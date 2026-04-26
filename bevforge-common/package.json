@@ -1,0 +1,12 @@
+{
+  "name": "bevforge-common",
+  "private": true,
+  "scripts": {
+    "lab:smoke": "pnpm --dir apps/os-ui exec tsx ../lab-ui/scripts/export-smoke.ts"
+  },
+  "packageManager": "pnpm@8.15.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

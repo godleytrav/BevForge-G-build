@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/compliance/compliance-period-report.schema.json",
+  "title": "BevForge Compliance Period Report",
+  "description": "OPS-generated compliance packet summary derived from OS compliance feed events.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "siteId",
+    "jurisdiction",
+    "period",
+    "status",
+    "generatedAt",
+    "sourceFeedId",
+    "totals"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["countryCode", "regionCode", "agency"],
+      "properties": {
+        "countryCode": {
+          "type": "string"
+        },
+        "regionCode": {
+          "type": "string"
+        },
+        "agency": {
+          "type": "string",
+          "description": "Examples: TTB, ABC, local_authority."
+        },
+        "permitId": {
+          "type": "string"
+        },
+        "facilityId": {
+          "type": "string"
+        }
+      }
+    },
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to"],
+      "properties": {
+        "from": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "to": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "submitted", "accepted", "amended"]
+    },
+    "sourceFeedId": {
+      "type": "string"
+    },
+    "supportingEventIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "totals": {
+      "description": "Runtime invariant: onHandStartQty + producedQty - removedQty - destroyedQty - lossQty = onHandEndQty (per site/uom).",
+      "$ref": "#/$defs/qtyTotals"
+    },
+    "bySku": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["skuId", "totals"],
+        "properties": {
+          "skuId": {
+            "type": "string"
+          },
+          "lotCodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "totals": {
+            "$ref": "#/$defs/qtyTotals"
+          }
+        }
+      }
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "name", "kind"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string",
+            "enum": ["worksheet", "supporting_doc", "signature", "other"]
+          },
+          "path": {
+            "type": "string"
+          },
+          "uri": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "attestation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "preparedBy": {
+          "type": "string"
+        },
+        "reviewedBy": {
+          "type": "string"
+        },
+        "submittedBy": {
+          "type": "string"
+        },
+        "attestedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "qtyTotals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "uom",
+        "onHandStartQty",
+        "producedQty",
+        "removedQty",
+        "destroyedQty",
+        "lossQty",
+        "onHandEndQty"
+      ],
+      "properties": {
+        "uom": {
+          "type": "string"
+        },
+        "onHandStartQty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "producedQty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "removedQty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "destroyedQty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "lossQty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "onHandEndQty": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

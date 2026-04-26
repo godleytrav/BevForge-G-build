@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ops-goals-scenarios",
+  "updatedAt": "2026-03-08T04:50:51.786Z",
+  "activeScenarioId": "goals-mmh9ve2z-xygf03",
+  "scenarios": [
+    {
+      "id": "goals-mmh9ve2z-xygf03",
+      "name": "Balanced Phase 1",
+      "goalLock": "annual",
+      "targetLock": "none",
+      "reviewPeriod": "monthly",
+      "annualRevenueGoal": 120000,
+      "monthlyRevenueGoal": 10000,
+      "mix": {
+        "wholesalePct": 60,
+        "directPct": 40,
+        "kegPct": 50,
+        "canPct": 50,
+        "basePct": 70,
+        "premiumPct": 30,
+        "halfBblPct": 45,
+        "sixthBblPct": 55,
+        "clubPct": 35,
+        "wholesaleGeneralPct": 65,
+        "onsiteDirectPct": 0,
+        "marketRetailPct": 0,
+        "eventSalesPct": 0
+      },
+      "assumptions": {
+        "base4PackWholesale": 11,
+        "premium4PackWholesale": 13,
+        "baseHalfBblWholesale": 155,
+        "baseSixthBblWholesale": 75,
+        "premiumSixthBblWholesale": 90,
+        "clubMonthlyFee": 15,
+        "halfBblGallons": 15.5,
+        "sixthBblGallons": 5.16,
+        "cansPerGallon": 8,
+        "cansPerCase": 24,
+        "cansPer4Pack": 4,
+        "avgMonthlyAccountRevenue": 4500,
+        "avgMonthlyKegsPerAccount": 4,
+        "avgMonthlyHalfBblKegSharePct": 25,
+        "avgMonthlySixthBblKegSharePct": 75,
+        "avgQuarterlyAllocationPerMember": 120,
+        "productionCapGallons": 10000,
+        "grossMarginPct": 45
+      },
+      "stress": {
+        "enabled": false,
+        "accountChurnPct": 20,
+        "clubChurnPct": 12,
+        "priceDropPct": 5,
+        "productionLossPct": 8
+      },
+      "createdAt": "2026-03-08T04:48:47.627Z",
+      "updatedAt": "2026-03-08T04:48:47.627Z",
+      "derived": {
+        "revenue": {
+          "annualTarget": 120000,
+          "monthlyTarget": 10000,
+          "quarterlyTarget": 30000,
+          "wholesaleTarget": 72000,
+          "directTarget": 48000,
+          "clubTarget": 16800,
+          "directNonClubTarget": 31200,
+          "wholesaleKegTarget": 36000,
+          "wholesaleCanTarget": 36000,
+          "baseKegTarget": 25200,
+          "premiumKegTarget": 10800,
+          "baseCanTarget": 25200,
+          "premiumCanTarget": 10800
+        },
+        "units": {
+          "halfBblKegs": 73.161,
+          "baseSixthBblKegs": 184.8,
+          "premiumSixthBblKegs": 120,
+          "totalSixthBblKegs": 304.8,
+          "fourPacks": 3121.68,
+          "cans": 12486.72,
+          "cases": 520.28,
+          "annualUnitsEstimate": 898.24
+        },
+        "gallons": {
+          "halfBblGallons": 1134,
+          "sixthBblGallons": 1572.77,
+          "canGallons": 1560.84,
+          "annualGallons": 4267.61,
+          "monthlyGallons": 355.63,
+          "quarterlyGallons": 1066.9
+        },
+        "targets": {
+          "wholesaleAccountsNeeded": 3.94,
+          "clubMembersNeeded": 93.33,
+          "monthlyHalfBblKegs": 6.1,
+          "monthlySixthBblKegs": 25.4,
+          "monthlyCases": 43.36,
+          "monthlyRevenueTarget": 10000,
+          "quarterlyRevenueTarget": 30000
+        },
+        "channelBreakdown": [
+          {
+            "label": "Wholesale",
+            "value": 72000,
+            "pct": 60
+          },
+          {
+            "label": "Direct (non-club)",
+            "value": 31200,
+            "pct": 26
+          },
+          {
+            "label": "Club",
+            "value": 16800,
+            "pct": 14
+          }
+        ],
+        "packageBreakdown": [
+          {
+            "label": "1/2 bbl Kegs",
+            "units": 73.161,
+            "gallons": 1134,
+            "revenue": 11340
+          },
+          {
+            "label": "1/6 bbl Kegs",
+            "units": 304.8,
+            "gallons": 1572.77,
+            "revenue": 24660
+          },
+          {
+            "label": "Cases (from 4-packs)",
+            "units": 520.28,
+            "gallons": 1560.84,
+            "revenue": 36000
+          }
+        ],
+        "validations": {
+          "productionCapGallons": 10000,
+          "utilizationPct": 42.68,
+          "overCapGallons": 0,
+          "state": "healthy",
+          "grossProfitEstimate": 54000,
+          "grossProfitGap": 0
+        },
+        "stress": {
+          "enabled": false,
+          "stressedAnnualRevenue": 99144,
+          "revenueShortfall": 20856,
+          "stressedProductionCapGallons": 9200,
+          "stressedUtilizationPct": 46.39,
+          "stressedOverCapGallons": 0,
+          "additionalAccountsNeeded": 0.39,
+          "additionalClubMembersNeeded": 115.87,
+          "state": "healthy"
+        }
+      }
+    }
+  ]
+}

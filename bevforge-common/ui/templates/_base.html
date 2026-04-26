@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>{{ page_title or 'BevForge' }}</title>
+  <link rel="icon" type="image/svg+xml" href="{{ url_for('static', path='brand/favicon.svg') if url_for else '/static/brand/favicon.svg' }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', path='brand/favicon-32.png') if url_for else '/static/brand/favicon-32.png' }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', path='brand/favicon-192.png') if url_for else '/static/brand/favicon-192.png' }}">
+  <link rel="apple-touch-icon" href="{{ url_for('static', path='brand/apple-touch-icon.png') if url_for else '/static/brand/apple-touch-icon.png' }}">
+  <link rel="stylesheet" href="{{ url_for('static', path='theme.css') if url_for else '/static/theme.css' }}"/>
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+  {% include "_nav.html" %}
+  <main class="bf-container">
+    {% block content %}{% endblock %}
+  </main>
+  {% include "_footer.html" %}
+  {% block body_scripts %}{% endblock %}
+</body>
+</html>

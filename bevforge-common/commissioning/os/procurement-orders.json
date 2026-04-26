@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "procurement-orders",
+  "updatedAt": "2026-03-12T17:10:03.239Z",
+  "orders": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "4ad0c751-3d20-48b4-8ade-c4846aad5ac3",
+      "siteId": "main",
+      "poNumber": "PO-MMNQ259S",
+      "vendorName": "Updated Vendor",
+      "vendorUrl": "https://example.com/item",
+      "status": "received",
+      "createdAt": "2026-03-12T17:08:33.712Z",
+      "orderedAt": "2026-03-12T17:08:33.712Z",
+      "updatedAt": "2026-03-12T17:10:03.239Z",
+      "notes": "smoke test po",
+      "lines": [
+        {
+          "id": "4a167632-369e-4b6e-bba0-6c7636f2aa75",
+          "itemId": "3dab8b4b-e077-4c66-8566-c0683d9980c5",
+          "skuId": "VENDOR-SMOKE-TEST",
+          "itemName": "Vendor Smoke Test Item Updated",
+          "unit": "units",
+          "orderedQty": 12,
+          "receivedQty": 12,
+          "costPerUnit": 2.25,
+          "vendorSku": "TV-001",
+          "vendorProductUrl": "https://example.com/item",
+          "status": "received",
+          "notes": "smoke test po"
+        }
+      ],
+      "events": [
+        {
+          "id": "83fbf884-2af9-4d5e-a281-21a16e8172ee",
+          "type": "received",
+          "timestamp": "2026-03-12T17:10:03.239Z",
+          "lineId": "4a167632-369e-4b6e-bba0-6c7636f2aa75",
+          "qty": 7,
+          "note": "final check-in"
+        },
+        {
+          "id": "6e0d7789-46fd-41b8-b559-e0a9d7e588d6",
+          "type": "received",
+          "timestamp": "2026-03-12T17:09:39.466Z",
+          "lineId": "4a167632-369e-4b6e-bba0-6c7636f2aa75",
+          "qty": 5,
+          "note": "partial check-in"
+        },
+        {
+          "id": "18eefd67-76d3-49b0-9cdc-10723f9b7a0f",
+          "type": "created",
+          "timestamp": "2026-03-12T17:08:33.712Z",
+          "note": "Procurement order created."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/canvas/canvas-node.schema.json",
+  "title": "BevForge Canvas Node Base",
+  "description": "Base node definition shared across OS and OPS.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "position"],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "description": "Node type identifier (OS/OPS extensions)."
+    },
+    "position": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["x", "y"],
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" }
+      }
+    },
+    "data": {
+      "type": "object",
+      "description": "Node-specific payload for OS/OPS extensions.",
+      "additionalProperties": true
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

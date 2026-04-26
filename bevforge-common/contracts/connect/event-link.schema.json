@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/connect/event-link.schema.json",
+  "title": "BevForge CONNECT Event Link",
+  "description": "Reference to a cross-suite record used by CONNECT tasks and threads.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "sourceSuite",
+    "entityType",
+    "entityId",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "sourceSuite": {
+      "type": "string",
+      "enum": ["os", "ops", "lab", "flow", "connect"]
+    },
+    "entityType": {
+      "type": "string",
+      "enum": [
+        "order",
+        "order_line",
+        "reservation",
+        "batch",
+        "recipe_run",
+        "inventory_item",
+        "delivery",
+        "task",
+        "thread",
+        "site",
+        "customer_account",
+        "contact"
+      ]
+    },
+    "entityId": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "batchId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "reservationId": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

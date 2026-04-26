@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/catalog/tap-assignment.schema.json",
+  "title": "BevForge FLOW Tap Assignment",
+  "description": "Offline-capable FLOW runtime assignment that maps a customer-facing card/image to a tap and sellable SKU while preserving OS product/package/asset identity.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "tapAssignmentId",
+    "siteId",
+    "tapId",
+    "productId",
+    "skuId",
+    "status",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "tapAssignmentId": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "tapId": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "string"
+    },
+    "productCode": {
+      "type": "string"
+    },
+    "productName": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "packageLotId": {
+      "type": "string"
+    },
+    "packageLotCode": {
+      "type": "string"
+    },
+    "assetId": {
+      "type": "string"
+    },
+    "assetCode": {
+      "type": "string"
+    },
+    "labelVersionId": {
+      "type": "string"
+    },
+    "beverageClass": {
+      "type": "string"
+    },
+    "style": {
+      "type": "string"
+    },
+    "abv": {
+      "type": "number",
+      "minimum": 0
+    },
+    "tastingNotes": {
+      "type": "string"
+    },
+    "imageAssetId": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "pourSizesOz": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "paused", "offline_only", "disabled"]
+    },
+    "dispenseTargetId": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

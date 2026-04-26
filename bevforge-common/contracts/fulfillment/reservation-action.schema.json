@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/fulfillment/reservation-action.schema.json",
+  "title": "BevForge Reservation Action",
+  "description": "OPS action request that advances or releases an existing OS reservation.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "actionId",
+    "reservationId",
+    "action",
+    "occurredAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "actionId": {
+      "type": "string",
+      "description": "Idempotency key for commit/release/expire request."
+    },
+    "reservationId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "lineId": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string",
+      "enum": ["commit", "release", "expire"]
+    },
+    "reasonCode": {
+      "type": "string",
+      "enum": [
+        "picked",
+        "shipped",
+        "order_canceled",
+        "line_edited",
+        "reservation_timeout",
+        "manual_override"
+      ]
+    },
+    "reasonMessage": {
+      "type": "string"
+    },
+    "occurredAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

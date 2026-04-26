@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/recipes/recipe-execution.schema.json",
+  "title": "BevForge Recipe Execution Adapter",
+  "description": "Normalized execution plan representation produced from recipe files.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "recipeId", "executionPlanId", "steps"],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "recipeId": {
+      "type": "string"
+    },
+    "executionPlanId": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/step"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "recipeStepId", "kind"],
+      "properties": {
+        "id": { "type": "string" },
+        "recipeStepId": { "type": "string" },
+        "kind": {
+          "type": "string",
+          "enum": ["command", "delay", "condition", "notify"]
+        },
+        "targetDeviceId": { "type": "string" },
+        "command": {
+          "type": "string",
+          "enum": ["on_off", "open_close", "route", "set_value", "trigger"]
+        },
+        "value": { "type": ["string", "number", "boolean"] },
+        "delayMs": { "type": "integer", "minimum": 0 },
+        "requireUserProceed": { "type": "boolean" }
+      }
+    }
+  }
+}

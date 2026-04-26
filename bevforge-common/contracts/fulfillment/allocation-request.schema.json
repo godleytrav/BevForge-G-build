@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/fulfillment/allocation-request.schema.json",
+  "title": "BevForge Allocation Request",
+  "description": "OPS request to OS to reserve inventory for an order line. `skuId` is the sellable package identity; any package-lot preferences are optional traceability constraints.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "requestId",
+    "orderId",
+    "lineId",
+    "skuId",
+    "requestedQty",
+    "uom",
+    "siteId",
+    "requestedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "requestId": {
+      "type": "string",
+      "description": "Idempotency key scoped to OPS order-line reserve attempt."
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "lineId": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "requestedQty": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "uom": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "allowPartial": {
+      "type": "boolean",
+      "default": false
+    },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lotPolicy": {
+          "type": "string",
+          "enum": ["fifo", "fefo", "specific_lots"]
+        },
+        "preferredLotIds": {
+          "type": "array",
+          "description": "Legacy lot field retained for compatibility. Prefer `preferredPackageLotIds` when OS exposes explicit package-lot identities.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "preferredPackageLotIds": {
+          "type": "array",
+          "description": "Optional package-lot UUID preferences supplied by OPS when OS availability exposes explicit package lots.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "preferredPackageLotCodes": {
+          "type": "array",
+          "description": "Optional human-readable package-lot traceability codes for operator-selected inventory.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "requestedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

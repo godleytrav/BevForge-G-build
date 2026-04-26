@@ -1,0 +1,1354 @@
+[
+  {
+    "id": "9834b00a-16b3-4165-8abd-bec3b61d4614",
+    "type": "malt",
+    "name": "US 2-Row Pale Malt",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 36,
+      "lovibond": 2
+    },
+    "sensory_json": {
+      "cracker": 0.7,
+      "honey": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "af2b5341-a340-400d-95d3-4d0cc4ff5753",
+    "type": "malt",
+    "name": "Pilsner Malt",
+    "vendor": "",
+    "origin": "Germany",
+    "spec_json": {
+      "ppg": 37,
+      "lovibond": 1.8
+    },
+    "sensory_json": {
+      "cracker": 0.8,
+      "hay": 0.2
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "d778ec4c-66e4-4ca7-a6df-4368c57535f0",
+    "type": "malt",
+    "name": "Vienna Malt",
+    "vendor": "",
+    "origin": "Austria",
+    "spec_json": {
+      "ppg": 35,
+      "lovibond": 4
+    },
+    "sensory_json": {
+      "biscuit": 0.6,
+      "toffee": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "ad5a09b7-e6af-4b0a-8581-97863fa95746",
+    "type": "malt",
+    "name": "Munich Light",
+    "vendor": "",
+    "origin": "Germany",
+    "spec_json": {
+      "ppg": 35,
+      "lovibond": 8
+    },
+    "sensory_json": {
+      "toast": 0.7,
+      "bread_crust": 0.5
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "cf46f969-3731-42f5-a755-16ade1d45692",
+    "type": "malt",
+    "name": "Munich Dark",
+    "vendor": "",
+    "origin": "Germany",
+    "spec_json": {
+      "ppg": 34,
+      "lovibond": 15
+    },
+    "sensory_json": {
+      "toast": 0.8,
+      "bread_crust": 0.6
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "18180922-7690-4570-8857-491bbb81e1c3",
+    "type": "malt",
+    "name": "Maris Otter Pale Ale",
+    "vendor": "",
+    "origin": "UK",
+    "spec_json": {
+      "ppg": 36,
+      "lovibond": 3.5
+    },
+    "sensory_json": {
+      "biscuit": 0.6,
+      "nutty": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "054e9771-76fe-4c3a-9864-0ba3704d1bc1",
+    "type": "malt",
+    "name": "Wheat Malt",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 38,
+      "lovibond": 2.5
+    },
+    "sensory_json": {
+      "bread": 0.7,
+      "soft": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "963ddf62-85f3-4556-8198-316fc0278ec7",
+    "type": "malt",
+    "name": "Flaked Wheat",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 34,
+      "lovibond": 2
+    },
+    "sensory_json": {
+      "bread": 0.6,
+      "silky": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "2cfe9b79-9e50-4d6b-bcf5-20b25dd99d00",
+    "type": "malt",
+    "name": "Flaked Oats",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 33,
+      "lovibond": 2
+    },
+    "sensory_json": {
+      "silky": 0.9
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "83334b5d-964b-4ebf-a6e7-a63d18e29dd4",
+    "type": "malt",
+    "name": "Rye Malt",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 29,
+      "lovibond": 3.7
+    },
+    "sensory_json": {
+      "spicy": 0.7,
+      "bready": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "16c5d76b-f218-4eb3-b66e-ef592936d79d",
+    "type": "malt",
+    "name": "CaraPils/Dextrin Malt",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 33,
+      "lovibond": 1.5
+    },
+    "sensory_json": {
+      "foam": 0.7,
+      "body": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "f1ad38c4-9477-4ab7-af95-51422b77e36e",
+    "type": "malt",
+    "name": "Crystal 10L",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 35,
+      "lovibond": 10
+    },
+    "sensory_json": {
+      "caramel": 0.8,
+      "honey": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "97bb7a66-b513-4962-901a-f4bb15c7dc6e",
+    "type": "malt",
+    "name": "Crystal 20L",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 35,
+      "lovibond": 20
+    },
+    "sensory_json": {
+      "caramel": 0.8,
+      "honey": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "9ac6d9c9-f868-4221-b23e-de7d68fb65a7",
+    "type": "malt",
+    "name": "Crystal 40L",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 34,
+      "lovibond": 40
+    },
+    "sensory_json": {
+      "toffee": 0.7,
+      "caramel": 0.5
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "4bdc3ddc-e630-46fd-aa2f-7c88f2069c97",
+    "type": "malt",
+    "name": "Crystal 60L",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 34,
+      "lovibond": 60
+    },
+    "sensory_json": {
+      "toffee": 0.8,
+      "raisin": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "2e352ec8-c086-4feb-b05c-4478685fc537",
+    "type": "malt",
+    "name": "Crystal 80L",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 34,
+      "lovibond": 80
+    },
+    "sensory_json": {
+      "dark_caramel": 0.7,
+      "dried_fruit": 0.5
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "268b6f85-bed7-4b63-8483-94fb8ba93fb3",
+    "type": "malt",
+    "name": "Crystal 120L",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "ppg": 33,
+      "lovibond": 120
+    },
+    "sensory_json": {
+      "molasses": 0.7,
+      "dark_fruit": 0.6
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "4e9bf415-5502-49be-a099-2d85f5081afc",
+    "type": "malt",
+    "name": "Chocolate Malt",
+    "vendor": "",
+    "origin": "UK",
+    "spec_json": {
+      "ppg": 34,
+      "lovibond": 350
+    },
+    "sensory_json": {
+      "cocoa": 0.9,
+      "coffee": 0.5
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "9c229be0-a83e-4105-a330-13a5fe9d7031",
+    "type": "malt",
+    "name": "Roasted Barley",
+    "vendor": "",
+    "origin": "Ireland",
+    "spec_json": {
+      "ppg": 25,
+      "lovibond": 500
+    },
+    "sensory_json": {
+      "coffee": 0.9,
+      "char": 0.6
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "4ce1187e-bb86-4f47-ad7b-da0167c39c37",
+    "type": "malt",
+    "name": "Special B",
+    "vendor": "",
+    "origin": "Belgium",
+    "spec_json": {
+      "ppg": 30,
+      "lovibond": 180
+    },
+    "sensory_json": {
+      "plum": 0.6,
+      "raisin": 0.6,
+      "molasses": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "da645404-c558-4687-b756-09d86471f6b9",
+    "type": "hop",
+    "name": "Citra",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.12,
+      "aroma_family": [
+        "tropical",
+        "citrus"
+      ]
+    },
+    "sensory_json": {
+      "tropical": 0.8,
+      "citrus": 0.7
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "35e16d3c-9c77-4fae-b3a2-6ca51d023cd3",
+    "type": "hop",
+    "name": "Mosaic",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.12,
+      "aroma_family": [
+        "tropical",
+        "berry",
+        "pine"
+      ]
+    },
+    "sensory_json": {
+      "tropical": 0.6,
+      "berry": 0.5,
+      "pine": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "f34d4a42-8521-4f6c-9efd-46c73044361f",
+    "type": "hop",
+    "name": "Simcoe",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.13,
+      "aroma_family": [
+        "pine",
+        "dank",
+        "berry"
+      ]
+    },
+    "sensory_json": {
+      "pine": 0.7,
+      "dank": 0.4,
+      "berry": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "20a5b6ce-38d8-463d-91d9-0b143a30a969",
+    "type": "hop",
+    "name": "Cascade",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.06,
+      "aroma_family": [
+        "citrus",
+        "floral"
+      ]
+    },
+    "sensory_json": {
+      "grapefruit": 0.7,
+      "floral": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "dbd316b4-ce86-41de-a64d-5153eafaf278",
+    "type": "hop",
+    "name": "Centennial",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.1,
+      "aroma_family": [
+        "citrus",
+        "pine",
+        "floral"
+      ]
+    },
+    "sensory_json": {
+      "citrus": 0.7,
+      "pine": 0.4,
+      "floral": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "dd2cf62a-aad5-4c64-bbfc-e5303f8d7d1a",
+    "type": "hop",
+    "name": "Amarillo",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.09,
+      "aroma_family": [
+        "citrus",
+        "floral"
+      ]
+    },
+    "sensory_json": {
+      "orange": 0.6,
+      "citrus": 0.6,
+      "floral": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "1b5833b8-83f4-4fad-9405-7f14ff7a19ae",
+    "type": "hop",
+    "name": "Chinook",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.12,
+      "aroma_family": [
+        "pine",
+        "spice"
+      ]
+    },
+    "sensory_json": {
+      "pine": 0.7,
+      "spicy": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "73409db9-7766-4bcf-9233-5d0d1f1520ac",
+    "type": "hop",
+    "name": "Galaxy",
+    "vendor": "",
+    "origin": "Australia",
+    "spec_json": {
+      "alpha_acid_typical": 0.14,
+      "aroma_family": [
+        "tropical",
+        "citrus"
+      ]
+    },
+    "sensory_json": {
+      "tropical": 0.8,
+      "citrus": 0.6
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "87acfff7-e33a-4bc3-ae63-2d522dead70a",
+    "type": "hop",
+    "name": "Nelson Sauvin",
+    "vendor": "",
+    "origin": "New Zealand",
+    "spec_json": {
+      "alpha_acid_typical": 0.12,
+      "aroma_family": [
+        "white_wine",
+        "gooseberry"
+      ]
+    },
+    "sensory_json": {
+      "white_wine": 0.8,
+      "gooseberry": 0.6
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "e0b8daee-33e9-40c2-ac12-b7c974b2ed4c",
+    "type": "hop",
+    "name": "Motueka",
+    "vendor": "",
+    "origin": "New Zealand",
+    "spec_json": {
+      "alpha_acid_typical": 0.07,
+      "aroma_family": [
+        "lime",
+        "tropical"
+      ]
+    },
+    "sensory_json": {
+      "lime": 0.7,
+      "tropical": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "422a6c37-f0a0-47c5-af33-9758eedf2713",
+    "type": "hop",
+    "name": "Sabro",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.13,
+      "aroma_family": [
+        "coconut",
+        "tropical"
+      ]
+    },
+    "sensory_json": {
+      "coconut": 0.7,
+      "tropical": 0.5
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "9953a1cb-902a-450f-b9ce-a8d72312d946",
+    "type": "hop",
+    "name": "Strata",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.12,
+      "aroma_family": [
+        "tropical",
+        "dank",
+        "berry"
+      ]
+    },
+    "sensory_json": {
+      "tropical": 0.6,
+      "dank": 0.5,
+      "berry": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "f767ec64-05fd-45f1-a744-3eb6370b3ff1",
+    "type": "hop",
+    "name": "Idaho 7",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.13,
+      "aroma_family": [
+        "tropical",
+        "stonefruit",
+        "pine"
+      ]
+    },
+    "sensory_json": {
+      "tropical": 0.6,
+      "stonefruit": 0.5,
+      "pine": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "a6b05760-c646-462a-acca-e0b1b58fce33",
+    "type": "hop",
+    "name": "El Dorado",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.13,
+      "aroma_family": [
+        "tropical",
+        "stonefruit"
+      ]
+    },
+    "sensory_json": {
+      "tropical": 0.6,
+      "stonefruit": 0.5
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "e21bfc02-3c27-46f2-a0ff-9ad166bd2d43",
+    "type": "hop",
+    "name": "Columbus/CTZ",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.15,
+      "aroma_family": [
+        "dank",
+        "spicy"
+      ]
+    },
+    "sensory_json": {
+      "dank": 0.6,
+      "spicy": 0.5
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "624d4325-0284-4daf-b8e4-a16946c74ebf",
+    "type": "hop",
+    "name": "Talus",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "alpha_acid_typical": 0.1,
+      "aroma_family": [
+        "citrus",
+        "floral",
+        "wood"
+      ]
+    },
+    "sensory_json": {
+      "citrus": 0.6,
+      "floral": 0.4,
+      "woody": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "f2bada9e-8cb8-4ce1-9990-b3a6b6aea7fc",
+    "type": "hop",
+    "name": "Saaz",
+    "vendor": "",
+    "origin": "Czechia",
+    "spec_json": {
+      "alpha_acid_typical": 0.035,
+      "aroma_family": [
+        "spicy",
+        "herbal"
+      ]
+    },
+    "sensory_json": {
+      "spicy": 0.7,
+      "herbal": 0.6
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "ea98c44d-4abb-4970-a718-ef2fadc4b0b6",
+    "type": "hop",
+    "name": "Hallertau Mittelfr\u00fch",
+    "vendor": "",
+    "origin": "Germany",
+    "spec_json": {
+      "alpha_acid_typical": 0.04,
+      "aroma_family": [
+        "floral",
+        "herbal"
+      ]
+    },
+    "sensory_json": {
+      "floral": 0.6,
+      "herbal": 0.5
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "0808a728-d59d-484c-9add-942763d6a5f7",
+    "type": "hop",
+    "name": "Tettnang",
+    "vendor": "",
+    "origin": "Germany",
+    "spec_json": {
+      "alpha_acid_typical": 0.045,
+      "aroma_family": [
+        "spicy",
+        "herbal"
+      ]
+    },
+    "sensory_json": {
+      "spicy": 0.6,
+      "herbal": 0.5
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "27b33433-d76d-43fc-b3c7-7481b9746aa6",
+    "type": "hop",
+    "name": "East Kent Goldings",
+    "vendor": "",
+    "origin": "UK",
+    "spec_json": {
+      "alpha_acid_typical": 0.05,
+      "aroma_family": [
+        "earthy",
+        "marmalade"
+      ]
+    },
+    "sensory_json": {
+      "earthy": 0.6,
+      "marmalade": 0.6
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "1150af83-04e2-4b6a-b84b-3ad72bbc958e",
+    "type": "yeast",
+    "name": "Chico / US-05 Family",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "attenuation_range": [
+        0.73,
+        0.8
+      ],
+      "temp_range_c": [
+        18,
+        21
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "clean": 1.0
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "0cb11845-605f-4b83-bd8a-8978d6fd698c",
+    "type": "yeast",
+    "name": "San Diego Super (WLP090 fam)",
+    "vendor": "",
+    "origin": "USA",
+    "spec_json": {
+      "attenuation_range": [
+        0.76,
+        0.83
+      ],
+      "temp_range_c": [
+        18,
+        21
+      ],
+      "flocculation": "high"
+    },
+    "sensory_json": {
+      "clean": 0.9
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "49855383-ca73-409c-9d17-d9bde96cac37",
+    "type": "yeast",
+    "name": "Verdant IPA",
+    "vendor": "",
+    "origin": "UK",
+    "spec_json": {
+      "attenuation_range": [
+        0.72,
+        0.78
+      ],
+      "temp_range_c": [
+        18,
+        21
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "stonefruit": 0.4,
+      "tropical": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "d85dec2c-28ba-4d94-b2a5-9d5e47ffc18c",
+    "type": "yeast",
+    "name": "London ESB (WLP002/WY1968)",
+    "vendor": "",
+    "origin": "UK",
+    "spec_json": {
+      "attenuation_range": [
+        0.67,
+        0.72
+      ],
+      "temp_range_c": [
+        18,
+        20
+      ],
+      "flocculation": "very_high"
+    },
+    "sensory_json": {
+      "red_apple": 0.4,
+      "stonefruit": 0.4,
+      "toffee": 0.2
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "9cec7da0-564f-42a9-b616-e4a127bdf4f3",
+    "type": "yeast",
+    "name": "S-04 English Ale",
+    "vendor": "",
+    "origin": "UK",
+    "spec_json": {
+      "attenuation_range": [
+        0.72,
+        0.78
+      ],
+      "temp_range_c": [
+        18,
+        21
+      ],
+      "flocculation": "high"
+    },
+    "sensory_json": {
+      "stonefruit": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "2e0dbc66-4ef9-4f5c-ad1d-142e5346d7b0",
+    "type": "yeast",
+    "name": "London III (WY1318)",
+    "vendor": "",
+    "origin": "UK",
+    "spec_json": {
+      "attenuation_range": [
+        0.71,
+        0.75
+      ],
+      "temp_range_c": [
+        18,
+        21
+      ],
+      "flocculation": "high"
+    },
+    "sensory_json": {
+      "tropical": 0.3,
+      "stonefruit": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "143d0374-57a2-418f-a5de-1b11cd117679",
+    "type": "yeast",
+    "name": "Belgian Abbey",
+    "vendor": "",
+    "origin": "Belgium",
+    "spec_json": {
+      "attenuation_range": [
+        0.74,
+        0.82
+      ],
+      "temp_range_c": [
+        20,
+        25
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "banana": 0.3,
+      "clove": 0.2,
+      "pepper": 0.2,
+      "dark_fruit": 0.2
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "4abed7ac-24ab-4ec3-9721-20e02491da44",
+    "type": "yeast",
+    "name": "Belgian Ardennes",
+    "vendor": "",
+    "origin": "Belgium",
+    "spec_json": {
+      "attenuation_range": [
+        0.74,
+        0.82
+      ],
+      "temp_range_c": [
+        20,
+        24
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "spice": 0.3,
+      "fruit": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "036018de-2023-4207-93c6-a93d7b29e861",
+    "type": "yeast",
+    "name": "Trappist High Gravity",
+    "vendor": "",
+    "origin": "Belgium",
+    "spec_json": {
+      "attenuation_range": [
+        0.78,
+        0.85
+      ],
+      "temp_range_c": [
+        20,
+        25
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "banana": 0.4,
+      "clove": 0.3,
+      "pepper": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "a8c882af-5c33-4e8d-a58a-7cd54ee5a97a",
+    "type": "yeast",
+    "name": "Saison (WLP565)",
+    "vendor": "",
+    "origin": "Belgium",
+    "spec_json": {
+      "attenuation_range": [
+        0.82,
+        0.9
+      ],
+      "temp_range_c": [
+        22,
+        28
+      ],
+      "flocculation": "low"
+    },
+    "sensory_json": {
+      "pepper": 0.5,
+      "clove": 0.4,
+      "lemon": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "df48d9cc-8faf-4f0a-9be5-266a9aa774d2",
+    "type": "yeast",
+    "name": "French Saison (WY3711)",
+    "vendor": "",
+    "origin": "France",
+    "spec_json": {
+      "attenuation_range": [
+        0.82,
+        0.92
+      ],
+      "temp_range_c": [
+        20,
+        28
+      ],
+      "flocculation": "low"
+    },
+    "sensory_json": {
+      "pepper": 0.5,
+      "citrus": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "a306c156-caf7-4735-8be8-18f86ebdec8d",
+    "type": "yeast",
+    "name": "Weizen (WY3068/WLP300)",
+    "vendor": "",
+    "origin": "Germany",
+    "spec_json": {
+      "attenuation_range": [
+        0.72,
+        0.77
+      ],
+      "temp_range_c": [
+        18,
+        22
+      ],
+      "flocculation": "low"
+    },
+    "sensory_json": {
+      "banana": 0.9,
+      "clove": 0.6
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "375cbe12-160a-489b-b523-5f2dbc8dd5c6",
+    "type": "yeast",
+    "name": "K\u00f6lsch (WLP029)",
+    "vendor": "",
+    "origin": "Germany",
+    "spec_json": {
+      "attenuation_range": [
+        0.72,
+        0.78
+      ],
+      "temp_range_c": [
+        15,
+        18
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "clean": 0.8,
+      "apple": 0.2
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "e4c58ff6-3988-40b7-8a0c-1e8e07317a74",
+    "type": "yeast",
+    "name": "W-34/70 Lager",
+    "vendor": "",
+    "origin": "Germany",
+    "spec_json": {
+      "attenuation_range": [
+        0.75,
+        0.83
+      ],
+      "temp_range_c": [
+        9,
+        13
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "clean": 0.8,
+      "sulfur": 0.2
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "6036fdd8-236d-4bfb-8299-cf742d730fbb",
+    "type": "yeast",
+    "name": "Bohemian Lager (WLP830)",
+    "vendor": "",
+    "origin": "Czechia",
+    "spec_json": {
+      "attenuation_range": [
+        0.74,
+        0.8
+      ],
+      "temp_range_c": [
+        9,
+        13
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "clean": 0.8
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "fd7d68bb-dece-4464-949d-41873dff094c",
+    "type": "yeast",
+    "name": "Bavarian Lager (WY2206)",
+    "vendor": "",
+    "origin": "Germany",
+    "spec_json": {
+      "attenuation_range": [
+        0.73,
+        0.79
+      ],
+      "temp_range_c": [
+        9,
+        12
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "clean": 0.7,
+      "malt_accent": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "e2eb32b8-c2ac-42ad-96b7-22bc6c2f3841",
+    "type": "yeast",
+    "name": "Mexican Lager",
+    "vendor": "",
+    "origin": "Mexico",
+    "spec_json": {
+      "attenuation_range": [
+        0.74,
+        0.82
+      ],
+      "temp_range_c": [
+        10,
+        14
+      ],
+      "flocculation": "medium"
+    },
+    "sensory_json": {
+      "clean": 0.8
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "a8e2b3ac-4541-4408-910f-8a48ccef81c8",
+    "type": "yeast",
+    "name": "Kveik Voss",
+    "vendor": "",
+    "origin": "Norway",
+    "spec_json": {
+      "attenuation_range": [
+        0.74,
+        0.82
+      ],
+      "temp_range_c": [
+        25,
+        40
+      ],
+      "flocculation": "high"
+    },
+    "sensory_json": {
+      "orange": 0.5,
+      "citrus": 0.4
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "6711945d-8297-43ed-b3d7-00131f67e590",
+    "type": "yeast",
+    "name": "Kveik Hornindal",
+    "vendor": "",
+    "origin": "Norway",
+    "spec_json": {
+      "attenuation_range": [
+        0.74,
+        0.82
+      ],
+      "temp_range_c": [
+        25,
+        38
+      ],
+      "flocculation": "high"
+    },
+    "sensory_json": {
+      "tropical": 0.5,
+      "citrus": 0.3
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  },
+  {
+    "id": "fb7874b6-ba94-460b-8f81-a9eba4f78c3e",
+    "type": "yeast",
+    "name": "Nottingham Ale",
+    "vendor": "",
+    "origin": "UK",
+    "spec_json": {
+      "attenuation_range": [
+        0.76,
+        0.82
+      ],
+      "temp_range_c": [
+        14,
+        21
+      ],
+      "flocculation": "high"
+    },
+    "sensory_json": {
+      "clean": 0.8
+    },
+    "active": true,
+    "version": 1,
+    "created_at": "2025-10-08",
+    "updated_at": "2025-10-08"
+  }
+]

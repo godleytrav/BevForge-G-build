@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:," />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <script>
+      (function () {
+        var path = window.location.pathname || "/";
+        var head = document.head;
+        var manifestHref = "";
+        var themeColor = "#0A1116";
+        var appleTitle = "BevForge OPS";
+        var documentTitle = "BevForge OPS";
+
+        if (path.indexOf("/ops/mobile") === 0) {
+          manifestHref = "/ops/mobile/manifest.webmanifest";
+          themeColor = "#07131a";
+          appleTitle = "OPS Mobile";
+          documentTitle = "OPS Mobile";
+        } else if (path.indexOf("/ops/logistics/driver") === 0) {
+          manifestHref = "/ops-driver.webmanifest";
+          themeColor = "#0A1116";
+          appleTitle = "OPS Driver";
+          documentTitle = "OPS Driver";
+        }
+
+        var theme = document.createElement("meta");
+        theme.setAttribute("name", "theme-color");
+        theme.setAttribute("content", themeColor);
+        head.appendChild(theme);
+
+        var appleTitleMeta = document.createElement("meta");
+        appleTitleMeta.setAttribute("name", "apple-mobile-web-app-title");
+        appleTitleMeta.setAttribute("content", appleTitle);
+        head.appendChild(appleTitleMeta);
+
+        if (manifestHref) {
+          var manifest = document.createElement("link");
+          manifest.setAttribute("rel", "manifest");
+          manifest.setAttribute("href", manifestHref);
+          head.appendChild(manifest);
+        }
+
+        document.title = documentTitle;
+      })();
+    </script>
+    <title>BevForge OPS</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

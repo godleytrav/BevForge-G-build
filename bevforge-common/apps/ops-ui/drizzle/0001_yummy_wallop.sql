@@ -1,0 +1,1 @@
+ALTER TABLE `orders` MODIFY COLUMN `status` enum('draft','confirmed','approved','in-packing','packed','loaded','in-delivery','delivered','cancelled') DEFAULT 'draft';

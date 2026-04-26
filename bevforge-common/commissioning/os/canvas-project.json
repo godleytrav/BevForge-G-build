@@ -1,0 +1,1822 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "project-mltq9xhz-tpna8n",
+  "name": "BevForge OS Canvas Project",
+  "pages": [
+    {
+      "id": "page-mltq9xhz-pr51i5",
+      "name": "Master Layout",
+      "mode": "published",
+      "nodes": [
+        {
+          "id": "pump-mltx2057-1x68sh",
+          "type": "widget",
+          "position": {
+            "x": 4.666429917031593,
+            "y": 302.44252536633525
+          },
+          "data": {
+            "label": "Transfer Pump",
+            "widgetType": "pump",
+            "config": {
+              "state": "off",
+              "flowRate": 0
+            },
+            "logicalDeviceId": "dev-pump-mltx2057-1x68sh",
+            "control": {
+              "driverType": "dummy"
+            },
+            "bindings": {}
+          }
+        },
+        {
+          "id": "button-mltx260r-qmdedk",
+          "type": "widget",
+          "position": {
+            "x": -581.3267272984863,
+            "y": 267.46359917432983
+          },
+          "data": {
+            "label": "Manual Transfer Pump",
+            "widgetType": "button",
+            "config": {
+              "state": "off",
+              "autoProceed": false,
+              "requireUserProceed": true
+            },
+            "logicalDeviceId": "dev-manual-transfer-pump",
+            "control": {
+              "targetDeviceId": "dev-pump-mltx2057-1x68sh",
+              "command": "on_off",
+              "driverType": "dummy"
+            },
+            "bindings": {}
+          }
+        },
+        {
+          "id": "vessel-mltzqmmz-6ix3ja",
+          "type": "widget",
+          "position": {
+            "x": -269,
+            "y": -32
+          },
+          "data": {
+            "label": "Fermentor",
+            "widgetType": "vessel",
+            "config": {
+              "capacity": 100,
+              "currentLevel": 0,
+              "temperature": 20,
+              "vesselType": "fermentor_conical"
+            },
+            "logicalDeviceId": "dev-vessel-mltzqmmz-6ix3ja",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "vessel-mltzr0o2-07axes",
+          "type": "widget",
+          "position": {
+            "x": 471.18000313871653,
+            "y": -15.248253868612174
+          },
+          "data": {
+            "label": "Bright Tank",
+            "widgetType": "vessel",
+            "config": {
+              "capacity": 100,
+              "currentLevel": 0,
+              "temperature": 20,
+              "vesselType": "bright_tank"
+            },
+            "logicalDeviceId": "dev-vessel-mltzr0o2-07axes",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "vessel-mlund641-4bwocw",
+          "type": "widget",
+          "position": {
+            "x": -591.9972293322021,
+            "y": 439.903026627072
+          },
+          "data": {
+            "label": "VESSEL wocw",
+            "widgetType": "vessel",
+            "config": {
+              "vesselType": "fermentor_conical",
+              "capacity": 100,
+              "currentLevel": 0,
+              "temperature": 20
+            },
+            "logicalDeviceId": "dev-vessel-mlund641-4bwocw",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "pump-mlund7zk-oa83nj",
+          "type": "widget",
+          "position": {
+            "x": -278.30200278997575,
+            "y": 450.79710135256494
+          },
+          "data": {
+            "label": "PUMP 83nj",
+            "widgetType": "pump",
+            "config": {
+              "state": "off",
+              "flowRate": 0
+            },
+            "control": {
+              "command": "on_off",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-pump-mlund7zk-oa83nj",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "sensor-mlund97z-4nm4bk",
+          "type": "widget",
+          "position": {
+            "x": -638.6871256138897,
+            "y": -181.34335173188765
+          },
+          "data": {
+            "label": "Fermentor (TMP)",
+            "widgetType": "sensor",
+            "config": {
+              "value": 55,
+              "sensorType": "temperature",
+              "unit": "F",
+              "dummyMode": true,
+              "dummyValue": 55,
+              "min": 0,
+              "max": 250,
+              "step": 1,
+              "sensorSampleAtMs": 1771962674232
+            },
+            "logicalDeviceId": "dev-sensor-mlund97z-4nm4bk",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "glycol_controller-mlundco2-swj21x",
+          "type": "widget",
+          "position": {
+            "x": -660,
+            "y": 4
+          },
+          "data": {
+            "label": "GLYCOL_CONTROLLER j21x",
+            "widgetType": "glycol_controller",
+            "config": {
+              "state": "off",
+              "value": 55,
+              "setpoint": 65,
+              "unit": "F",
+              "glycolController": {
+                "compareTo": "threshold",
+                "threshold": 65,
+                "hysteresis": 1,
+                "pollMs": 1000,
+                "sourceSensorDeviceId": "dev-sensor-mlund97z-4nm4bk",
+                "pumpDeviceId": "dev-pump-mlund7zk-oa83nj"
+              }
+            },
+            "logicalDeviceId": "dev-glycol-controller-main",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "hlt_controller-mlv746y2-e8bmlu",
+          "type": "widget",
+          "position": {
+            "x": 755.2180087737281,
+            "y": -122.3603943908418
+          },
+          "data": {
+            "label": "HLT_CONTROLLER bmlu",
+            "widgetType": "hlt_controller",
+            "config": {
+              "state": "off",
+              "value": 120,
+              "setpoint": 150,
+              "unit": "F",
+              "min": 50,
+              "max": 180,
+              "step": 0.5,
+              "hltController": {
+                "compareTo": "threshold",
+                "threshold": 150,
+                "hysteresis": 1,
+                "pollMs": 1000,
+                "sourceSensorDeviceId": "dev-sensor-mlv7a9jj-jd8em4",
+                "heaterDeviceId": "dev-heater-mlv76q2m-cnjtih",
+                "enabled": true
+              }
+            },
+            "logicalDeviceId": "dev-hlt-controller-main",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "vessel-mlv74seq-n2s9jl",
+          "type": "widget",
+          "position": {
+            "x": 915.8157034998018,
+            "y": 127.19839611113585
+          },
+          "data": {
+            "label": "HLT",
+            "widgetType": "vessel",
+            "config": {
+              "vesselType": "hlt",
+              "capacity": 100,
+              "currentLevel": 0,
+              "temperature": 20
+            },
+            "logicalDeviceId": "dev-vessel-mlv74seq-n2s9jl",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "heater-mlv76q2m-cnjtih",
+          "type": "widget",
+          "position": {
+            "x": 1072.3587608867062,
+            "y": -119.01972839746861
+          },
+          "data": {
+            "label": "HEATER jtih",
+            "widgetType": "heater",
+            "config": {
+              "state": "off",
+              "setpoint": 68,
+              "temperature": 20
+            },
+            "control": {
+              "command": "on_off",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-heater-mlv76q2m-cnjtih",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "sensor-mlv7a9jj-jd8em4",
+          "type": "widget",
+          "position": {
+            "x": 767.4916796755109,
+            "y": -255.78048634585417
+          },
+          "data": {
+            "label": "SENSOR 8em4",
+            "widgetType": "sensor",
+            "config": {
+              "value": 120,
+              "sensorType": "temperature",
+              "unit": "F",
+              "dummyMode": true,
+              "dummyValue": 120,
+              "min": 30,
+              "max": 250,
+              "step": 1,
+              "sensorSampleAtMs": 1771962674232
+            },
+            "logicalDeviceId": "dev-sensor-mlv7a9jj-jd8em4",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "vessel-mm0t3kaf-uipa4n",
+          "type": "widget",
+          "position": {
+            "x": 1181.756782579721,
+            "y": 149.25521570036787
+          },
+          "data": {
+            "label": "Brew Kettle",
+            "widgetType": "vessel",
+            "config": {
+              "vesselType": "brew_kettle",
+              "capacity": 100,
+              "currentLevel": 0,
+              "temperature": 20
+            },
+            "logicalDeviceId": "dev-vessel-mm0t3kaf-uipa4n",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "vessel-mm0t4pnr-pltj0u",
+          "type": "widget",
+          "position": {
+            "x": 1490.449703376008,
+            "y": 156.1427300800559
+          },
+          "data": {
+            "label": "Mash Tun",
+            "widgetType": "vessel",
+            "config": {
+              "vesselType": "mash_tun",
+              "capacity": 100,
+              "currentLevel": 0,
+              "temperature": 20
+            },
+            "logicalDeviceId": "dev-vessel-mm0t4pnr-pltj0u",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "valve-mm0tdi9p-apn7we",
+          "type": "widget",
+          "position": {
+            "x": 130,
+            "y": -13
+          },
+          "data": {
+            "label": "Valve - Fermentor To Bright",
+            "widgetType": "valve",
+            "config": {
+              "valveType": "2way",
+              "position": "closed",
+              "state": "off"
+            },
+            "control": {
+              "command": "open_close",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-valve-mm0tdi9p-apn7we",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "valve-mm0tfltv-9oz8i2",
+          "type": "widget",
+          "position": {
+            "x": 1230.257453116186,
+            "y": 529.639255307441
+          },
+          "data": {
+            "label": "Valve - Mash Source",
+            "widgetType": "valve",
+            "config": {
+              "valveType": "2way",
+              "position": "closed"
+            },
+            "control": {
+              "command": "open_close",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-valve-mm0tfltv-9oz8i2",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "pump-mm0tiebh-sipguh",
+          "type": "widget",
+          "position": {
+            "x": 1570.8667413850196,
+            "y": 813.7186070737094
+          },
+          "data": {
+            "label": "Brew Pump",
+            "widgetType": "pump",
+            "config": {
+              "state": "off",
+              "flowRate": 0,
+              "value": 0
+            },
+            "control": {
+              "command": "on_off",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-pump-mm0tiebh-sipguh",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "valve-mm0tkjqf-yln6x6",
+          "type": "widget",
+          "position": {
+            "x": 688.7078736820512,
+            "y": 527.3240660307335
+          },
+          "data": {
+            "label": "Valve - HLT Source",
+            "widgetType": "valve",
+            "config": {
+              "valveType": "2way",
+              "position": "closed"
+            },
+            "control": {
+              "command": "open_close",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-valve-mm0tkjqf-yln6x6",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "valve-mm0tkl7n-i2pcpt",
+          "type": "widget",
+          "position": {
+            "x": 940.1391807126686,
+            "y": 527.1663746152094
+          },
+          "data": {
+            "label": "Valve - Kettle Source",
+            "widgetType": "valve",
+            "config": {
+              "valveType": "2way",
+              "position": "closed",
+              "state": "off"
+            },
+            "control": {
+              "command": "open_close",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-valve-mm0tkl7n-i2pcpt",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "valve-mm0tsb9b-kgwub8",
+          "type": "widget",
+          "position": {
+            "x": 572,
+            "y": 846
+          },
+          "data": {
+            "label": "Valve - 3-Way Manifold",
+            "widgetType": "valve",
+            "config": {
+              "valveType": "3way",
+              "position": "c_to_b"
+            },
+            "control": {
+              "command": "open_close",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-valve-mm0tsb9b-kgwub8",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "valve-mm0tu1fa-3lgsge",
+          "type": "widget",
+          "position": {
+            "x": 974.5676043184028,
+            "y": 868.6671941895204
+          },
+          "data": {
+            "label": "Valve - Return To Kettle",
+            "widgetType": "valve",
+            "config": {
+              "valveType": "2way",
+              "position": "closed"
+            },
+            "control": {
+              "command": "open_close",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-valve-mm0tu1fa-3lgsge",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "valve-mm0tu2xf-ivcswr",
+          "type": "widget",
+          "position": {
+            "x": 1251.966755087154,
+            "y": 860.0597249491867
+          },
+          "data": {
+            "label": "Valve - Return To Mash",
+            "widgetType": "valve",
+            "config": {
+              "valveType": "2way",
+              "position": "closed"
+            },
+            "control": {
+              "command": "open_close",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-valve-mm0tu2xf-ivcswr",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "button-mm0tz0gz-53xzsr",
+          "type": "widget",
+          "position": {
+            "x": 1864.1239323335915,
+            "y": 486.59123594709814
+          },
+          "data": {
+            "label": "Manual Brew Pump",
+            "widgetType": "button",
+            "config": {
+              "state": "off",
+              "autoProceed": false,
+              "requireUserProceed": true
+            },
+            "control": {
+              "command": "on_off",
+              "driverType": "dummy",
+              "targetDeviceId": "dev-pump-mm0tiebh-sipguh"
+            },
+            "logicalDeviceId": "dev-manual-brew-pump",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "automation-brewhouse-heat-strike",
+          "type": "widget",
+          "position": {
+            "x": 1960,
+            "y": -120
+          },
+          "data": {
+            "label": "AUTO HEAT STRIKE",
+            "widgetType": "automation",
+            "logicalDeviceId": "dev-auto-heat-strike",
+            "config": {
+              "automationMode": "advanced",
+              "automationSteps": [
+                {
+                  "id": "heat-1",
+                  "label": "Brew Pump Off",
+                  "targetDeviceId": "dev-pump-mm0tiebh-sipguh",
+                  "command": "on_off",
+                  "value": "off"
+                },
+                {
+                  "id": "heat-2",
+                  "label": "Transfer Pump Off",
+                  "targetDeviceId": "dev-pump-mltx2057-1x68sh",
+                  "command": "on_off",
+                  "value": "off",
+                  "delayMs": 200
+                },
+                {
+                  "id": "heat-3",
+                  "label": "Close HLT Valve",
+                  "targetDeviceId": "dev-valve-mm0tkjqf-yln6x6",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "heat-4",
+                  "label": "Close Mash Valve",
+                  "targetDeviceId": "dev-valve-mm0tfltv-9oz8i2",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "heat-5",
+                  "label": "Close Kettle Valve",
+                  "targetDeviceId": "dev-valve-mm0tkl7n-i2pcpt",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "heat-6",
+                  "label": "Close Bright Valve",
+                  "targetDeviceId": "dev-valve-mm0tdi9p-apn7we",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "heat-7",
+                  "label": "Close Kettle Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu1fa-3lgsge",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "heat-8",
+                  "label": "Close Mash Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu2xf-ivcswr",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "heat-9",
+                  "label": "Route 3-way to Fermentor Path",
+                  "targetDeviceId": "dev-valve-mm0tsb9b-kgwub8",
+                  "command": "route",
+                  "value": false
+                },
+                {
+                  "id": "heat-10",
+                  "label": "Set HLT Setpoint 168F",
+                  "targetDeviceId": "dev-hlt-controller-main",
+                  "command": "set_value",
+                  "value": 168,
+                  "delayMs": 250
+                }
+              ],
+              "requireUserProceed": true
+            },
+            "control": {
+              "command": "trigger",
+              "driverType": "dummy"
+            },
+            "bindings": {}
+          }
+        },
+        {
+          "id": "automation-brewhouse-xfer-hlt-mash",
+          "type": "widget",
+          "position": {
+            "x": 1960,
+            "y": 20
+          },
+          "data": {
+            "label": "AUTO XFER HLT -> MASH",
+            "widgetType": "automation",
+            "logicalDeviceId": "dev-auto-xfer-hlt-mash",
+            "config": {
+              "automationMode": "advanced",
+              "automationSteps": [
+                {
+                  "id": "hm-1",
+                  "label": "Brew Pump Off",
+                  "targetDeviceId": "dev-pump-mm0tiebh-sipguh",
+                  "command": "on_off",
+                  "value": "off"
+                },
+                {
+                  "id": "hm-2",
+                  "label": "Open HLT Source Valve",
+                  "targetDeviceId": "dev-valve-mm0tkjqf-yln6x6",
+                  "command": "open_close",
+                  "value": true,
+                  "delayMs": 150
+                },
+                {
+                  "id": "hm-3",
+                  "label": "Close Mash Source Valve",
+                  "targetDeviceId": "dev-valve-mm0tfltv-9oz8i2",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "hm-4",
+                  "label": "Close Kettle Source Valve",
+                  "targetDeviceId": "dev-valve-mm0tkl7n-i2pcpt",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "hm-5",
+                  "label": "Close Kettle Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu1fa-3lgsge",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "hm-6",
+                  "label": "Open Mash Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu2xf-ivcswr",
+                  "command": "open_close",
+                  "value": true
+                },
+                {
+                  "id": "hm-7",
+                  "label": "Route Manifold to Return Branch",
+                  "targetDeviceId": "dev-valve-mm0tsb9b-kgwub8",
+                  "command": "route",
+                  "value": true
+                },
+                {
+                  "id": "hm-8",
+                  "label": "Brew Pump On",
+                  "targetDeviceId": "dev-pump-mm0tiebh-sipguh",
+                  "command": "on_off",
+                  "value": "on",
+                  "delayMs": 300
+                }
+              ],
+              "requireUserProceed": true
+            },
+            "control": {
+              "command": "trigger",
+              "driverType": "dummy"
+            },
+            "bindings": {}
+          }
+        },
+        {
+          "id": "automation-brewhouse-xfer-mash-kettle",
+          "type": "widget",
+          "position": {
+            "x": 1960,
+            "y": 160
+          },
+          "data": {
+            "label": "AUTO XFER MASH -> KETTLE",
+            "widgetType": "automation",
+            "logicalDeviceId": "dev-auto-xfer-mash-kettle",
+            "config": {
+              "automationMode": "advanced",
+              "automationSteps": [
+                {
+                  "id": "mk-1",
+                  "label": "Brew Pump Off",
+                  "targetDeviceId": "dev-pump-mm0tiebh-sipguh",
+                  "command": "on_off",
+                  "value": "off"
+                },
+                {
+                  "id": "mk-2",
+                  "label": "Close HLT Source Valve",
+                  "targetDeviceId": "dev-valve-mm0tkjqf-yln6x6",
+                  "command": "open_close",
+                  "value": false,
+                  "delayMs": 150
+                },
+                {
+                  "id": "mk-3",
+                  "label": "Open Mash Source Valve",
+                  "targetDeviceId": "dev-valve-mm0tfltv-9oz8i2",
+                  "command": "open_close",
+                  "value": true
+                },
+                {
+                  "id": "mk-4",
+                  "label": "Close Kettle Source Valve",
+                  "targetDeviceId": "dev-valve-mm0tkl7n-i2pcpt",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "mk-5",
+                  "label": "Close Mash Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu2xf-ivcswr",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "mk-6",
+                  "label": "Open Kettle Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu1fa-3lgsge",
+                  "command": "open_close",
+                  "value": true
+                },
+                {
+                  "id": "mk-7",
+                  "label": "Route Manifold to Return Branch",
+                  "targetDeviceId": "dev-valve-mm0tsb9b-kgwub8",
+                  "command": "route",
+                  "value": true
+                },
+                {
+                  "id": "mk-8",
+                  "label": "Brew Pump On",
+                  "targetDeviceId": "dev-pump-mm0tiebh-sipguh",
+                  "command": "on_off",
+                  "value": "on",
+                  "delayMs": 300
+                }
+              ],
+              "requireUserProceed": true
+            },
+            "control": {
+              "command": "trigger",
+              "driverType": "dummy"
+            },
+            "bindings": {}
+          }
+        },
+        {
+          "id": "automation-brewhouse-xfer-kettle-fermentor",
+          "type": "widget",
+          "position": {
+            "x": 1960,
+            "y": 300
+          },
+          "data": {
+            "label": "AUTO XFER KETTLE -> FERMENTOR",
+            "widgetType": "automation",
+            "logicalDeviceId": "dev-auto-xfer-kettle-fermentor",
+            "config": {
+              "automationMode": "advanced",
+              "automationSteps": [
+                {
+                  "id": "kf-1",
+                  "label": "Brew Pump Off",
+                  "targetDeviceId": "dev-pump-mm0tiebh-sipguh",
+                  "command": "on_off",
+                  "value": "off"
+                },
+                {
+                  "id": "kf-2",
+                  "label": "Close HLT Source Valve",
+                  "targetDeviceId": "dev-valve-mm0tkjqf-yln6x6",
+                  "command": "open_close",
+                  "value": false,
+                  "delayMs": 150
+                },
+                {
+                  "id": "kf-3",
+                  "label": "Close Mash Source Valve",
+                  "targetDeviceId": "dev-valve-mm0tfltv-9oz8i2",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "kf-4",
+                  "label": "Open Kettle Source Valve",
+                  "targetDeviceId": "dev-valve-mm0tkl7n-i2pcpt",
+                  "command": "open_close",
+                  "value": true
+                },
+                {
+                  "id": "kf-5",
+                  "label": "Close Mash Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu2xf-ivcswr",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "kf-6",
+                  "label": "Close Kettle Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu1fa-3lgsge",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "kf-7",
+                  "label": "Route 3-way to Fermentor",
+                  "targetDeviceId": "dev-valve-mm0tsb9b-kgwub8",
+                  "command": "route",
+                  "value": false
+                },
+                {
+                  "id": "kf-8",
+                  "label": "Brew Pump On",
+                  "targetDeviceId": "dev-pump-mm0tiebh-sipguh",
+                  "command": "on_off",
+                  "value": "on",
+                  "delayMs": 300
+                }
+              ],
+              "requireUserProceed": true
+            },
+            "control": {
+              "command": "trigger",
+              "driverType": "dummy"
+            },
+            "bindings": {}
+          }
+        },
+        {
+          "id": "automation-brewhouse-xfer-fermentor-bright",
+          "type": "widget",
+          "position": {
+            "x": 1960,
+            "y": 440
+          },
+          "data": {
+            "label": "AUTO XFER FERMENTOR -> BRIGHT",
+            "widgetType": "automation",
+            "logicalDeviceId": "dev-auto-xfer-fermentor-bright",
+            "config": {
+              "automationMode": "advanced",
+              "automationSteps": [
+                {
+                  "id": "fb-1",
+                  "label": "Transfer Pump Off",
+                  "targetDeviceId": "dev-pump-mltx2057-1x68sh",
+                  "command": "on_off",
+                  "value": "off"
+                },
+                {
+                  "id": "fb-2",
+                  "label": "Open Bright Transfer Valve",
+                  "targetDeviceId": "dev-valve-mm0tdi9p-apn7we",
+                  "command": "open_close",
+                  "value": true,
+                  "delayMs": 150
+                },
+                {
+                  "id": "fb-3",
+                  "label": "Transfer Pump On",
+                  "targetDeviceId": "dev-pump-mltx2057-1x68sh",
+                  "command": "on_off",
+                  "value": "on",
+                  "delayMs": 300
+                }
+              ],
+              "requireUserProceed": true
+            },
+            "control": {
+              "command": "trigger",
+              "driverType": "dummy"
+            },
+            "bindings": {}
+          }
+        },
+        {
+          "id": "automation-brewhouse-safe-stop",
+          "type": "widget",
+          "position": {
+            "x": 1960,
+            "y": 600
+          },
+          "data": {
+            "label": "AUTO SAFE STOP",
+            "widgetType": "automation",
+            "logicalDeviceId": "dev-auto-safe-stop",
+            "config": {
+              "automationMode": "advanced",
+              "automationSteps": [
+                {
+                  "id": "safe-1",
+                  "label": "Brew Pump Off",
+                  "targetDeviceId": "dev-pump-mm0tiebh-sipguh",
+                  "command": "on_off",
+                  "value": "off"
+                },
+                {
+                  "id": "safe-2",
+                  "label": "Transfer Pump Off",
+                  "targetDeviceId": "dev-pump-mltx2057-1x68sh",
+                  "command": "on_off",
+                  "value": "off",
+                  "delayMs": 250
+                },
+                {
+                  "id": "safe-3",
+                  "label": "Close HLT Valve",
+                  "targetDeviceId": "dev-valve-mm0tkjqf-yln6x6",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "safe-4",
+                  "label": "Close Mash Outlet Valve",
+                  "targetDeviceId": "dev-valve-mm0tfltv-9oz8i2",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "safe-5",
+                  "label": "Close Kettle Outlet Valve",
+                  "targetDeviceId": "dev-valve-mm0tkl7n-i2pcpt",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "safe-6",
+                  "label": "Close Bright Transfer Valve",
+                  "targetDeviceId": "dev-valve-mm0tdi9p-apn7we",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "safe-7",
+                  "label": "Close Kettle Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu1fa-3lgsge",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "safe-8",
+                  "label": "Close Mash Return Valve",
+                  "targetDeviceId": "dev-valve-mm0tu2xf-ivcswr",
+                  "command": "open_close",
+                  "value": false
+                },
+                {
+                  "id": "safe-9",
+                  "label": "Set 3-way to Fermentor Path",
+                  "targetDeviceId": "dev-valve-mm0tsb9b-kgwub8",
+                  "command": "route",
+                  "value": false
+                }
+              ],
+              "requireUserProceed": true
+            },
+            "control": {
+              "command": "trigger",
+              "driverType": "dummy"
+            },
+            "bindings": {}
+          }
+        },
+        {
+          "id": "recipe_executor-brewhouse-main",
+          "type": "widget",
+          "position": {
+            "x": 1610,
+            "y": -130
+          },
+          "data": {
+            "label": "Recipe Executor - Brewhouse",
+            "widgetType": "recipe_executor",
+            "logicalDeviceId": "dev-recipe-executor-main",
+            "config": {
+              "state": "off",
+              "recipeName": "Brewhouse Start-to-Finish",
+              "recipeFormat": "bevforge",
+              "recipeSteps": [
+                {
+                  "id": "run-1",
+                  "name": "Heat strike water to 168F",
+                  "stage": "prep",
+                  "targetDeviceId": "dev-auto-heat-strike",
+                  "command": "trigger",
+                  "value": true,
+                  "requiresUserConfirm": true,
+                  "autoProceed": false
+                },
+                {
+                  "id": "run-2",
+                  "name": "Fill mash tun from HLT",
+                  "stage": "mash",
+                  "targetDeviceId": "dev-auto-xfer-hlt-mash",
+                  "command": "trigger",
+                  "value": true,
+                  "requiresUserConfirm": true,
+                  "autoProceed": false
+                },
+                {
+                  "id": "run-3",
+                  "name": "Stop transfer at mash target volume",
+                  "stage": "mash",
+                  "targetDeviceId": "dev-auto-safe-stop",
+                  "command": "trigger",
+                  "value": true,
+                  "requiresUserConfirm": true,
+                  "autoProceed": false
+                },
+                {
+                  "id": "run-4",
+                  "name": "Mash rest",
+                  "stage": "mash",
+                  "durationMin": 60,
+                  "requiresUserConfirm": false,
+                  "autoProceed": true
+                },
+                {
+                  "id": "run-5",
+                  "name": "Transfer mash to brew kettle",
+                  "stage": "lauter",
+                  "targetDeviceId": "dev-auto-xfer-mash-kettle",
+                  "command": "trigger",
+                  "value": true,
+                  "requiresUserConfirm": true,
+                  "autoProceed": false
+                },
+                {
+                  "id": "run-6",
+                  "name": "Stop transfer at kettle target volume",
+                  "stage": "lauter",
+                  "targetDeviceId": "dev-auto-safe-stop",
+                  "command": "trigger",
+                  "value": true,
+                  "requiresUserConfirm": true,
+                  "autoProceed": false
+                },
+                {
+                  "id": "run-7",
+                  "name": "Boil",
+                  "stage": "boil",
+                  "durationMin": 60,
+                  "requiresUserConfirm": false,
+                  "autoProceed": true
+                },
+                {
+                  "id": "run-8",
+                  "name": "Transfer kettle to fermentor",
+                  "stage": "knockout",
+                  "targetDeviceId": "dev-auto-xfer-kettle-fermentor",
+                  "command": "trigger",
+                  "value": true,
+                  "requiresUserConfirm": true,
+                  "autoProceed": false
+                },
+                {
+                  "id": "run-9",
+                  "name": "Stop transfer after knockout",
+                  "stage": "knockout",
+                  "targetDeviceId": "dev-auto-safe-stop",
+                  "command": "trigger",
+                  "value": true,
+                  "requiresUserConfirm": true,
+                  "autoProceed": false
+                },
+                {
+                  "id": "run-10",
+                  "name": "Set ferment temperature target (glycol)",
+                  "stage": "fermentation",
+                  "targetDeviceId": "dev-glycol-controller-main",
+                  "command": "set_value",
+                  "value": 65,
+                  "requiresUserConfirm": true,
+                  "autoProceed": false
+                },
+                {
+                  "id": "run-11",
+                  "name": "Transfer fermentor to bright tank",
+                  "stage": "packaging",
+                  "targetDeviceId": "dev-auto-xfer-fermentor-bright",
+                  "command": "trigger",
+                  "value": true,
+                  "requiresUserConfirm": true,
+                  "autoProceed": false
+                },
+                {
+                  "id": "run-12",
+                  "name": "Safe stop all outputs",
+                  "stage": "packaging",
+                  "targetDeviceId": "dev-auto-safe-stop",
+                  "command": "trigger",
+                  "value": true,
+                  "requiresUserConfirm": false,
+                  "autoProceed": true
+                }
+              ],
+              "recipeExecutor": {
+                "enabled": true,
+                "running": false,
+                "paused": false,
+                "awaitingConfirm": false,
+                "currentStepIndex": 0,
+                "autoProceedDefault": false,
+                "runtimeState": "idle"
+              }
+            },
+            "control": {
+              "command": "trigger",
+              "driverType": "dummy"
+            },
+            "bindings": {}
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge-mltzroy3-tl05k3",
+          "source": "button-mltx260r-qmdedk",
+          "target": "pump-mltx2057-1x68sh",
+          "sourceHandle": "data-out",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-mltzs27h-lizpqq",
+          "source": "vessel-mltzqmmz-6ix3ja",
+          "target": "pump-mltx2057-1x68sh",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mlune9qc-d9i57x",
+          "source": "sensor-mlund97z-4nm4bk",
+          "target": "glycol_controller-mlundco2-swj21x",
+          "sourceHandle": "data-out",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-mlunethy-g1kbm9",
+          "source": "vessel-mlund641-4bwocw",
+          "target": "pump-mlund7zk-oa83nj",
+          "sourceHandle": "glycol-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "glycol"
+          }
+        },
+        {
+          "id": "edge-mlunf4f0-h5whpb",
+          "source": "pump-mlund7zk-oa83nj",
+          "target": "vessel-mltzqmmz-6ix3ja",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "glycol-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "glycol"
+          }
+        },
+        {
+          "id": "edge-mlunf9kn-9vmv73",
+          "source": "vessel-mltzqmmz-6ix3ja",
+          "target": "vessel-mlund641-4bwocw",
+          "sourceHandle": "glycol-out",
+          "targetHandle": "glycol-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "glycol"
+          }
+        },
+        {
+          "id": "edge-mlunfx8z-xxthzy",
+          "source": "glycol_controller-mlundco2-swj21x",
+          "target": "pump-mlund7zk-oa83nj",
+          "sourceHandle": "data-out",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-mlv779vm-r2lnea",
+          "source": "hlt_controller-mlv746y2-e8bmlu",
+          "target": "heater-mlv76q2m-cnjtih",
+          "sourceHandle": "data-out",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-mlv77wax-due8yd",
+          "source": "heater-mlv76q2m-cnjtih",
+          "target": "vessel-mlv74seq-n2s9jl",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mlv7b0z3-nshban",
+          "source": "sensor-mlv7a9jj-jd8em4",
+          "target": "hlt_controller-mlv746y2-e8bmlu",
+          "sourceHandle": "data-out",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-mm0tdyd6-xo44um",
+          "source": "pump-mltx2057-1x68sh",
+          "target": "valve-mm0tdi9p-apn7we",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0te452-17xfb1",
+          "source": "valve-mm0tdi9p-apn7we",
+          "target": "vessel-mltzr0o2-07axes",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tp7io-gfe7o6",
+          "source": "vessel-mlv74seq-n2s9jl",
+          "target": "valve-mm0tkjqf-yln6x6",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tpkmu-35n9mz",
+          "source": "vessel-mm0t3kaf-uipa4n",
+          "target": "valve-mm0tkl7n-i2pcpt",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tppf2-pq0aht",
+          "source": "vessel-mm0t4pnr-pltj0u",
+          "target": "valve-mm0tfltv-9oz8i2",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tqxtp-zggz2z",
+          "source": "valve-mm0tkjqf-yln6x6",
+          "target": "pump-mm0tiebh-sipguh",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tr5dv-ebedcj",
+          "source": "valve-mm0tkl7n-i2pcpt",
+          "target": "pump-mm0tiebh-sipguh",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tr8y4-6i9975",
+          "source": "valve-mm0tfltv-9oz8i2",
+          "target": "pump-mm0tiebh-sipguh",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tt1lx-etsyh4",
+          "source": "pump-mm0tiebh-sipguh",
+          "target": "valve-mm0tsb9b-kgwub8",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in-c",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0ttdp4-xu8dfz",
+          "source": "valve-mm0tsb9b-kgwub8",
+          "target": "vessel-mltzqmmz-6ix3ja",
+          "sourceHandle": "fluid-out-b",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tuttf-lypc12",
+          "source": "valve-mm0tsb9b-kgwub8",
+          "target": "valve-mm0tu1fa-3lgsge",
+          "sourceHandle": "fluid-out-a",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tv2y5-bq9khf",
+          "source": "valve-mm0tsb9b-kgwub8",
+          "target": "valve-mm0tu2xf-ivcswr",
+          "sourceHandle": "fluid-out-a",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tvgdh-6r7vew",
+          "source": "valve-mm0tu1fa-3lgsge",
+          "target": "vessel-mm0t3kaf-uipa4n",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tvmp8-7qaovg",
+          "source": "valve-mm0tu2xf-ivcswr",
+          "target": "vessel-mm0t4pnr-pltj0u",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mm0tzitn-3ltgrw",
+          "source": "button-mm0tz0gz-53xzsr",
+          "target": "pump-mm0tiebh-sipguh",
+          "sourceHandle": "data-out",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-brewhouse-recipe-1",
+          "source": "recipe_executor-brewhouse-main",
+          "sourceHandle": "data-out",
+          "target": "automation-brewhouse-heat-strike",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-brewhouse-recipe-2",
+          "source": "recipe_executor-brewhouse-main",
+          "sourceHandle": "data-out",
+          "target": "automation-brewhouse-xfer-hlt-mash",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-brewhouse-recipe-3",
+          "source": "recipe_executor-brewhouse-main",
+          "sourceHandle": "data-out",
+          "target": "automation-brewhouse-xfer-mash-kettle",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-brewhouse-recipe-4",
+          "source": "recipe_executor-brewhouse-main",
+          "sourceHandle": "data-out",
+          "target": "automation-brewhouse-xfer-kettle-fermentor",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-brewhouse-recipe-5",
+          "source": "recipe_executor-brewhouse-main",
+          "sourceHandle": "data-out",
+          "target": "automation-brewhouse-xfer-fermentor-bright",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-brewhouse-recipe-6",
+          "source": "recipe_executor-brewhouse-main",
+          "sourceHandle": "data-out",
+          "target": "automation-brewhouse-safe-stop",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        }
+      ],
+      "tags": [],
+      "createdAt": "2026-02-19T17:21:31.607Z",
+      "updatedAt": "2026-02-25T22:38:29.998Z"
+    },
+    {
+      "id": "page-mluc6zyy-gr96x5",
+      "name": "Page 2",
+      "mode": "published",
+      "nodes": [
+        {
+          "id": "vessel-mluc730u-qail6k",
+          "type": "widget",
+          "position": {
+            "x": -154.59971052842047,
+            "y": 281.4787277913588
+          },
+          "data": {
+            "label": "VESSEL il6k",
+            "widgetType": "vessel",
+            "config": {
+              "vesselType": "fermentor_conical",
+              "capacity": 100,
+              "currentLevel": 0,
+              "temperature": 55
+            },
+            "logicalDeviceId": "dev-vessel-mluc730u-qail6k",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "sensor-mluc74z4-86zj6m",
+          "type": "widget",
+          "position": {
+            "x": -461.03835652037384,
+            "y": 5.33972608672898
+          },
+          "data": {
+            "label": "SENSOR zj6m",
+            "widgetType": "sensor",
+            "config": {
+              "value": 55,
+              "sensorType": "temperature",
+              "unit": "F",
+              "dummyMode": true,
+              "dummyValue": 55,
+              "min": 0,
+              "max": 250,
+              "step": 1,
+              "sensorSampleAtMs": 1771962674232
+            },
+            "logicalDeviceId": "dev-sensor-mluc74z4-86zj6m",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "pump-mluc9948-2kvsv2",
+          "type": "widget",
+          "position": {
+            "x": 395.49818853288355,
+            "y": 71.2641730979069
+          },
+          "data": {
+            "label": "Glycol pump",
+            "widgetType": "pump",
+            "config": {
+              "state": "on",
+              "flowRate": 0
+            },
+            "control": {
+              "command": "on_off",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-pump-mluc9948-2kvsv2",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "slider-mluc9q9a-kez0x3",
+          "type": "widget",
+          "position": {
+            "x": 92.69617158268039,
+            "y": 392.8075981251859
+          },
+          "data": {
+            "label": "thermostat",
+            "widgetType": "slider",
+            "config": {
+              "value": 50,
+              "setpointType": "temperature",
+              "unit": "F",
+              "min": 30,
+              "max": 70,
+              "step": 1
+            },
+            "control": {
+              "command": "set_value",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-slider-slider-mluc9q9a-kez0x3",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "valve-mlucafcz-2zu3yi",
+          "type": "widget",
+          "position": {
+            "x": 102.47165380418616,
+            "y": 77.78106339648849
+          },
+          "data": {
+            "label": "VALVE u3yi",
+            "widgetType": "valve",
+            "config": {
+              "valveType": "2way",
+              "position": "open"
+            },
+            "control": {
+              "command": "open_close",
+              "driverType": "dummy"
+            },
+            "logicalDeviceId": "dev-valve-mlucafcz-2zu3yi",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "vessel-mlucahl3-2mh9m6",
+          "type": "widget",
+          "position": {
+            "x": 682.769901046523,
+            "y": 19.28679134510466
+          },
+          "data": {
+            "label": "VESSEL h9m6",
+            "widgetType": "vessel",
+            "config": {
+              "vesselType": "fermentor_conical",
+              "capacity": 100,
+              "currentLevel": 0,
+              "temperature": 20
+            },
+            "logicalDeviceId": "dev-vessel-mlucahl3-2mh9m6",
+            "control": {},
+            "bindings": {}
+          }
+        },
+        {
+          "id": "automation-mlucfhx6-df5usa",
+          "type": "widget",
+          "position": {
+            "x": 418.9945739819466,
+            "y": 372.52462410171756
+          },
+          "data": {
+            "label": "Glycol Logic",
+            "widgetType": "automation",
+            "config": {
+              "automationMode": "simple",
+              "simpleAutomation": {
+                "compareTo": "setpoint_device",
+                "operator": "gt",
+                "threshold": 42,
+                "hysteresis": 1,
+                "command": "on_off",
+                "onValue": "on",
+                "offValue": "off",
+                "pollMs": 1000,
+                "sourceSensorDeviceId": "dev-sensor-mluc74z4-86zj6m",
+                "setpointDeviceId": "node:slider-mluc9q9a-kez0x3",
+                "targetDeviceId": "dev-pump-mluc9948-2kvsv2"
+              },
+              "automationSteps": [],
+              "requireUserProceed": true
+            },
+            "control": {
+              "targetDeviceId": "dev-pump-mluc9948-2kvsv2",
+              "command": "on_off"
+            },
+            "logicalDeviceId": "dev-automation-automation-mlucfhx6-df5usa",
+            "bindings": {}
+          }
+        },
+        {
+          "id": "automation-mluhq9tl-j7q0jb",
+          "type": "widget",
+          "position": {
+            "x": 414,
+            "y": 570.5605844691901
+          },
+          "data": {
+            "label": "Glycol valve",
+            "widgetType": "automation",
+            "config": {
+              "automationMode": "simple",
+              "simpleAutomation": {
+                "compareTo": "setpoint_device",
+                "operator": "gt",
+                "threshold": 69,
+                "hysteresis": 1,
+                "command": "open_close",
+                "onValue": "open",
+                "offValue": "close",
+                "pollMs": 1000,
+                "sourceSensorDeviceId": "dev-sensor-mluc74z4-86zj6m",
+                "setpointDeviceId": "node:slider-mluc9q9a-kez0x3",
+                "targetDeviceId": "dev-valve-mlucafcz-2zu3yi"
+              },
+              "automationSteps": [],
+              "requireUserProceed": true
+            },
+            "control": {
+              "targetDeviceId": "dev-valve-mlucafcz-2zu3yi",
+              "command": "open_close"
+            },
+            "logicalDeviceId": "dev-automation-automation-mluhq9tl-j7q0jb",
+            "bindings": {}
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "edge-mluc7hu5-u4ttqq",
+          "source": "sensor-mluc74z4-86zj6m",
+          "target": "vessel-mluc730u-qail6k",
+          "sourceHandle": "data-out",
+          "targetHandle": "data-in",
+          "type": "default",
+          "data": {
+            "kind": "data"
+          }
+        },
+        {
+          "id": "edge-mlucdcwz-fyfpyl",
+          "source": "vessel-mlucahl3-2mh9m6",
+          "target": "pump-mluc9948-2kvsv2",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mlucdjqs-jr6r3z",
+          "source": "pump-mluc9948-2kvsv2",
+          "target": "valve-mlucafcz-2zu3yi",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mlucdu76-vpl38r",
+          "source": "valve-mlucafcz-2zu3yi",
+          "target": "vessel-mluc730u-qail6k",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        },
+        {
+          "id": "edge-mlucdxjk-2srqjo",
+          "source": "vessel-mluc730u-qail6k",
+          "target": "vessel-mlucahl3-2mh9m6",
+          "sourceHandle": "fluid-out",
+          "targetHandle": "fluid-in",
+          "type": "smoothstep",
+          "data": {
+            "kind": "fluid",
+            "medium": "product"
+          }
+        }
+      ],
+      "tags": [],
+      "createdAt": "2026-02-20T03:35:06.394Z",
+      "updatedAt": "2026-02-25T22:38:29.998Z"
+    }
+  ],
+  "createdAt": "2026-02-19T17:21:31.607Z",
+  "updatedAt": "2026-02-25T22:38:29.998Z"
+}

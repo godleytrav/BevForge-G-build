@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "product-catalog",
+  "updatedAt": "2026-04-22T14:21:05.113Z",
+  "products": [
+    {
+      "productId": "853fba0f-c8b4-4404-a59f-2eb99062baad",
+      "productCode": "GC-CORE-JUST-ANOUTHER-TESTY",
+      "name": "Just Anouther Testy Cider",
+      "beverageClass": "cider",
+      "skuIds": [
+        "GC-CORE-JUST-ANOUTHER-TESTY-KEG15"
+      ],
+      "defaultSkuId": "GC-CORE-JUST-ANOUTHER-TESTY-KEG15",
+      "currentAssetId": "6157e579-9357-470b-b4c0-3860091f8358",
+      "currentLabelVersionId": "d6480b1c-9e8b-40cd-9063-73f7267e8d9f",
+      "assets": [
+        {
+          "assetId": "6157e579-9357-470b-b4c0-3860091f8358",
+          "altText": "Just Anouther Testy Cider label",
+          "images": {
+            "thumbnailUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMaIFyOaxsVoCb21bv8xWqY4wLKlXCc_b5ou1a5z-3ddDd3fxmUacr0kAqPlq9B0oS-qGqXxmFSVEzKS0Vs_qV1Wb2UKlq0P7XwQWFJHYnsUQI_BuofjvmfjHX22gBHB-uNT834M0b-s4&usqp=CAc",
+            "cardImageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMaIFyOaxsVoCb21bv8xWqY4wLKlXCc_b5ou1a5z-3ddDd3fxmUacr0kAqPlq9B0oS-qGqXxmFSVEzKS0Vs_qV1Wb2UKlq0P7XwQWFJHYnsUQI_BuofjvmfjHX22gBHB-uNT834M0b-s4&usqp=CAc",
+            "fullImageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMaIFyOaxsVoCb21bv8xWqY4wLKlXCc_b5ou1a5z-3ddDd3fxmUacr0kAqPlq9B0oS-qGqXxmFSVEzKS0Vs_qV1Wb2UKlq0P7XwQWFJHYnsUQI_BuofjvmfjHX22gBHB-uNT834M0b-s4&usqp=CAc"
+          },
+          "createdAt": "2026-04-22T14:07:19.307Z",
+          "updatedAt": "2026-04-22T14:21:05.112Z"
+        }
+      ],
+      "labelVersions": [
+        {
+          "labelVersionId": "d6480b1c-9e8b-40cd-9063-73f7267e8d9f",
+          "assetId": "6157e579-9357-470b-b4c0-3860091f8358",
+          "revision": "v1",
+          "sourceSuite": "os",
+          "createdAt": "2026-04-22T14:07:19.307Z",
+          "updatedAt": "2026-04-22T14:21:05.112Z"
+        }
+      ],
+      "createdAt": "2026-04-21T16:16:18.279Z",
+      "updatedAt": "2026-04-22T14:21:05.112Z"
+    }
+  ]
+}

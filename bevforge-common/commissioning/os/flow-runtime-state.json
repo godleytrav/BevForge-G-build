@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "flow-runtime-state",
+  "updatedAt": "2026-02-24T04:20:36.562Z",
+  "snapshots": [
+    {
+      "siteId": "main",
+      "kioskId": "kiosk-a",
+      "status": "online",
+      "taps": [
+        {
+          "tapId": "tap-1",
+          "state": "ready",
+          "lineTempC": 3.1,
+          "co2Psi": 11.8
+        }
+      ],
+      "reportedAt": "2026-02-24T04:20:00.000Z",
+      "id": "ffb5a2cf-5fca-4725-9048-b66cc23bd4a6",
+      "schemaVersion": "1.0.0"
+    }
+  ]
+}

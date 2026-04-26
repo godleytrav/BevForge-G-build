@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "equipment-role-map",
+  "updatedAt": "2026-02-24T20:00:02.947011Z",
+  "roles": {
+    "hlt_vessel": "dev-vessel-mlv74seq-n2s9jl",
+    "mash_tun_vessel": "dev-vessel-mm0t4pnr-pltj0u",
+    "boil_kettle_vessel": "dev-vessel-mm0t3kaf-uipa4n",
+    "fermenter_primary": "dev-vessel-mltzqmmz-6ix3ja",
+    "heat_source_primary": "dev-heater-mlv76q2m-cnjtih",
+    "transfer_pump_primary": "dev-pump-mm0tiebh-sipguh",
+    "glycol_pump": "dev-pump-mlund7zk-oa83nj",
+    "temp_sensor_mash": "dev-sensor-mlv7a9jj-jd8em4",
+    "temp_sensor_fermenter": "dev-sensor-mlund97z-4nm4bk"
+  }
+}

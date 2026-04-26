@@ -1,0 +1,453 @@
+[
+  {
+    "style": "American Pale Ale",
+    "abv": [
+      4.5,
+      6.2
+    ],
+    "ibu": [
+      30,
+      50
+    ],
+    "srm": [
+      5,
+      10
+    ],
+    "keywords": [
+      "citrus",
+      "pine",
+      "floral",
+      "balanced"
+    ],
+    "yeast": "ale_clean"
+  },
+  {
+    "style": "American IPA",
+    "abv": [
+      5.5,
+      7.5
+    ],
+    "ibu": [
+      40,
+      70
+    ],
+    "srm": [
+      5,
+      10
+    ],
+    "keywords": [
+      "citrus",
+      "pine",
+      "resin",
+      "tropical"
+    ],
+    "yeast": "ale_clean"
+  },
+  {
+    "style": "Double IPA",
+    "abv": [
+      7.5,
+      9.5
+    ],
+    "ibu": [
+      60,
+      100
+    ],
+    "srm": [
+      5,
+      10
+    ],
+    "keywords": [
+      "citrus",
+      "pine",
+      "dank"
+    ],
+    "yeast": "ale_clean"
+  },
+  {
+    "style": "New England IPA",
+    "abv": [
+      6.0,
+      8.5
+    ],
+    "ibu": [
+      25,
+      60
+    ],
+    "srm": [
+      4,
+      8
+    ],
+    "keywords": [
+      "tropical",
+      "stonefruit",
+      "citrus",
+      "low_bite",
+      "hazy"
+    ],
+    "yeast": "english_estery"
+  },
+  {
+    "style": "German Pils",
+    "abv": [
+      4.4,
+      5.4
+    ],
+    "ibu": [
+      25,
+      45
+    ],
+    "srm": [
+      2,
+      5
+    ],
+    "keywords": [
+      "herbal",
+      "floral",
+      "crisp",
+      "dry"
+    ],
+    "yeast": "lager_clean"
+  },
+  {
+    "style": "Czech Premium Pale Lager",
+    "abv": [
+      4.2,
+      5.8
+    ],
+    "ibu": [
+      30,
+      45
+    ],
+    "srm": [
+      3,
+      6
+    ],
+    "keywords": [
+      "floral",
+      "spicy",
+      "bready",
+      "soft_finish"
+    ],
+    "yeast": "lager_clean"
+  },
+  {
+    "style": "K\u00f6lsch",
+    "abv": [
+      4.4,
+      5.2
+    ],
+    "ibu": [
+      18,
+      30
+    ],
+    "srm": [
+      3,
+      5
+    ],
+    "keywords": [
+      "clean",
+      "delicate_hops",
+      "crisp"
+    ],
+    "yeast": "kolsch"
+  },
+  {
+    "style": "Irish Stout",
+    "abv": [
+      4.0,
+      5.0
+    ],
+    "ibu": [
+      25,
+      45
+    ],
+    "srm": [
+      25,
+      40
+    ],
+    "keywords": [
+      "roast",
+      "coffee",
+      "dry"
+    ],
+    "yeast": "ale_english"
+  },
+  {
+    "style": "American Stout",
+    "abv": [
+      5.5,
+      7.5
+    ],
+    "ibu": [
+      35,
+      75
+    ],
+    "srm": [
+      30,
+      40
+    ],
+    "keywords": [
+      "roast",
+      "cocoa",
+      "citrus_pine"
+    ],
+    "yeast": "ale_clean"
+  },
+  {
+    "style": "English Porter",
+    "abv": [
+      4.5,
+      6.0
+    ],
+    "ibu": [
+      18,
+      35
+    ],
+    "srm": [
+      20,
+      35
+    ],
+    "keywords": [
+      "chocolate",
+      "toffee",
+      "earthy"
+    ],
+    "yeast": "ale_english"
+  },
+  {
+    "style": "ESB",
+    "abv": [
+      4.6,
+      6.2
+    ],
+    "ibu": [
+      30,
+      50
+    ],
+    "srm": [
+      8,
+      18
+    ],
+    "keywords": [
+      "toffee",
+      "biscuit",
+      "earthy",
+      "marmalade"
+    ],
+    "yeast": "ale_english"
+  },
+  {
+    "style": "Witbier",
+    "abv": [
+      4.5,
+      5.5
+    ],
+    "ibu": [
+      10,
+      20
+    ],
+    "srm": [
+      2,
+      5
+    ],
+    "keywords": [
+      "orange_peel",
+      "coriander",
+      "wheat_bread"
+    ],
+    "yeast": "belgian_wit"
+  },
+  {
+    "style": "Hefeweizen",
+    "abv": [
+      4.9,
+      5.6
+    ],
+    "ibu": [
+      8,
+      18
+    ],
+    "srm": [
+      3,
+      6
+    ],
+    "keywords": [
+      "banana",
+      "clove",
+      "bready"
+    ],
+    "yeast": "weizen"
+  },
+  {
+    "style": "Saison",
+    "abv": [
+      5.0,
+      7.5
+    ],
+    "ibu": [
+      20,
+      35
+    ],
+    "srm": [
+      3,
+      7
+    ],
+    "keywords": [
+      "pepper",
+      "clove",
+      "lemon",
+      "dry"
+    ],
+    "yeast": "saison"
+  },
+  {
+    "style": "M\u00e4rzen",
+    "abv": [
+      5.0,
+      6.0
+    ],
+    "ibu": [
+      18,
+      25
+    ],
+    "srm": [
+      8,
+      14
+    ],
+    "keywords": [
+      "toasty",
+      "bread_crust",
+      "smooth"
+    ],
+    "yeast": "lager_clean"
+  },
+  {
+    "style": "American Amber Ale",
+    "abv": [
+      4.5,
+      6.2
+    ],
+    "ibu": [
+      20,
+      40
+    ],
+    "srm": [
+      10,
+      17
+    ],
+    "keywords": [
+      "caramel",
+      "biscuit",
+      "toasty"
+    ],
+    "yeast": "ale_clean"
+  },
+  {
+    "style": "Belgian Dubbel",
+    "abv": [
+      6.0,
+      7.6
+    ],
+    "ibu": [
+      15,
+      25
+    ],
+    "srm": [
+      10,
+      17
+    ],
+    "keywords": [
+      "toffee",
+      "raisin",
+      "clove"
+    ],
+    "yeast": "belgian_abbey"
+  },
+  {
+    "style": "Belgian Tripel",
+    "abv": [
+      7.5,
+      9.5
+    ],
+    "ibu": [
+      20,
+      40
+    ],
+    "srm": [
+      3,
+      6
+    ],
+    "keywords": [
+      "pepper",
+      "clove",
+      "honey",
+      "dry_finish"
+    ],
+    "yeast": "belgian_abbey"
+  },
+  {
+    "style": "Belgian Strong Golden Ale",
+    "abv": [
+      7.5,
+      10.5
+    ],
+    "ibu": [
+      20,
+      35
+    ],
+    "srm": [
+      3,
+      6
+    ],
+    "keywords": [
+      "pear",
+      "apple",
+      "pepper",
+      "high_effervescence"
+    ],
+    "yeast": "belgian_abbey"
+  },
+  {
+    "style": "Vienna Lager",
+    "abv": [
+      4.7,
+      5.5
+    ],
+    "ibu": [
+      18,
+      30
+    ],
+    "srm": [
+      10,
+      16
+    ],
+    "keywords": [
+      "toasty",
+      "bready",
+      "clean"
+    ],
+    "yeast": "lager_clean"
+  },
+  {
+    "style": "Doppelbock",
+    "abv": [
+      7.0,
+      9.5
+    ],
+    "ibu": [
+      16,
+      26
+    ],
+    "srm": [
+      15,
+      30
+    ],
+    "keywords": [
+      "rich_malt",
+      "toffee",
+      "dark_fruit"
+    ],
+    "yeast": "lager_clean"
+  }
+]

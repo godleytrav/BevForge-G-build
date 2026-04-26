@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/calendar/calendar-feed.schema.json",
+  "title": "BevForge Calendar Feed",
+  "description": "Portable JSON-on-disk feed for suite-owned calendar events.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "id", "updatedAt", "events"],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "https://bevforge.dev/contracts/calendar/calendar-event.schema.json"
+      }
+    }
+  }
+}

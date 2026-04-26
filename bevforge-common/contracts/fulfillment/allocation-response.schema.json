@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/fulfillment/allocation-response.schema.json",
+  "title": "BevForge Allocation Response",
+  "description": "OS reservation result returned to OPS for an order line allocation request. Allocations should preserve explicit package-lot identity when available while retaining legacy lot fields for compatibility.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "reservationId",
+    "requestId",
+    "orderId",
+    "lineId",
+    "status",
+    "allocatedQty",
+    "shortQty",
+    "availabilitySnapshot",
+    "respondedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "reservationId": {
+      "type": "string"
+    },
+    "requestId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "lineId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["reserved", "partially_reserved", "rejected"]
+    },
+    "allocatedQty": {
+      "type": "number",
+      "minimum": 0
+    },
+    "shortQty": {
+      "type": "number",
+      "minimum": 0
+    },
+    "reasonCode": {
+      "type": "string",
+      "enum": [
+        "insufficient_available",
+        "unknown_sku",
+        "invalid_uom",
+        "blocked_lot",
+        "site_unavailable",
+        "validation_error"
+      ]
+    },
+    "reasonMessage": {
+      "type": "string"
+    },
+    "allocations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lotAllocation"
+      }
+    },
+    "availabilitySnapshot": {
+      "$ref": "./availability-snapshot.schema.json"
+    },
+    "respondedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "lotAllocation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lotId", "qty"],
+      "properties": {
+        "lotId": {
+          "type": "string",
+          "description": "Legacy lot identifier retained for compatibility. Prefer `packageLotId` for packaged inventory traceability."
+        },
+        "packageLotId": {
+          "type": "string"
+        },
+        "packageLotCode": {
+          "type": "string"
+        },
+        "batchId": {
+          "type": "string"
+        },
+        "batchCode": {
+          "type": "string"
+        },
+        "qty": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "uom": {
+          "type": "string"
+        },
+        "skuId": {
+          "type": "string"
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

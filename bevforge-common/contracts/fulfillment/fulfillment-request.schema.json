@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/fulfillment/fulfillment-request.schema.json",
+  "title": "BevForge Fulfillment Queue Request",
+  "description": "OPS request for OS to create production or packaging work when order demand exceeds available inventory.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "requestId",
+    "type",
+    "siteId",
+    "skuId",
+    "requestedQty",
+    "uom",
+    "requestedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "requestId": {
+      "type": "string",
+      "description": "Idempotency key from OPS."
+    },
+    "sourceSuite": {
+      "type": "string",
+      "enum": ["ops", "os", "lab", "flow", "connect"],
+      "default": "ops"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["production", "packaging"]
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "requestedQty": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "uom": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "lineId": {
+      "type": "string"
+    },
+    "neededBy": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "reasonCode": {
+      "type": "string"
+    },
+    "reasonMessage": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "requestedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
+

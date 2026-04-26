@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "calendar-events-ops",
+  "updatedAt": "2026-04-07T05:32:53.899Z",
+  "events": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "evt-mno6nnyj-776k97",
+      "sourceSuite": "ops",
+      "sourceRecordId": "ops-dispatch-ready-TRK-01-TRK-01-1775539973892",
+      "title": "Truck Ready: Truck 1",
+      "description": "Payload 1 items · 152 lb · 11.8 ft^3 · Route North - Truck 01",
+      "type": "delivery",
+      "status": "planned",
+      "priority": "medium",
+      "startAt": "2026-04-07T05:32:53.891Z",
+      "links": {
+        "openPath": "/ops/logistics/trucks/TRK-01"
+      },
+      "metadata": {
+        "origin": "ops-logistics-canvas-dispatch",
+        "truckId": "TRK-01",
+        "truckName": "Truck 1",
+        "packagingId": "TRK-01",
+        "destination": "Route North - Truck 01",
+        "totalItems": 1,
+        "totalWeightLb": 152,
+        "totalVolumeFt3": 11.8,
+        "loadedPackagingIds": [
+          "PLT-110"
+        ]
+      }
+    }
+  ]
+}

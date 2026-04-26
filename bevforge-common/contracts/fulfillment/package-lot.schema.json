@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/fulfillment/package-lot.schema.json",
+  "title": "BevForge Package Lot",
+  "description": "OS package-level lot genealogy record linked to a production batch. `packageLotId`/`packageLotCode` are the explicit packaged traceability identities.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "lotCode",
+    "batchId",
+    "siteId",
+    "packageType",
+    "totalUnits",
+    "allocatedUnits",
+    "shippedUnits",
+    "status",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string",
+      "description": "Legacy package-lot UUID field retained for compatibility. Prefer `packageLotId` for new integrations."
+    },
+    "packageLotId": {
+      "type": "string"
+    },
+    "lotCode": {
+      "type": "string",
+      "description": "Legacy lot field retained for compatibility. Prefer packageLotCode."
+    },
+    "packageLotCode": {
+      "type": "string"
+    },
+    "batchId": {
+      "type": "string"
+    },
+    "batchCode": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "string"
+    },
+    "productCode": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "packageType": {
+      "type": "string",
+      "enum": ["keg", "can", "bottle", "case", "pallet", "other"]
+    },
+    "packageFormatCode": {
+      "type": "string"
+    },
+    "packageSkuId": {
+      "type": "string"
+    },
+    "labelVersionId": {
+      "type": "string"
+    },
+    "totalUnits": {
+      "type": "number",
+      "minimum": 0
+    },
+    "allocatedUnits": {
+      "type": "number",
+      "minimum": 0
+    },
+    "shippedUnits": {
+      "type": "number",
+      "minimum": 0
+    },
+    "unitSize": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "unitOfMeasure": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["planned", "active", "closed", "canceled"]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ops-mobile-events",
+  "updatedAt": "2026-04-07T03:37:28.334Z",
+  "events": [
+    {
+      "id": "ops-mobile-event-cf96877a-37d6-454c-8964-a70f0151eb9c",
+      "type": "proof_logged",
+      "summary": "Field proof test",
+      "detail": "Smoke test from local OPS mobile sync",
+      "siteId": "site-joes-pub",
+      "accountId": "site-joes-pub",
+      "truckId": "TRK-01",
+      "payload": {
+        "recipient": "Test Recipient",
+        "note": "Local sync verification"
+      },
+      "createdAt": "2026-04-07T03:37:28.324Z",
+      "syncedAt": "2026-04-07T03:37:28.324Z"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/brewhouse/device-binding.schema.json",
+  "title": "BevForge Device and Driver Binding",
+  "description": "Logical device definition with swappable driver binding.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "deviceId", "deviceType"],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "deviceId": {
+      "type": "string",
+      "description": "Stable logical device identifier."
+    },
+    "deviceType": {
+      "type": "string",
+      "description": "Logical device type, e.g. pump, sensor, valve."
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "driver": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["driverId", "driverType"],
+      "properties": {
+        "driverId": { "type": "string" },
+        "driverType": { "type": "string" },
+        "mode": {
+          "type": "string",
+          "description": "e.g. dummy, pi, simulator"
+        },
+        "connection": {
+          "type": "object",
+          "description": "Driver-specific connection parameters.",
+          "additionalProperties": true
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

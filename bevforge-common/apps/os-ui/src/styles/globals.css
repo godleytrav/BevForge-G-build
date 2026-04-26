@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors - BevForge OS Dark Theme */
+    --background: 220 60% 10%;
+    --foreground: 210 40% 98%;
+    --card: 220 50% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 50% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 190 95% 60%;
+    --primary-foreground: 220 60% 10%;
+    --secondary: 220 40% 25%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 40% 20%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 190 80% 50%;
+    --accent-foreground: 220 60% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 40% 25%;
+    --input: 220 40% 20%;
+    --ring: 190 95% 60%;
+
+    /* Extended Colors */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    /* Sidebar Colors */
+    --sidebar: 220 50% 12%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 190 95% 60%;
+    --sidebar-primary-foreground: 220 60% 10%;
+    --sidebar-accent: 220 40% 20%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 220 40% 25%;
+    --sidebar-ring: 190 95% 60%;
+
+    /* Border Radius */
+    --radius: 0.5rem;
+
+    /* Typography */
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+
+    /* Glow Shadows - BevForge OS Theme */
+    --shadow-glow-sm: 0 0 10px rgba(79, 209, 255, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-glow-md: 0 0 15px rgba(79, 209, 255, 0.2), 0 4px 6px rgba(0, 0, 0, 0.15);
+    --shadow-glow-lg: 0 0 25px rgba(79, 209, 255, 0.25), 0 8px 12px rgba(0, 0, 0, 0.2);
+    --shadow-glow-xl: 0 0 35px rgba(79, 209, 255, 0.3), 0 12px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .dark {
+    /* Dark mode uses same colors as default for BevForge OS */
+    --background: 220 60% 10%;
+    --foreground: 210 40% 98%;
+    --card: 220 50% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 220 50% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 190 95% 60%;
+    --primary-foreground: 220 60% 10%;
+    --secondary: 220 40% 25%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 220 40% 20%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 190 80% 50%;
+    --accent-foreground: 220 60% 10%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 40% 25%;
+    --input: 220 40% 20%;
+    --ring: 190 95% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+}
+
+/* Grid Pattern for Device Canvas */
+.grid-pattern {
+  background-image: 
+    linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-border rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-muted-foreground;
+}
+
+/* Thermostat slider styling (blue=min temp, red=max temp) */
+.bf-range-thermo {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 1.15rem;
+}
+
+.bf-range-thermo::-webkit-slider-runnable-track {
+  height: 0.45rem;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #dc2626 100%);
+}
+
+.bf-range-thermo::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0.95rem;
+  height: 0.95rem;
+  margin-top: -0.25rem;
+  border-radius: 9999px;
+  background: #f8fafc;
+  border: 2px solid #0f172a;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+.bf-range-thermo::-moz-range-track {
+  height: 0.45rem;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 50%, #dc2626 100%);
+}
+
+.bf-range-thermo::-moz-range-thumb {
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 9999px;
+  background: #f8fafc;
+  border: 2px solid #0f172a;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}

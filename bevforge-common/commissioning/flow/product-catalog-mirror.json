@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "flow-product-catalog-mirror",
+  "updatedAt": "2026-03-19T00:00:00.000Z",
+  "products": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "flow-product-hop-circuit",
+      "productId": "6c0a7f78-6f6e-4c74-93d2-2e31e2a1f401",
+      "productCode": "HF-HOP-CIRCUIT",
+      "name": "Hop Circuit IPA",
+      "beverageClass": "beer",
+      "skuIds": ["HF-HOP-CIRCUIT-KEG15"],
+      "defaultSkuId": "HF-HOP-CIRCUIT-KEG15",
+      "currentAssetId": "flow-asset-hop-circuit",
+      "currentLabelVersionId": "label-hop-circuit-v3",
+      "assets": [
+        {
+          "assetId": "flow-asset-hop-circuit",
+          "altText": "Hop Circuit IPA hero art",
+          "images": {
+            "thumbnailUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23081410'/><circle cx='62' cy='58' r='52' fill='%2322C55E' opacity='0.35'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Hop Circuit</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>West Coast IPA</text></svg>",
+            "cardImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23081410'/><circle cx='62' cy='58' r='52' fill='%2322C55E' opacity='0.35'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Hop Circuit</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>West Coast IPA</text></svg>",
+            "fullImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23081410'/><circle cx='62' cy='58' r='52' fill='%2322C55E' opacity='0.35'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Hop Circuit</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>West Coast IPA</text></svg>"
+          },
+          "createdAt": "2026-03-01T00:00:00.000Z",
+          "updatedAt": "2026-03-19T00:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-03-01T00:00:00.000Z",
+      "updatedAt": "2026-03-19T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "flow-product-riverbank",
+      "productId": "6c0a7f78-6f6e-4c74-93d2-2e31e2a1f402",
+      "productCode": "HF-RIVERBANK",
+      "name": "Riverbank Pils",
+      "beverageClass": "beer",
+      "skuIds": ["HF-RIVERBANK-KEG15"],
+      "defaultSkuId": "HF-RIVERBANK-KEG15",
+      "currentAssetId": "flow-asset-riverbank",
+      "currentLabelVersionId": "label-riverbank-v2",
+      "assets": [
+        {
+          "assetId": "flow-asset-riverbank",
+          "altText": "Riverbank Pils hero art",
+          "images": {
+            "thumbnailUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23071519'/><circle cx='262' cy='58' r='52' fill='%237DD3FC' opacity='0.30'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Riverbank</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>German Pilsner</text></svg>",
+            "cardImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23071519'/><circle cx='262' cy='58' r='52' fill='%237DD3FC' opacity='0.30'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Riverbank</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>German Pilsner</text></svg>",
+            "fullImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23071519'/><circle cx='262' cy='58' r='52' fill='%237DD3FC' opacity='0.30'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Riverbank</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>German Pilsner</text></svg>"
+          },
+          "createdAt": "2026-03-01T00:00:00.000Z",
+          "updatedAt": "2026-03-19T00:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-03-01T00:00:00.000Z",
+      "updatedAt": "2026-03-19T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "flow-product-ember",
+      "productId": "6c0a7f78-6f6e-4c74-93d2-2e31e2a1f403",
+      "productCode": "HF-EMBER-STOUT",
+      "name": "Ember Stout",
+      "beverageClass": "beer",
+      "skuIds": ["HF-EMBER-STOUT-KEG15"],
+      "defaultSkuId": "HF-EMBER-STOUT-KEG15",
+      "currentAssetId": "flow-asset-ember",
+      "currentLabelVersionId": "label-ember-v4",
+      "assets": [
+        {
+          "assetId": "flow-asset-ember",
+          "altText": "Ember Stout hero art",
+          "images": {
+            "thumbnailUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23190F0A'/><circle cx='250' cy='164' r='68' fill='%23FB923C' opacity='0.28'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Ember Stout</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>Oatmeal Stout</text></svg>",
+            "cardImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23190F0A'/><circle cx='250' cy='164' r='68' fill='%23FB923C' opacity='0.28'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Ember Stout</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>Oatmeal Stout</text></svg>",
+            "fullImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23190F0A'/><circle cx='250' cy='164' r='68' fill='%23FB923C' opacity='0.28'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Ember Stout</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>Oatmeal Stout</text></svg>"
+          },
+          "createdAt": "2026-03-01T00:00:00.000Z",
+          "updatedAt": "2026-03-19T00:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-03-01T00:00:00.000Z",
+      "updatedAt": "2026-03-19T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "flow-product-citrus",
+      "productId": "6c0a7f78-6f6e-4c74-93d2-2e31e2a1f404",
+      "productCode": "HF-CITRUS-SESSION",
+      "name": "Citrus Session",
+      "beverageClass": "beer",
+      "skuIds": ["HF-CITRUS-SESSION-KEG10"],
+      "defaultSkuId": "HF-CITRUS-SESSION-KEG10",
+      "currentAssetId": "flow-asset-citrus",
+      "currentLabelVersionId": "label-citrus-v5",
+      "assets": [
+        {
+          "assetId": "flow-asset-citrus",
+          "altText": "Citrus Session hero art",
+          "images": {
+            "thumbnailUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%230D1407'/><circle cx='74' cy='60' r='54' fill='%23FACC15' opacity='0.30'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Citrus Session</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>Session Ale</text></svg>",
+            "cardImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%230D1407'/><circle cx='74' cy='60' r='54' fill='%23FACC15' opacity='0.30'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Citrus Session</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>Session Ale</text></svg>",
+            "fullImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%230D1407'/><circle cx='74' cy='60' r='54' fill='%23FACC15' opacity='0.30'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Citrus Session</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>Session Ale</text></svg>"
+          },
+          "createdAt": "2026-03-01T00:00:00.000Z",
+          "updatedAt": "2026-03-19T00:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-03-01T00:00:00.000Z",
+      "updatedAt": "2026-03-19T00:00:00.000Z"
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "flow-product-rotator",
+      "productId": "6c0a7f78-6f6e-4c74-93d2-2e31e2a1f405",
+      "productCode": "HF-ROTATOR-SOUR",
+      "name": "Rotator Sour",
+      "beverageClass": "beer",
+      "skuIds": ["HF-ROTATOR-SOUR-KEG10"],
+      "defaultSkuId": "HF-ROTATOR-SOUR-KEG10",
+      "currentAssetId": "flow-asset-rotator",
+      "currentLabelVersionId": "label-rotator-v1",
+      "assets": [
+        {
+          "assetId": "flow-asset-rotator",
+          "altText": "Rotator Sour hero art",
+          "images": {
+            "thumbnailUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23160A14'/><circle cx='256' cy='60' r='56' fill='%23F472B6' opacity='0.30'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Rotator Sour</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>Mixed Culture Sour</text></svg>",
+            "cardImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23160A14'/><circle cx='256' cy='60' r='56' fill='%23F472B6' opacity='0.30'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Rotator Sour</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>Mixed Culture Sour</text></svg>",
+            "fullImageUrl": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 220'><rect width='320' height='220' fill='%23160A14'/><circle cx='256' cy='60' r='56' fill='%23F472B6' opacity='0.30'/><rect x='18' y='18' width='284' height='184' rx='20' fill='rgba(255,255,255,0.06)' stroke='rgba(255,255,255,0.15)'/><text x='28' y='150' fill='%23F7FFF8' font-size='28' font-family='Georgia'>Rotator Sour</text><text x='28' y='182' fill='rgba(247,255,248,0.72)' font-size='14' font-family='Arial'>Mixed Culture Sour</text></svg>"
+          },
+          "createdAt": "2026-03-01T00:00:00.000Z",
+          "updatedAt": "2026-03-19T00:00:00.000Z"
+        }
+      ],
+      "createdAt": "2026-03-01T00:00:00.000Z",
+      "updatedAt": "2026-03-19T00:00:00.000Z"
+    }
+  ]
+}

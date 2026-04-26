@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/flow/keg-assignment.schema.json",
+  "title": "BevForge FLOW Keg Assignment",
+  "description": "Current tap-mounted serving assignment mirrored into FLOW runtime from OS authority.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "siteId",
+    "tapId",
+    "skuId",
+    "uom",
+    "startQty",
+    "remainingQty",
+    "status",
+    "assignedAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "tapId": {
+      "type": "string"
+    },
+    "tapAssignmentId": {
+      "type": "string"
+    },
+    "kegAssetId": {
+      "type": "string",
+      "description": "Legacy FLOW field for the mounted keg/container identity. Prefer `assetId` for new payloads."
+    },
+    "assetId": {
+      "type": "string",
+      "description": "Canonical physical keg/container UUID mirrored from OS asset identity."
+    },
+    "assetCode": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "string"
+    },
+    "productCode": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "batchId": {
+      "type": "string"
+    },
+    "packageLotId": {
+      "type": "string"
+    },
+    "packageLotCode": {
+      "type": "string"
+    },
+    "lotId": {
+      "type": "string",
+      "description": "Legacy ambiguous lot field. Prefer packageLotId/packageLotCode for packaged traceability."
+    },
+    "labelVersionId": {
+      "type": "string"
+    },
+    "uom": {
+      "type": "string"
+    },
+    "startQty": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "remainingQty": {
+      "type": "number",
+      "minimum": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "empty", "removed", "error"]
+    },
+    "assignedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "endedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

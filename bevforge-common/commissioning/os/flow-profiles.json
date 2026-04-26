@@ -1,0 +1,287 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "flow-profiles",
+  "updatedAt": "2026-02-24T04:18:36.056Z",
+  "profiles": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "691774ce-2a3c-46b2-9784-2352ede78718",
+      "siteId": "main",
+      "profileName": "Main Taproom Export",
+      "publishedAt": "2026-02-24T04:18:36.055Z",
+      "source": {
+        "projectId": "project-mltq9xhz-tpna8n",
+        "projectName": "BevForge OS Canvas Project",
+        "pageId": "page-mluc6zyy-gr96x5",
+        "pageName": "Page 2",
+        "pageMode": "published",
+        "pageUpdatedAt": "2026-02-20T18:07:16.986Z"
+      },
+      "profile": {
+        "taps": [],
+        "controllers": [],
+        "menuItems": [],
+        "graph": {
+          "nodes": [
+            {
+              "id": "vessel-mluc730u-qail6k",
+              "type": "widget",
+              "position": {
+                "x": -154.59971052842047,
+                "y": 281.4787277913588
+              },
+              "data": {
+                "label": "VESSEL il6k",
+                "widgetType": "vessel",
+                "config": {
+                  "vesselType": "fermentor_conical",
+                  "capacity": 100,
+                  "currentLevel": 0,
+                  "temperature": 55
+                },
+                "logicalDeviceId": "dev-vessel-mluc730u-qail6k"
+              }
+            },
+            {
+              "id": "sensor-mluc74z4-86zj6m",
+              "type": "widget",
+              "position": {
+                "x": -461.03835652037384,
+                "y": 5.33972608672898
+              },
+              "data": {
+                "label": "SENSOR zj6m",
+                "widgetType": "sensor",
+                "config": {
+                  "value": 55,
+                  "sensorType": "temperature",
+                  "unit": "F",
+                  "dummyMode": true,
+                  "dummyValue": 55,
+                  "min": 0,
+                  "max": 250,
+                  "step": 1
+                },
+                "logicalDeviceId": "dev-sensor-mluc74z4-86zj6m"
+              }
+            },
+            {
+              "id": "pump-mluc9948-2kvsv2",
+              "type": "widget",
+              "position": {
+                "x": 395.49818853288355,
+                "y": 71.2641730979069
+              },
+              "data": {
+                "label": "Glycol pump",
+                "widgetType": "pump",
+                "config": {
+                  "state": "on",
+                  "flowRate": 0
+                },
+                "control": {
+                  "command": "on_off",
+                  "driverType": "dummy"
+                },
+                "logicalDeviceId": "dev-pump-mluc9948-2kvsv2"
+              }
+            },
+            {
+              "id": "slider-mluc9q9a-kez0x3",
+              "type": "widget",
+              "position": {
+                "x": 92.69617158268039,
+                "y": 392.8075981251859
+              },
+              "data": {
+                "label": "thermostat",
+                "widgetType": "slider",
+                "config": {
+                  "value": 50,
+                  "setpointType": "temperature",
+                  "unit": "F",
+                  "min": 30,
+                  "max": 70,
+                  "step": 1
+                },
+                "control": {
+                  "command": "set_value",
+                  "driverType": "dummy"
+                }
+              }
+            },
+            {
+              "id": "valve-mlucafcz-2zu3yi",
+              "type": "widget",
+              "position": {
+                "x": 102.47165380418616,
+                "y": 77.78106339648849
+              },
+              "data": {
+                "label": "VALVE u3yi",
+                "widgetType": "valve",
+                "config": {
+                  "valveType": "2way",
+                  "position": "open"
+                },
+                "control": {
+                  "command": "open_close",
+                  "driverType": "dummy"
+                },
+                "logicalDeviceId": "dev-valve-mlucafcz-2zu3yi"
+              }
+            },
+            {
+              "id": "vessel-mlucahl3-2mh9m6",
+              "type": "widget",
+              "position": {
+                "x": 682.769901046523,
+                "y": 19.28679134510466
+              },
+              "data": {
+                "label": "VESSEL h9m6",
+                "widgetType": "vessel",
+                "config": {
+                  "vesselType": "fermentor_conical",
+                  "capacity": 100,
+                  "currentLevel": 0,
+                  "temperature": 20
+                },
+                "logicalDeviceId": "dev-vessel-mlucahl3-2mh9m6"
+              }
+            },
+            {
+              "id": "automation-mlucfhx6-df5usa",
+              "type": "widget",
+              "position": {
+                "x": 418.9945739819466,
+                "y": 372.52462410171756
+              },
+              "data": {
+                "label": "Glycol Logic",
+                "widgetType": "automation",
+                "config": {
+                  "automationMode": "simple",
+                  "simpleAutomation": {
+                    "compareTo": "setpoint_device",
+                    "operator": "gt",
+                    "threshold": 42,
+                    "hysteresis": 1,
+                    "command": "on_off",
+                    "onValue": "on",
+                    "offValue": "off",
+                    "pollMs": 1000,
+                    "sourceSensorDeviceId": "dev-sensor-mluc74z4-86zj6m",
+                    "setpointDeviceId": "node:slider-mluc9q9a-kez0x3",
+                    "targetDeviceId": "dev-pump-mluc9948-2kvsv2"
+                  },
+                  "automationSteps": [],
+                  "requireUserProceed": true
+                },
+                "control": {
+                  "targetDeviceId": "dev-pump-mluc9948-2kvsv2",
+                  "command": "on_off"
+                }
+              }
+            },
+            {
+              "id": "automation-mluhq9tl-j7q0jb",
+              "type": "widget",
+              "position": {
+                "x": 414,
+                "y": 570.5605844691901
+              },
+              "data": {
+                "label": "Glycol valve",
+                "widgetType": "automation",
+                "config": {
+                  "automationMode": "simple",
+                  "simpleAutomation": {
+                    "compareTo": "setpoint_device",
+                    "operator": "gt",
+                    "threshold": 69,
+                    "hysteresis": 1,
+                    "command": "open_close",
+                    "onValue": "open",
+                    "offValue": "close",
+                    "pollMs": 1000,
+                    "sourceSensorDeviceId": "dev-sensor-mluc74z4-86zj6m",
+                    "setpointDeviceId": "node:slider-mluc9q9a-kez0x3",
+                    "targetDeviceId": "dev-valve-mlucafcz-2zu3yi"
+                  },
+                  "automationSteps": [],
+                  "requireUserProceed": true
+                },
+                "control": {
+                  "targetDeviceId": "dev-valve-mlucafcz-2zu3yi",
+                  "command": "open_close"
+                }
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "edge-mluc7hu5-u4ttqq",
+              "source": "sensor-mluc74z4-86zj6m",
+              "target": "vessel-mluc730u-qail6k",
+              "sourceHandle": "data-out",
+              "targetHandle": "data-in",
+              "type": "default",
+              "data": {
+                "kind": "data"
+              }
+            },
+            {
+              "id": "edge-mlucdcwz-fyfpyl",
+              "source": "vessel-mlucahl3-2mh9m6",
+              "target": "pump-mluc9948-2kvsv2",
+              "sourceHandle": "fluid-out",
+              "targetHandle": "fluid-in",
+              "type": "smoothstep",
+              "data": {
+                "kind": "fluid",
+                "medium": "product"
+              }
+            },
+            {
+              "id": "edge-mlucdjqs-jr6r3z",
+              "source": "pump-mluc9948-2kvsv2",
+              "target": "valve-mlucafcz-2zu3yi",
+              "sourceHandle": "fluid-out",
+              "targetHandle": "fluid-in",
+              "type": "smoothstep",
+              "data": {
+                "kind": "fluid",
+                "medium": "product"
+              }
+            },
+            {
+              "id": "edge-mlucdu76-vpl38r",
+              "source": "valve-mlucafcz-2zu3yi",
+              "target": "vessel-mluc730u-qail6k",
+              "sourceHandle": "fluid-out",
+              "targetHandle": "fluid-in",
+              "type": "smoothstep",
+              "data": {
+                "kind": "fluid",
+                "medium": "product"
+              }
+            },
+            {
+              "id": "edge-mlucdxjk-2srqjo",
+              "source": "vessel-mluc730u-qail6k",
+              "target": "vessel-mlucahl3-2mh9m6",
+              "sourceHandle": "fluid-out",
+              "targetHandle": "fluid-in",
+              "type": "smoothstep",
+              "data": {
+                "kind": "fluid",
+                "medium": "product"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/compliance/compliance-event.schema.json",
+  "title": "BevForge Compliance Event",
+  "description": "Canonical compliance-relevant event projected from OS ledgers for OPS reporting workflows.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "eventType",
+    "sourceSuite",
+    "sourceRecord",
+    "siteId",
+    "eventStatus",
+    "occurredAt",
+    "recordedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string",
+      "description": "Stable idempotency/event key across OS->OPS sync."
+    },
+    "eventType": {
+      "type": "string",
+      "enum": [
+        "batch_planned",
+        "batch_started",
+        "batch_completed",
+        "batch_released",
+        "batch_shipped",
+        "transfer_completed",
+        "inventory_consumed",
+        "inventory_produced",
+        "inventory_adjusted",
+        "inventory_shipped",
+        "loss_recorded",
+        "destruction_recorded",
+        "reservation_committed",
+        "reservation_released",
+        "pour_recorded",
+        "compliance_note"
+      ]
+    },
+    "eventStatus": {
+      "type": "string",
+      "enum": ["recorded", "voided", "amended"]
+    },
+    "sourceSuite": {
+      "type": "string",
+      "enum": ["os", "ops", "lab", "flow", "connect"],
+      "description": "Suite asserting the event in this stream. For OS->OPS compliance feed this must be 'os'."
+    },
+    "sourceRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recordType", "recordId"],
+      "properties": {
+        "recordType": {
+          "type": "string",
+          "enum": [
+            "batch",
+            "inventory_movement",
+            "recipe_run",
+            "recipe_reading",
+            "reservation",
+            "reservation_action",
+            "flow_pour_event",
+            "transfer_run",
+            "packaging_run",
+            "manual"
+          ]
+        },
+        "recordId": {
+          "type": "string"
+        },
+        "originSuite": {
+          "type": "string",
+          "enum": ["os", "ops", "lab", "flow", "connect"],
+          "description": "Optional provenance for projected events where the originating record came from another suite."
+        },
+        "openPath": {
+          "type": "string"
+        }
+      }
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "countryCode": {
+          "type": "string"
+        },
+        "regionCode": {
+          "type": "string"
+        },
+        "agency": {
+          "type": "string",
+          "description": "Examples: TTB, ABC, local_authority."
+        },
+        "permitId": {
+          "type": "string"
+        }
+      }
+    },
+    "batchId": {
+      "type": "string"
+    },
+    "lotCode": {
+      "type": "string"
+    },
+    "recipeRunId": {
+      "type": "string"
+    },
+    "recipeId": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "itemId": {
+      "type": "string"
+    },
+    "reservationId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "lineId": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "uom", "direction"],
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "uom": {
+          "type": "string"
+        },
+        "direction": {
+          "type": "string",
+          "enum": ["in", "out", "none"]
+        }
+      }
+    },
+    "reasonCode": {
+      "type": "string"
+    },
+    "reasonMessage": {
+      "type": "string"
+    },
+    "regulatoryTags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ttb_production",
+          "ttb_storage_transfer",
+          "ttb_removal",
+          "ttb_loss",
+          "ttb_destruction",
+          "abc_inventory",
+          "abc_transfer",
+          "abc_sale",
+          "internal_audit"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "measurements": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "temperatureC": {
+          "type": "number"
+        },
+        "sg": {
+          "type": "number"
+        },
+        "fg": {
+          "type": "number"
+        },
+        "abvPct": {
+          "type": "number",
+          "minimum": 0
+        },
+        "ph": {
+          "type": "number",
+          "minimum": 0
+        },
+        "brix": {
+          "type": "number"
+        },
+        "titratableAcidityGpl": {
+          "type": "number",
+          "minimum": 0
+        },
+        "so2Ppm": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        }
+      }
+    },
+    "occurredAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "recordedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

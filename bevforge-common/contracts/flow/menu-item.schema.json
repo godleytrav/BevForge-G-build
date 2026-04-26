@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/flow/menu-item.schema.json",
+  "title": "BevForge FLOW Menu Item",
+  "description": "Customer-facing tap menu item rendered by FLOW kiosk and displays. Customer interactions should resolve through tapAssignmentId.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "siteId",
+    "skuId",
+    "name",
+    "status",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "tapAssignmentId": {
+      "type": "string"
+    },
+    "tapId": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "string"
+    },
+    "productCode": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "batchId": {
+      "type": "string"
+    },
+    "packageLotId": {
+      "type": "string"
+    },
+    "packageLotCode": {
+      "type": "string"
+    },
+    "assetId": {
+      "type": "string"
+    },
+    "assetCode": {
+      "type": "string"
+    },
+    "labelVersionId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "style": {
+      "type": "string"
+    },
+    "abv": {
+      "type": "number",
+      "minimum": 0
+    },
+    "ibu": {
+      "type": "number",
+      "minimum": 0
+    },
+    "servingTempC": {
+      "type": "number"
+    },
+    "tastingNotes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["on_tap", "coming_soon", "out_of_stock", "hidden"]
+    },
+    "story": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string"
+    },
+    "imageAssetId": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

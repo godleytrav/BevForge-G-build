@@ -1,0 +1,11 @@
+<header class="bf-header">
+  <div class="brand">
+    <img src="{{ url_for('static', path='brand/logo.svg') if url_for else '/static/brand/logo.svg' }}" alt="BevForge">
+    <span class="title">BevForge</span>
+  </div>
+  <nav class="bf-appswitch">
+    <a href="{{ os_url or '/' }}" class="{{ 'active' if active_app=='os' else '' }}">OS</a>
+    <a href="{{ flow_url or 'http://'+ (request.headers.get('host') or 'localhost') | replace(':8080',':8082') + '/' }}" class="{{ 'active' if active_app=='flow' else '' }}">Flow</a>
+    <a href="{{ connect_url or '#' }}" class="{{ 'active' if active_app=='connect' else '' }}">Connect</a>
+  </nav>
+</header>

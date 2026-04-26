@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "bb34a888-2d4d-49ac-a2c6-d9797eef882d",
+  "name": "Just Anouther Testy Cider",
+  "format": "bevforge",
+  "metadata": {
+    "schemaVersion": "1.0.0",
+    "source": "manual-inline",
+    "createdFrom": "os-new-batch",
+    "productId": "853fba0f-c8b4-4404-a59f-2eb99062baad",
+    "productCode": "GC-CORE-JUST-ANOUTHER-TESTY",
+    "beverageClass": "cider",
+    "defaultUnit": "bbl",
+    "targetAbvPct": 7
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "name": "Define process",
+      "stage": "planning",
+      "action": "review",
+      "requiresUserConfirm": true,
+      "autoProceed": false
+    }
+  ]
+}

@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "bb34a888-2d4d-49ac-a2c6-d9797eef882d",
+    "name": "Just Anouther Testy Cider",
+    "format": "bevforge",
+    "steps": [
+      {
+        "id": "step-1",
+        "name": "Define process",
+        "stage": "planning",
+        "action": "review",
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      }
+    ],
+    "metadata": {
+      "schemaVersion": "1.0.0",
+      "source": "manual-inline",
+      "createdFrom": "os-new-batch",
+      "productId": "853fba0f-c8b4-4404-a59f-2eb99062baad",
+      "productCode": "GC-CORE-JUST-ANOUTHER-TESTY",
+      "beverageClass": "cider",
+      "defaultUnit": "bbl",
+      "targetAbvPct": 7
+    },
+    "rawFile": "1776788178287-just_anouther_testy_cider.json",
+    "importedAt": "2026-04-21T16:16:18.287Z"
+  },
+  {
+    "id": "b0b77f8f-f1de-4ddd-b241-978a2819b4b7",
+    "name": "Best tester ipa",
+    "format": "bevforge",
+    "steps": [
+      {
+        "id": "step-1",
+        "name": "Define process",
+        "stage": "planning",
+        "action": "review",
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      }
+    ],
+    "metadata": {
+      "schemaVersion": "1.0.0",
+      "source": "manual-inline",
+      "createdFrom": "os-new-batch",
+      "productId": "7b2a7fcb-0727-4f42-bb57-036ff9c6ada7",
+      "productCode": "TESTER-IPA-2",
+      "beverageClass": "beer",
+      "defaultUnit": "bbl",
+      "targetAbvPct": 5.5
+    },
+    "rawFile": "1776198811005-best_tester_ipa.json",
+    "importedAt": "2026-04-14T20:33:31.005Z"
+  },
+  {
+    "id": "e7058594-461d-424a-a165-d2efa7dcdc18",
+    "name": "just a hoppy test IPA",
+    "format": "bevforge",
+    "steps": [
+      {
+        "id": "step-1",
+        "name": "Define process",
+        "stage": "planning",
+        "action": "review",
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      }
+    ],
+    "metadata": {
+      "schemaVersion": "1.0.0",
+      "source": "manual-inline",
+      "createdFrom": "os-new-batch",
+      "productId": "c55e370f-876b-4551-afa4-6a4c925abf3a",
+      "productCode": "TESTER-IPA",
+      "beverageClass": "beer",
+      "defaultUnit": "bbl"
+    },
+    "rawFile": "1776195863543-just_a_hoppy_test_ipa.json",
+    "importedAt": "2026-04-14T19:44:23.542Z"
+  },
+  {
+    "id": "recipe-mm0su8d6-cgq1q",
+    "name": "Fat Tire Clone (BevForge Lab)",
+    "format": "bevforge",
+    "requirements": [
+      {
+        "name": "Willamette",
+        "category": "hops",
+        "requiredQty": 28,
+        "unit": "g"
+      },
+      {
+        "name": "Pale Ale Malt (2-Row)",
+        "category": "malt",
+        "requiredQty": 3.65,
+        "unit": "kg"
+      },
+      {
+        "name": "Munich Malt (Light)",
+        "category": "malt",
+        "requiredQty": 0.82,
+        "unit": "kg"
+      },
+      {
+        "name": "Crystal 60L",
+        "category": "malt",
+        "requiredQty": 0.23,
+        "unit": "kg"
+      },
+      {
+        "name": "Victory Malt",
+        "category": "malt",
+        "requiredQty": 0.11,
+        "unit": "kg"
+      },
+      {
+        "name": "Biscuit Malt",
+        "category": "malt",
+        "requiredQty": 0.14,
+        "unit": "kg"
+      },
+      {
+        "name": "Chocolate Malt (small amount)",
+        "category": "malt",
+        "requiredQty": 0.03,
+        "unit": "kg"
+      },
+      {
+        "name": "WLP051 (California Ale V) or equivalent",
+        "category": "yeast",
+        "unit": "packs"
+      }
+    ],
+    "steps": [
+      {
+        "id": "m1",
+        "name": "mash: heat to",
+        "stage": "mash",
+        "action": "heat_to",
+        "triggerWhen": "stage_start",
+        "temperatureC": 68,
+        "targetDeviceId": "mash_heater",
+        "command": "set_value",
+        "value": 68,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "m2",
+        "name": "mash: hold",
+        "stage": "mash",
+        "action": "hold",
+        "triggerWhen": "temp_reached",
+        "durationMin": 60,
+        "command": "trigger",
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "m3",
+        "name": "mash: heat to",
+        "stage": "mash",
+        "action": "heat_to",
+        "triggerWhen": "after_action",
+        "temperatureC": 76,
+        "targetDeviceId": "mash_heater",
+        "command": "set_value",
+        "value": 76,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "m4",
+        "name": "mash: hold",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 10,
+        "command": "trigger",
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "b1",
+        "name": "boil: heat to",
+        "stage": "boil",
+        "action": "heat_to",
+        "triggerWhen": "stage_start",
+        "temperatureC": 100,
+        "targetDeviceId": "kettle_heater",
+        "command": "set_value",
+        "value": 100,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "b2",
+        "name": "boil: hop add",
+        "stage": "boil",
+        "action": "hop_add",
+        "command": "trigger",
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "b3",
+        "name": "boil: hop add",
+        "stage": "boil",
+        "action": "hop_add",
+        "command": "trigger",
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "b4",
+        "name": "boil: hold",
+        "stage": "boil",
+        "action": "hold",
+        "durationMin": 60,
+        "command": "trigger",
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "c1",
+        "name": "chill: cool to",
+        "stage": "chill",
+        "action": "cool_to",
+        "triggerWhen": "boil_complete",
+        "temperatureC": 19,
+        "targetDeviceId": "chiller_loop",
+        "command": "set_value",
+        "value": 19,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "f1",
+        "name": "fermentation: hold temp",
+        "stage": "fermentation",
+        "action": "hold_temp",
+        "triggerWhen": "transfer_complete",
+        "durationMin": 14400,
+        "temperatureC": 20,
+        "targetDeviceId": "ferment_temp_control",
+        "command": "trigger",
+        "value": 20,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "f2",
+        "name": "fermentation: diacetyl rest",
+        "stage": "fermentation",
+        "action": "diacetyl_rest",
+        "durationMin": 2880,
+        "temperatureC": 21,
+        "targetDeviceId": "ferment_temp_control",
+        "command": "trigger",
+        "value": 21,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "f3",
+        "name": "fermentation: cold crash",
+        "stage": "fermentation",
+        "action": "cold_crash",
+        "durationMin": 2880,
+        "temperatureC": 2,
+        "targetDeviceId": "ferment_temp_control",
+        "command": "trigger",
+        "value": 2,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      }
+    ],
+    "rawFile": "2026-02-24T16-07-41-269Z-Fat_Tire.json",
+    "importedAt": "2026-02-24T16:07:41.274Z"
+  },
+  {
+    "id": "recipe-mlvb994u-18vkh",
+    "name": "Freedom",
+    "format": "beer-smith-bsmx",
+    "steps": [
+      {
+        "id": "mash-1",
+        "name": "Protein Rest",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 30,
+        "temperatureC": 50,
+        "command": "set_value",
+        "value": 50,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "mash-2",
+        "name": "Saccharification",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 45,
+        "temperatureC": 66.7,
+        "command": "set_value",
+        "value": 66.7,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "mash-3",
+        "name": "Mash Out",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 10,
+        "temperatureC": 75.6,
+        "command": "set_value",
+        "value": 75.6,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "boil",
+        "name": "Boil",
+        "stage": "boil",
+        "action": "hold",
+        "durationMin": 60,
+        "temperatureC": 100,
+        "command": "set_value",
+        "value": 100,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "hop-1",
+        "name": "Hop Add: Amarillo Gold",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:60",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-2",
+        "name": "Hop Add: Amarillo Gold",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:20",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-3",
+        "name": "Hop Add: Amarillo Gold",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:0",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "fermentation-primary",
+        "name": "Primary Fermentation",
+        "stage": "fermentation",
+        "action": "hold_temp",
+        "durationMin": 4320,
+        "temperatureC": 18.9,
+        "command": "set_value",
+        "value": 18.9,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "fermentation-secondary",
+        "name": "Secondary Fermentation",
+        "stage": "fermentation",
+        "action": "hold_temp",
+        "durationMin": 14400,
+        "temperatureC": 18.9,
+        "command": "set_value",
+        "value": 18.9,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      }
+    ],
+    "rawFile": "2026-02-20T19-56-38-137Z-Freedom.bsmx",
+    "importedAt": "2026-02-20T19:56:38.142Z"
+  },
+  {
+    "id": "recipe-mlvb994h-serzd",
+    "name": "Fat Tire Clone (BevForge Lab)",
+    "format": "bevforge",
+    "steps": [
+      {
+        "id": "m1",
+        "name": "mash: heat to",
+        "stage": "mash",
+        "action": "heat_to",
+        "triggerWhen": "stage_start",
+        "temperatureC": 68,
+        "targetDeviceId": "mash_heater",
+        "command": "set_value",
+        "value": 68,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "m2",
+        "name": "mash: hold",
+        "stage": "mash",
+        "action": "hold",
+        "triggerWhen": "temp_reached",
+        "durationMin": 60,
+        "command": "trigger",
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "m3",
+        "name": "mash: heat to",
+        "stage": "mash",
+        "action": "heat_to",
+        "triggerWhen": "after_action",
+        "temperatureC": 76,
+        "targetDeviceId": "mash_heater",
+        "command": "set_value",
+        "value": 76,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "m4",
+        "name": "mash: hold",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 10,
+        "command": "trigger",
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "b1",
+        "name": "boil: heat to",
+        "stage": "boil",
+        "action": "heat_to",
+        "triggerWhen": "stage_start",
+        "temperatureC": 100,
+        "targetDeviceId": "kettle_heater",
+        "command": "set_value",
+        "value": 100,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "b2",
+        "name": "boil: hop add",
+        "stage": "boil",
+        "action": "hop_add",
+        "command": "trigger",
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "b3",
+        "name": "boil: hop add",
+        "stage": "boil",
+        "action": "hop_add",
+        "command": "trigger",
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "b4",
+        "name": "boil: hold",
+        "stage": "boil",
+        "action": "hold",
+        "durationMin": 60,
+        "command": "trigger",
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "c1",
+        "name": "chill: cool to",
+        "stage": "chill",
+        "action": "cool_to",
+        "triggerWhen": "boil_complete",
+        "temperatureC": 19,
+        "targetDeviceId": "chiller_loop",
+        "command": "set_value",
+        "value": 19,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "f1",
+        "name": "fermentation: hold temp",
+        "stage": "fermentation",
+        "action": "hold_temp",
+        "triggerWhen": "transfer_complete",
+        "durationMin": 14400,
+        "temperatureC": 20,
+        "targetDeviceId": "ferment_temp_control",
+        "command": "trigger",
+        "value": 20,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "f2",
+        "name": "fermentation: diacetyl rest",
+        "stage": "fermentation",
+        "action": "diacetyl_rest",
+        "durationMin": 2880,
+        "temperatureC": 21,
+        "targetDeviceId": "ferment_temp_control",
+        "command": "trigger",
+        "value": 21,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "f3",
+        "name": "fermentation: cold crash",
+        "stage": "fermentation",
+        "action": "cold_crash",
+        "durationMin": 2880,
+        "temperatureC": 2,
+        "targetDeviceId": "ferment_temp_control",
+        "command": "trigger",
+        "value": 2,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      }
+    ],
+    "rawFile": "2026-02-20T19-56-38-125Z-Fat_Tire.json",
+    "importedAt": "2026-02-20T19:56:38.129Z"
+  },
+  {
+    "id": "recipe-mlvb928b-zaeg6",
+    "name": "Freedom",
+    "format": "beer-smith-bsmx",
+    "steps": [
+      {
+        "id": "mash-1",
+        "name": "Protein Rest",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 30,
+        "temperatureC": 50,
+        "command": "set_value",
+        "value": 50,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "mash-2",
+        "name": "Saccharification",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 45,
+        "temperatureC": 66.7,
+        "command": "set_value",
+        "value": 66.7,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "mash-3",
+        "name": "Mash Out",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 10,
+        "temperatureC": 75.6,
+        "command": "set_value",
+        "value": 75.6,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "boil",
+        "name": "Boil",
+        "stage": "boil",
+        "action": "hold",
+        "durationMin": 60,
+        "temperatureC": 100,
+        "command": "set_value",
+        "value": 100,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "hop-1",
+        "name": "Hop Add: Amarillo Gold",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:60",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-2",
+        "name": "Hop Add: Amarillo Gold",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:20",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-3",
+        "name": "Hop Add: Amarillo Gold",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:0",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "fermentation-primary",
+        "name": "Primary Fermentation",
+        "stage": "fermentation",
+        "action": "hold_temp",
+        "durationMin": 4320,
+        "temperatureC": 18.9,
+        "command": "set_value",
+        "value": 18.9,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "fermentation-secondary",
+        "name": "Secondary Fermentation",
+        "stage": "fermentation",
+        "action": "hold_temp",
+        "durationMin": 14400,
+        "temperatureC": 18.9,
+        "command": "set_value",
+        "value": 18.9,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      }
+    ],
+    "rawFile": "2026-02-20T19-56-29-192Z-Freedom.bsmx",
+    "importedAt": "2026-02-20T19:56:29.195Z"
+  },
+  {
+    "id": "recipe-mlvb9287-epod1",
+    "name": "PUNK IPA 2007 - 2010",
+    "format": "beer-xml",
+    "steps": [
+      {
+        "id": "mash-1",
+        "name": "Mash step",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 75,
+        "temperatureC": 65,
+        "command": "set_value",
+        "value": 65,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "boil",
+        "name": "Boil",
+        "stage": "boil",
+        "action": "hold",
+        "durationMin": 60,
+        "temperatureC": 100,
+        "command": "set_value",
+        "value": 100,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "hop-1",
+        "name": "Hop Add: Ahtanum",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:60",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-2",
+        "name": "Hop Add: Chinook",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:60",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-3",
+        "name": "Hop Add: Crystal",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:30",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-4",
+        "name": "Hop Add: Chinook",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:30",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-5",
+        "name": "Hop Add: Ahtanum",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:0",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-6",
+        "name": "Hop Add: Chinook",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:0",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-7",
+        "name": "Hop Add: Crystal",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:0",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-8",
+        "name": "Hop Add: Motueka",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:0",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "fermentation-primary",
+        "name": "Primary Fermentation",
+        "stage": "fermentation",
+        "action": "hold_temp",
+        "temperatureC": 19,
+        "command": "set_value",
+        "value": 19,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      }
+    ],
+    "rawFile": "2026-02-20T19-56-29-190Z-punk-ipa-2007-2010.xml",
+    "importedAt": "2026-02-20T19:56:29.191Z"
+  },
+  {
+    "id": "recipe-mlvb9285-hzuzx",
+    "name": "Freedom",
+    "format": "beer-xml",
+    "steps": [
+      {
+        "id": "mash-1",
+        "name": "Protein Rest",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 30,
+        "temperatureC": 50,
+        "command": "set_value",
+        "value": 50,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "mash-2",
+        "name": "Saccharification",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 45,
+        "temperatureC": 66.6666667,
+        "command": "set_value",
+        "value": 66.6666667,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "mash-3",
+        "name": "Mash Out",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 10,
+        "temperatureC": 75.5555556,
+        "command": "set_value",
+        "value": 75.5555556,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "boil",
+        "name": "Boil",
+        "stage": "boil",
+        "action": "hold",
+        "durationMin": 60,
+        "temperatureC": 100,
+        "command": "set_value",
+        "value": 100,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "hop-1",
+        "name": "Hop Add: Amarillo Gold",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:60",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-2",
+        "name": "Hop Add: Amarillo Gold",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:20",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "hop-3",
+        "name": "Hop Add: Amarillo Gold",
+        "stage": "boil",
+        "action": "hop_add",
+        "triggerWhen": "boil_min_remaining:0",
+        "command": "trigger",
+        "value": true,
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "fermentation-primary",
+        "name": "Primary Fermentation",
+        "stage": "fermentation",
+        "action": "hold_temp",
+        "temperatureC": 18.8888889,
+        "command": "set_value",
+        "value": 18.8888889,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      }
+    ],
+    "rawFile": "2026-02-20T19-56-29-184Z-Freedom.xml",
+    "importedAt": "2026-02-20T19:56:29.189Z"
+  },
+  {
+    "id": "recipe-mlvb927y-x7rg1",
+    "name": "Fat Tire Clone (BevForge Lab)",
+    "format": "bevforge",
+    "steps": [
+      {
+        "id": "m1",
+        "name": "mash: heat to",
+        "stage": "mash",
+        "action": "heat_to",
+        "triggerWhen": "stage_start",
+        "temperatureC": 68,
+        "targetDeviceId": "mash_heater",
+        "command": "set_value",
+        "value": 68,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "m2",
+        "name": "mash: hold",
+        "stage": "mash",
+        "action": "hold",
+        "triggerWhen": "temp_reached",
+        "durationMin": 60,
+        "command": "trigger",
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "m3",
+        "name": "mash: heat to",
+        "stage": "mash",
+        "action": "heat_to",
+        "triggerWhen": "after_action",
+        "temperatureC": 76,
+        "targetDeviceId": "mash_heater",
+        "command": "set_value",
+        "value": 76,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "m4",
+        "name": "mash: hold",
+        "stage": "mash",
+        "action": "hold",
+        "durationMin": 10,
+        "command": "trigger",
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "b1",
+        "name": "boil: heat to",
+        "stage": "boil",
+        "action": "heat_to",
+        "triggerWhen": "stage_start",
+        "temperatureC": 100,
+        "targetDeviceId": "kettle_heater",
+        "command": "set_value",
+        "value": 100,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "b2",
+        "name": "boil: hop add",
+        "stage": "boil",
+        "action": "hop_add",
+        "command": "trigger",
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "b3",
+        "name": "boil: hop add",
+        "stage": "boil",
+        "action": "hop_add",
+        "command": "trigger",
+        "requiresUserConfirm": true,
+        "autoProceed": false
+      },
+      {
+        "id": "b4",
+        "name": "boil: hold",
+        "stage": "boil",
+        "action": "hold",
+        "durationMin": 60,
+        "command": "trigger",
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "c1",
+        "name": "chill: cool to",
+        "stage": "chill",
+        "action": "cool_to",
+        "triggerWhen": "boil_complete",
+        "temperatureC": 19,
+        "targetDeviceId": "chiller_loop",
+        "command": "set_value",
+        "value": 19,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "f1",
+        "name": "fermentation: hold temp",
+        "stage": "fermentation",
+        "action": "hold_temp",
+        "triggerWhen": "transfer_complete",
+        "durationMin": 14400,
+        "temperatureC": 20,
+        "targetDeviceId": "ferment_temp_control",
+        "command": "trigger",
+        "value": 20,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "f2",
+        "name": "fermentation: diacetyl rest",
+        "stage": "fermentation",
+        "action": "diacetyl_rest",
+        "durationMin": 2880,
+        "temperatureC": 21,
+        "targetDeviceId": "ferment_temp_control",
+        "command": "trigger",
+        "value": 21,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      },
+      {
+        "id": "f3",
+        "name": "fermentation: cold crash",
+        "stage": "fermentation",
+        "action": "cold_crash",
+        "durationMin": 2880,
+        "temperatureC": 2,
+        "targetDeviceId": "ferment_temp_control",
+        "command": "trigger",
+        "value": 2,
+        "requiresUserConfirm": false,
+        "autoProceed": true
+      }
+    ],
+    "rawFile": "2026-02-20T19-56-29-174Z-Fat_Tire.json",
+    "importedAt": "2026-02-20T19:56:29.182Z"
+  }
+]

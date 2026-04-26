@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/flow/session.schema.json",
+  "title": "BevForge FLOW Session",
+  "description": "Self-serve or operator serving session policy and consumption state.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "siteId",
+    "status",
+    "mode",
+    "limitQty",
+    "consumedQty",
+    "uom",
+    "startedAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["self_serve", "bartender", "test"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "paused", "closed", "blocked"]
+    },
+    "customerToken": {
+      "type": "string"
+    },
+    "actorId": {
+      "type": "string"
+    },
+    "limitQty": {
+      "type": "number",
+      "minimum": 0
+    },
+    "consumedQty": {
+      "type": "number",
+      "minimum": 0
+    },
+    "uom": {
+      "type": "string"
+    },
+    "allowedTapIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "endedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

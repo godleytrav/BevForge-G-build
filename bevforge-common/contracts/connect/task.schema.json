@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/connect/task.schema.json",
+  "title": "BevForge CONNECT Task",
+  "description": "Operational work item used by CONNECT for employee coordination.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "title",
+    "status",
+    "priority",
+    "createdById",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["open", "in_progress", "blocked", "done", "canceled"]
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["low", "normal", "high", "critical"]
+    },
+    "taskType": {
+      "type": "string",
+      "enum": [
+        "communication",
+        "delivery_followup",
+        "inventory_check",
+        "quality_hold",
+        "customer_service",
+        "compliance",
+        "manual_override_review",
+        "other"
+      ]
+    },
+    "assigneeIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "dueAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdById": {
+      "type": "string"
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "$ref": "./event-link.schema.json"
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "closedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

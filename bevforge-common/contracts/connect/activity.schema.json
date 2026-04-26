@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/connect/activity.schema.json",
+  "title": "BevForge CONNECT Activity",
+  "description": "CONNECT activity feed entry for task/contact/thread workflows with OPS reference IDs.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "type",
+    "entityType",
+    "entityId",
+    "actorType",
+    "message",
+    "createdAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "contact_created",
+        "task_created",
+        "task_status_changed",
+        "thread_created",
+        "thread_status_changed",
+        "thread_message_added"
+      ]
+    },
+    "entityType": {
+      "type": "string",
+      "enum": ["contact", "task", "thread"]
+    },
+    "entityId": {
+      "type": "string"
+    },
+    "actorId": {
+      "type": "string"
+    },
+    "actorType": {
+      "type": "string",
+      "enum": ["employee", "contact", "system"]
+    },
+    "opsAccountId": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
+    "deliveryId": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

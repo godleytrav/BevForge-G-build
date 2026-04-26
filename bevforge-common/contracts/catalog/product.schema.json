@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/catalog/product.schema.json",
+  "title": "BevForge Product",
+  "description": "Core shared product identity that exists independently of OPS and can be mirrored by all suites.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "productId",
+    "name",
+    "beverageClass",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "string"
+    },
+    "productCode": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "beverageClass": {
+      "type": "string",
+      "enum": ["cider", "wine", "beer", "other"]
+    },
+    "skuIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "defaultSkuId": {
+      "type": "string"
+    },
+    "currentAssetId": {
+      "type": "string"
+    },
+    "currentLabelVersionId": {
+      "type": "string"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "./product-asset.schema.json"
+      }
+    },
+    "labelVersions": {
+      "type": "array",
+      "items": {
+        "$ref": "./label-version.schema.json"
+      }
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

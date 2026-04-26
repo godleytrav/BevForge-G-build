@@ -1,0 +1,44 @@
+import type { Request, Response } from 'express';
+import { readBatchState } from '../../../lib/inventory-batch-store.js';
+
+export default async function handler(_req: Request, res: Response) {
+  try {
+    const state = await readBatchState();
+    const siteParam = _req.query.siteId;
+    const siteId = Array.isArray(siteParam) ? siteParam[0] : siteParam;
+    const normalizedSiteId =
+      siteId && String(siteId).trim() ? String(siteId).trim().toLowerCase() : null;
+    const batches = normalizedSiteId
+      ? state.batches.filter((batch) => String(batch.siteId).toLowerCase() === normalizedSiteId)
+      : state.batches;
+    const summary = {
+      total: batches.length,
+      active: batches.filter((batch) =>
+        ['planned', 'in_progress', 'completed', 'released', 'allocated'].includes(batch.status)
+      ).length,
+      inProgress: batches.filter((batch) => batch.status === 'in_progress').length,
+      readyToRelease: batches.filter((batch) => batch.status === 'completed').length,
+      released: batches.filter((batch) => batch.status === 'released').length,
+      shipped: batches.filter((batch) => batch.status === 'shipped').length,
+      onHandQty: batches.reduce(
+        (sum, batch) =>
+          sum + Math.max(0, batch.producedQty - batch.allocatedQty - (batch.dispensedQty ?? 0)),
+        0
+      ),
+    };
+    return res.status(200).json({
+      success: true,
+      data: {
+        batches,
+        siteId: normalizedSiteId ?? undefined,
+        summary,
+      },
+    });
+  } catch (error) {
+    console.error('Failed to load batches:', error);
+    return res.status(500).json({
+      success: false,
+      error: 'Failed to load batches.',
+    });
+  }
+}

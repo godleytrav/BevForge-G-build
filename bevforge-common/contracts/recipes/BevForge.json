@@ -1,0 +1,8 @@
+{
+  "$schema": "./recipe.schema.json",
+  "schemaVersion": "0.1.0",
+  "id": "recipe-placeholder",
+  "name": "Example Recipe",
+  "version": "0.1.0",
+  "steps": []
+}

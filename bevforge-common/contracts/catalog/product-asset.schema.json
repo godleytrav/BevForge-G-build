@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/catalog/product-asset.schema.json",
+  "title": "BevForge Product Asset",
+  "description": "Canonical product media asset with variant image sizes for offline-capable suite mirroring.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "assetId",
+    "variants",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "assetId": {
+      "type": "string"
+    },
+    "altText": {
+      "type": "string"
+    },
+    "variants": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "thumbnailUrl": {
+          "type": "string"
+        },
+        "cardImageUrl": {
+          "type": "string"
+        },
+        "fullImageUrl": {
+          "type": "string"
+        }
+      }
+    },
+    "mimeType": {
+      "type": "string"
+    },
+    "sourceSuite": {
+      "type": "string",
+      "enum": ["os", "ops", "lab", "flow", "connect"]
+    },
+    "storage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode"],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["file", "external"]
+        },
+        "variants": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "thumbnail": {
+              "$ref": "#/$defs/variantStorage"
+            },
+            "card": {
+              "$ref": "#/$defs/variantStorage"
+            },
+            "full": {
+              "$ref": "#/$defs/variantStorage"
+            }
+          }
+        }
+      }
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "variantStorage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fileName", "mimeType"],
+      "properties": {
+        "fileName": {
+          "type": "string"
+        },
+        "mimeType": {
+          "type": "string"
+        },
+        "sizeBytes": {
+          "type": "number",
+          "minimum": 0
+        }
+      }
+    }
+  }
+}

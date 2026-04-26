@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e7058594-461d-424a-a165-d2efa7dcdc18",
+  "name": "just a hoppy test IPA",
+  "format": "bevforge",
+  "metadata": {
+    "schemaVersion": "1.0.0",
+    "source": "manual-inline",
+    "createdFrom": "os-new-batch",
+    "productId": "c55e370f-876b-4551-afa4-6a4c925abf3a",
+    "productCode": "TESTER-IPA",
+    "beverageClass": "beer",
+    "defaultUnit": "bbl"
+  },
+  "steps": [
+    {
+      "id": "step-1",
+      "name": "Define process",
+      "stage": "planning",
+      "action": "review",
+      "requiresUserConfirm": true,
+      "autoProceed": false
+    }
+  ]
+}

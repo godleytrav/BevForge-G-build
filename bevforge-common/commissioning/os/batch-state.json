@@ -1,0 +1,319 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "batch-state",
+  "updatedAt": "2026-04-22T14:21:05.111Z",
+  "batches": [
+    {
+      "id": "dfd0bdcb-c927-4470-818b-7de07de92eee",
+      "siteId": "main",
+      "batchCode": "GC-CORE-JUST-ANOUTHER-TESTY-B01",
+      "lotCode": "GC-CORE-JUST-ANOUTHER-TESTY-B01",
+      "batchKind": "source",
+      "productionMode": "scheduled_runboard",
+      "scheduledStartAt": "2026-04-21T09:30",
+      "plannedVesselLabel": "Fermentor",
+      "plannedVesselKind": "vessel",
+      "rootBatchId": "dfd0bdcb-c927-4470-818b-7de07de92eee",
+      "containerLabel": "Fermentor",
+      "containerKind": "vessel",
+      "recipeId": "bb34a888-2d4d-49ac-a2c6-d9797eef882d",
+      "recipeName": "Just Anouther Testy Cider",
+      "status": "planned",
+      "producedQty": 10,
+      "allocatedQty": 0,
+      "dispensedQty": 2,
+      "unit": "bbl",
+      "createdAt": "2026-04-21T16:17:06.739Z",
+      "updatedAt": "2026-04-22T14:21:05.111Z",
+      "intendedRecipe": {
+        "schemaVersion": "1.0.0",
+        "recipeId": "bb34a888-2d4d-49ac-a2c6-d9797eef882d",
+        "recipeName": "Just Anouther Testy Cider",
+        "stepsCount": 0,
+        "requirementCount": 0,
+        "capturedAt": "2026-04-21T16:17:06.739Z"
+      },
+      "actualResults": {
+        "schemaVersion": "1.1.0",
+        "og": 1.058,
+        "sgLatest": 1.004,
+        "abvPct": 7.0875,
+        "phLatest": 3.3,
+        "temperatureCLatest": 60,
+        "updatedAt": "2026-04-22T14:21:05.111Z"
+      },
+      "readingLog": [
+        {
+          "id": "362cacc0-c162-4b21-acde-f75edf2bba93",
+          "timestamp": "2026-04-21T16:27:35.645Z",
+          "og": 1.058,
+          "sg": 1.058,
+          "temperatureC": 70,
+          "ph": 3.3
+        },
+        {
+          "id": "61d17e86-0bd0-48f4-8dc8-d0d1c56dfa7b",
+          "timestamp": "2026-04-21T16:27:40.993Z",
+          "og": 1.058,
+          "sg": 1.058,
+          "temperatureC": 70,
+          "ph": 3.3
+        },
+        {
+          "id": "f6a6a6e3-f064-4677-bb53-c120638a147d",
+          "timestamp": "2026-04-21T16:29:28.843Z",
+          "og": 1.058,
+          "sg": 1.045,
+          "temperatureC": 70,
+          "ph": 3.3
+        },
+        {
+          "id": "cf14922e-23f5-4a86-bedb-ddc38a99abe5",
+          "timestamp": "2026-04-21T22:42:07.775Z",
+          "og": 1.058,
+          "sg": 1.035,
+          "temperatureC": 60,
+          "ph": 3.3
+        },
+        {
+          "id": "cb007f3f-aba8-451f-8e45-b6b04b605960",
+          "timestamp": "2026-04-21T22:42:14.093Z",
+          "og": 1.058,
+          "sg": 1.025,
+          "temperatureC": 60,
+          "ph": 3.3
+        },
+        {
+          "id": "df7fe4f5-1e50-4818-9a39-6c9c07b1d273",
+          "timestamp": "2026-04-21T22:42:20.157Z",
+          "og": 1.058,
+          "sg": 1.02,
+          "temperatureC": 60,
+          "ph": 3.3
+        },
+        {
+          "id": "5e72d991-62d7-4c45-8135-8ece34194216",
+          "timestamp": "2026-04-21T22:42:45.123Z",
+          "og": 1.058,
+          "sg": 1.005,
+          "temperatureC": 60,
+          "ph": 3.3
+        },
+        {
+          "id": "8f836021-b16a-4bda-b12d-10fe1d3a6aed",
+          "timestamp": "2026-04-21T22:43:36.124Z",
+          "og": 1.058,
+          "sg": 1.004,
+          "temperatureC": 60,
+          "ph": 3.3
+        }
+      ],
+      "deviations": [
+        {
+          "id": "3ae0570a-afe9-47be-b5e1-270c0ab8ff1c",
+          "timestamp": "2026-04-21T16:27:35.669Z",
+          "field": "volume",
+          "planned": 10,
+          "actual": 10,
+          "unit": "bbl",
+          "note": "Manual bulk quantity updated on batch record.",
+          "source": "manual",
+          "reasonCode": "manual_bulk_adjustment"
+        },
+        {
+          "id": "9535daa2-2146-404f-b53c-a298ae81787f",
+          "timestamp": "2026-04-21T16:27:40.999Z",
+          "field": "volume",
+          "planned": 10,
+          "actual": 10,
+          "unit": "bbl",
+          "note": "Manual bulk quantity updated on batch record.",
+          "source": "manual",
+          "reasonCode": "manual_bulk_adjustment"
+        },
+        {
+          "id": "3d51886b-d488-4d6b-9668-5ecf6e07a6b6",
+          "timestamp": "2026-04-21T16:29:28.856Z",
+          "field": "volume",
+          "planned": 10,
+          "actual": 10,
+          "unit": "bbl",
+          "note": "Manual bulk quantity updated on batch record.",
+          "source": "manual",
+          "reasonCode": "manual_bulk_adjustment"
+        },
+        {
+          "id": "63d74553-2370-4e6f-8023-c4d1efefa45b",
+          "timestamp": "2026-04-21T22:42:07.821Z",
+          "field": "volume",
+          "planned": 10,
+          "actual": 10,
+          "unit": "bbl",
+          "note": "Manual bulk quantity updated on batch record.",
+          "source": "manual",
+          "reasonCode": "manual_bulk_adjustment"
+        },
+        {
+          "id": "cc597a13-5095-45eb-852d-b37e5179d5c5",
+          "timestamp": "2026-04-21T22:42:14.101Z",
+          "field": "volume",
+          "planned": 10,
+          "actual": 10,
+          "unit": "bbl",
+          "note": "Manual bulk quantity updated on batch record.",
+          "source": "manual",
+          "reasonCode": "manual_bulk_adjustment"
+        },
+        {
+          "id": "6675be7b-4a90-4a40-bdd3-7c519bd7c69d",
+          "timestamp": "2026-04-21T22:42:20.167Z",
+          "field": "volume",
+          "planned": 10,
+          "actual": 10,
+          "unit": "bbl",
+          "note": "Manual bulk quantity updated on batch record.",
+          "source": "manual",
+          "reasonCode": "manual_bulk_adjustment"
+        },
+        {
+          "id": "8c4fa56b-b4a0-4076-ada6-edf0e68399b8",
+          "timestamp": "2026-04-21T22:42:45.135Z",
+          "field": "volume",
+          "planned": 10,
+          "actual": 10,
+          "unit": "bbl",
+          "note": "Manual bulk quantity updated on batch record.",
+          "source": "manual",
+          "reasonCode": "manual_bulk_adjustment"
+        },
+        {
+          "id": "0a6c1468-5ad0-4a17-ad1b-e983a9976fdb",
+          "timestamp": "2026-04-21T22:43:36.133Z",
+          "field": "volume",
+          "planned": 10,
+          "actual": 10,
+          "unit": "bbl",
+          "note": "Manual bulk quantity updated on batch record.",
+          "source": "manual",
+          "reasonCode": "manual_bulk_adjustment"
+        },
+        {
+          "id": "7991e94c-3450-4163-909d-40129734ce42",
+          "timestamp": "2026-04-22T14:07:19.310Z",
+          "field": "volume",
+          "planned": 10,
+          "actual": 10,
+          "unit": "bbl",
+          "note": "Manual bulk quantity updated on batch record.",
+          "source": "manual",
+          "reasonCode": "manual_bulk_adjustment"
+        },
+        {
+          "id": "455550fb-2588-42ab-b5ff-231c9309b10b",
+          "timestamp": "2026-04-22T14:21:05.111Z",
+          "field": "packaging",
+          "planned": 4,
+          "actual": 4,
+          "note": "Packaging run d2ec2a8c-f7b3-4e3f-86f4-ba53d49b1023 completed. Packed 4 sellable / 0 rejected units for 2 bbl. Loss 0 bbl.",
+          "source": "manual"
+        }
+      ],
+      "sourceInputs": [],
+      "treatmentLog": [],
+      "volumeCheckpoints": [
+        {
+          "id": "5e075ff2-68d0-403c-aab3-f36f85eba92c",
+          "timestamp": "2026-04-21T16:27:35.668Z",
+          "stage": "other",
+          "quantity": 10,
+          "unit": "bbl",
+          "note": "Auto bulk ledger checkpoint. Manual quantity update from 10 bbl to 10 bbl."
+        },
+        {
+          "id": "79c89987-ef33-4256-ab95-099f6e9c8fe2",
+          "timestamp": "2026-04-21T16:27:40.998Z",
+          "stage": "other",
+          "quantity": 10,
+          "unit": "bbl",
+          "note": "Auto bulk ledger checkpoint. Manual quantity update from 10 bbl to 10 bbl."
+        },
+        {
+          "id": "4db5f166-06fa-465e-8f71-b2ae78f0964a",
+          "timestamp": "2026-04-21T16:29:28.854Z",
+          "stage": "other",
+          "quantity": 10,
+          "unit": "bbl",
+          "note": "Auto bulk ledger checkpoint. Manual quantity update from 10 bbl to 10 bbl."
+        },
+        {
+          "id": "4dcc47ab-84b3-40d7-92bb-8b68b5366069",
+          "timestamp": "2026-04-21T22:42:07.820Z",
+          "stage": "other",
+          "quantity": 10,
+          "unit": "bbl",
+          "note": "Auto bulk ledger checkpoint. Manual quantity update from 10 bbl to 10 bbl."
+        },
+        {
+          "id": "13627b92-ea63-45e3-b768-803ae850e73a",
+          "timestamp": "2026-04-21T22:42:14.100Z",
+          "stage": "other",
+          "quantity": 10,
+          "unit": "bbl",
+          "note": "Auto bulk ledger checkpoint. Manual quantity update from 10 bbl to 10 bbl."
+        },
+        {
+          "id": "133ec681-92b0-4c16-a557-03cc6ab69460",
+          "timestamp": "2026-04-21T22:42:20.166Z",
+          "stage": "other",
+          "quantity": 10,
+          "unit": "bbl",
+          "note": "Auto bulk ledger checkpoint. Manual quantity update from 10 bbl to 10 bbl."
+        },
+        {
+          "id": "cbee716b-a83b-4191-9770-6cbae041de00",
+          "timestamp": "2026-04-21T22:42:45.132Z",
+          "stage": "other",
+          "quantity": 10,
+          "unit": "bbl",
+          "note": "Auto bulk ledger checkpoint. Manual quantity update from 10 bbl to 10 bbl."
+        },
+        {
+          "id": "2279c6e8-7e90-44e3-a5a7-4c14134103af",
+          "timestamp": "2026-04-21T22:43:36.132Z",
+          "stage": "other",
+          "quantity": 10,
+          "unit": "bbl",
+          "note": "Auto bulk ledger checkpoint. Manual quantity update from 10 bbl to 10 bbl."
+        },
+        {
+          "id": "66bfd220-36f7-418f-b621-a4d35d572008",
+          "timestamp": "2026-04-22T14:07:19.309Z",
+          "stage": "other",
+          "quantity": 10,
+          "unit": "bbl",
+          "note": "Auto bulk ledger checkpoint. Manual quantity update from 10 bbl to 10 bbl."
+        }
+      ],
+      "sensoryQcRecords": [],
+      "stageTimeline": [],
+      "packageLotIds": [
+        "a31eb203-7491-448b-bc4f-caedee101185"
+      ],
+      "fulfillmentRequestIds": [],
+      "productSnapshot": {
+        "productId": "853fba0f-c8b4-4404-a59f-2eb99062baad",
+        "productCode": "GC-CORE-JUST-ANOUTHER-TESTY",
+        "productName": "Just Anouther Testy Cider",
+        "beverageClass": "cider",
+        "labelAssetId": "6157e579-9357-470b-b4c0-3860091f8358",
+        "labelVersionId": "d6480b1c-9e8b-40cd-9063-73f7267e8d9f",
+        "images": {
+          "thumbnailUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMaIFyOaxsVoCb21bv8xWqY4wLKlXCc_b5ou1a5z-3ddDd3fxmUacr0kAqPlq9B0oS-qGqXxmFSVEzKS0Vs_qV1Wb2UKlq0P7XwQWFJHYnsUQI_BuofjvmfjHX22gBHB-uNT834M0b-s4&usqp=CAc",
+          "cardImageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMaIFyOaxsVoCb21bv8xWqY4wLKlXCc_b5ou1a5z-3ddDd3fxmUacr0kAqPlq9B0oS-qGqXxmFSVEzKS0Vs_qV1Wb2UKlq0P7XwQWFJHYnsUQI_BuofjvmfjHX22gBHB-uNT834M0b-s4&usqp=CAc",
+          "fullImageUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMaIFyOaxsVoCb21bv8xWqY4wLKlXCc_b5ou1a5z-3ddDd3fxmUacr0kAqPlq9B0oS-qGqXxmFSVEzKS0Vs_qV1Wb2UKlq0P7XwQWFJHYnsUQI_BuofjvmfjHX22gBHB-uNT834M0b-s4&usqp=CAc"
+        },
+        "updatedAt": "2026-04-22T14:07:19.309Z"
+      }
+    }
+  ]
+}

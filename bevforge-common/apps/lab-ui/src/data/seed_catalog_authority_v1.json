@@ -1,0 +1,419 @@
+[
+  {
+    "type": "malt",
+    "name": "US 2-Row Pale Malt",
+    "spec_json": {
+      "ppg_range": [36.6, 37.5],
+      "ppg_typical": 37.0,
+      "lovibond_range": [1.7, 2.1],
+      "color_srm_range": [1.7, 2.1],
+      "extract_fgdb_range_pct": [79.5, 81.5]
+    },
+    "source_refs": [
+      {
+        "label": "Rahr - The Brewer's Standard 2-Row",
+        "url": "https://rahrbsg.com/rahr-the-brewers-standard-2-row/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "malt",
+    "name": "Pilsner Malt",
+    "spec_json": {
+      "ppg_range": [36.8, 37.8],
+      "ppg_typical": 37.2,
+      "lovibond_range": [1.6, 2.1],
+      "color_srm_range": [1.6, 2.1],
+      "extract_fgdb_min_pct": 80.5
+    },
+    "source_refs": [
+      {
+        "label": "BESTMALZ - BEST Pilsen Malt",
+        "url": "https://bestmalz.de/en/malts/best-pilsen-malt/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "malt",
+    "name": "Vienna Malt",
+    "spec_json": {
+      "ppg_range": [36.5, 37.5],
+      "ppg_typical": 37.0,
+      "lovibond_range": [3.6, 4.6],
+      "color_srm_range": [3.6, 4.6],
+      "extract_fgdb_min_pct": 80.0
+    },
+    "source_refs": [
+      {
+        "label": "BESTMALZ - BEST Vienna Malt",
+        "url": "https://bestmalz.de/en/malts/best-vienna-malt/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "malt",
+    "name": "Munich Light",
+    "spec_json": {
+      "ppg_range": [35.8, 36.8],
+      "ppg_typical": 36.3,
+      "lovibond_range": [9.1, 10.2],
+      "color_srm_range": [9.1, 10.2],
+      "extract_fgdb_min_pct": 79.0
+    },
+    "source_refs": [
+      {
+        "label": "BESTMALZ - BEST Munich Malt",
+        "url": "https://bestmalz.de/en/malts/best-munich-malt/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "malt",
+    "name": "Maris Otter Pale Ale",
+    "spec_json": {
+      "ppg_range": [36.8, 37.8],
+      "ppg_typical": 37.3,
+      "lovibond_range": [2.5, 3.6],
+      "color_srm_range": [2.5, 3.6],
+      "extract_fgdb_min_pct": 80.6
+    },
+    "source_refs": [
+      {
+        "label": "Crisp Malt - Maris Otter",
+        "url": "https://crispmalt.com/malts/maris-otter/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "malt",
+    "name": "Wheat Malt",
+    "spec_json": {
+      "ppg_range": [37.2, 38.2],
+      "ppg_typical": 37.7,
+      "lovibond_range": [1.5, 2.5],
+      "color_srm_range": [1.5, 2.5],
+      "extract_fgdb_min_pct": 81.5
+    },
+    "source_refs": [
+      {
+        "label": "BESTMALZ - BEST Wheat Malt",
+        "url": "https://bestmalz.de/en/malts/best-wheat-malt/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Citra",
+    "spec_json": {
+      "alpha_acid_range": [0.115, 0.155],
+      "alpha_acid_typical": 0.135
+    },
+    "source_refs": [
+      {
+        "label": "Hopsteiner - Citra",
+        "url": "https://shop.hopsteiner.com/shop/hops/hopsteiner-variety/citra/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Mosaic",
+    "spec_json": {
+      "alpha_acid_range": [0.095, 0.125],
+      "alpha_acid_typical": 0.11
+    },
+    "source_refs": [
+      {
+        "label": "Hopsteiner - Mosaic",
+        "url": "https://shop.hopsteiner.com/shop/hops/hopsteiner-variety/mosaic/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Simcoe",
+    "spec_json": {
+      "alpha_acid_range": [0.115, 0.15],
+      "alpha_acid_typical": 0.133
+    },
+    "source_refs": [
+      {
+        "label": "Hopsteiner - Simcoe",
+        "url": "https://shop.hopsteiner.com/shop/hops/hopsteiner-variety/simcoe/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Cascade",
+    "spec_json": {
+      "alpha_acid_range": [0.045, 0.07],
+      "alpha_acid_typical": 0.058
+    },
+    "source_refs": [
+      {
+        "label": "Hopsteiner - Cascade",
+        "url": "https://shop.hopsteiner.com/shop/hops/hopsteiner-variety/cascade/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Centennial",
+    "spec_json": {
+      "alpha_acid_range": [0.085, 0.115],
+      "alpha_acid_typical": 0.1
+    },
+    "source_refs": [
+      {
+        "label": "Hopsteiner - Centennial",
+        "url": "https://shop.hopsteiner.com/shop/hops/hopsteiner-variety/centennial/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Chinook",
+    "spec_json": {
+      "alpha_acid_range": [0.12, 0.14],
+      "alpha_acid_typical": 0.13
+    },
+    "source_refs": [
+      {
+        "label": "Hopsteiner - Chinook",
+        "url": "https://shop.hopsteiner.com/shop/hops/hopsteiner-variety/chinook/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Amarillo",
+    "spec_json": {
+      "alpha_acid_range": [0.08, 0.11],
+      "alpha_acid_typical": 0.095
+    },
+    "source_refs": [
+      {
+        "label": "Hopsteiner - Amarillo",
+        "url": "https://shop.hopsteiner.com/shop/hops/hopsteiner-variety/amarillo/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Saaz",
+    "spec_json": {
+      "alpha_acid_range": [0.03, 0.05],
+      "alpha_acid_typical": 0.04
+    },
+    "source_refs": [
+      {
+        "label": "BarthHaas - Saazer",
+        "url": "https://www.barthhaas.com/hops-and-products/hops/saazer",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Hallertau Mittelfrüh",
+    "spec_json": {
+      "alpha_acid_range": [0.03, 0.055],
+      "alpha_acid_typical": 0.043
+    },
+    "source_refs": [
+      {
+        "label": "BarthHaas - Hallertauer Mittelfrueh",
+        "url": "https://www.barthhaas.com/hops-and-products/hops/hallertauer-mittelfrueh",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "Tettnang",
+    "spec_json": {
+      "alpha_acid_range": [0.03, 0.06],
+      "alpha_acid_typical": 0.045
+    },
+    "source_refs": [
+      {
+        "label": "BarthHaas - Tettnanger",
+        "url": "https://www.barthhaas.com/hops-and-products/hops/tettnanger",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "hop",
+    "name": "East Kent Goldings",
+    "spec_json": {
+      "alpha_acid_range": [0.04, 0.065],
+      "alpha_acid_typical": 0.053
+    },
+    "source_refs": [
+      {
+        "label": "BarthHaas - Golding",
+        "url": "https://www.barthhaas.com/hops-and-products/hops/golding",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "yeast",
+    "name": "Chico / US-05 Family",
+    "spec_json": {
+      "attenuation_range": [0.78, 0.82],
+      "attenuation_mid": 0.8,
+      "temp_range_c": [18, 26],
+      "temp_c_typical": 21,
+      "flocculation": "medium"
+    },
+    "source_refs": [
+      {
+        "label": "Fermentis - SafAle US-05",
+        "url": "https://fermentis.com/en/product/safale-us-05/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "yeast",
+    "name": "London ESB (WLP002/WY1968)",
+    "spec_json": {
+      "attenuation_range": [0.67, 0.71],
+      "attenuation_mid": 0.69,
+      "temp_range_c": [18, 22],
+      "temp_c_typical": 20,
+      "flocculation": "high"
+    },
+    "source_refs": [
+      {
+        "label": "Wyeast 1968 London ESB",
+        "url": "https://wyeastlab.com/product/london-esb-ale/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "yeast",
+    "name": "S-04 English Ale",
+    "spec_json": {
+      "attenuation_range": [0.74, 0.82],
+      "attenuation_mid": 0.78,
+      "temp_range_c": [18, 26],
+      "temp_c_typical": 21,
+      "flocculation": "high"
+    },
+    "source_refs": [
+      {
+        "label": "Fermentis - SafAle S-04",
+        "url": "https://fermentis.com/en/product/safale-s-04/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "yeast",
+    "name": "Weizen (WY3068/WLP300)",
+    "spec_json": {
+      "attenuation_range": [0.73, 0.77],
+      "attenuation_mid": 0.75,
+      "temp_range_c": [17, 24],
+      "temp_c_typical": 20,
+      "flocculation": "low"
+    },
+    "source_refs": [
+      {
+        "label": "Wyeast 3068 Weihenstephan Weizen",
+        "url": "https://wyeastlab.com/product/weihenstephan-weizen/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "yeast",
+    "name": "W-34/70 Lager",
+    "spec_json": {
+      "attenuation_range": [0.8, 0.84],
+      "attenuation_mid": 0.82,
+      "temp_range_c": [9, 22],
+      "temp_c_typical": 13,
+      "flocculation": "medium"
+    },
+    "source_refs": [
+      {
+        "label": "Fermentis - SafLager W-34/70",
+        "url": "https://fermentis.com/en/product/saflager-w-34-70/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "yeast",
+    "name": "Bavarian Lager (WY2206)",
+    "spec_json": {
+      "attenuation_range": [0.73, 0.77],
+      "attenuation_mid": 0.75,
+      "temp_range_c": [8, 14],
+      "temp_c_typical": 11,
+      "flocculation": "medium"
+    },
+    "source_refs": [
+      {
+        "label": "Wyeast 2206 Bavarian Lager",
+        "url": "https://wyeastlab.com/product/bavarian-lager/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "yeast",
+    "name": "Kveik Voss",
+    "spec_json": {
+      "attenuation_range": [0.75, 0.82],
+      "attenuation_mid": 0.785,
+      "temp_range_c": [25, 40],
+      "temp_c_typical": 32,
+      "flocculation": "high"
+    },
+    "source_refs": [
+      {
+        "label": "Lallemand - LalBrew Voss",
+        "url": "https://www.lallemandbrewing.com/en/global/products/lalbrew-voss-kveik-ale-yeast/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  },
+  {
+    "type": "yeast",
+    "name": "Nottingham Ale",
+    "spec_json": {
+      "attenuation_range": [0.77, 0.85],
+      "attenuation_mid": 0.81,
+      "temp_range_c": [10, 22],
+      "temp_c_typical": 18,
+      "flocculation": "high"
+    },
+    "source_refs": [
+      {
+        "label": "Lallemand - Nottingham Ale Yeast",
+        "url": "https://www.lallemandbrewing.com/en/united-states/products/nottingham-ale-yeast/",
+        "captured_at": "2026-02-21"
+      }
+    ]
+  }
+]

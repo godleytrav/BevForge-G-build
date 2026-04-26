@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ops-driver-auth",
+  "updatedAt": "2026-04-07T17:48:28.839Z",
+  "drivers": [
+    {
+      "id": "driver-demo",
+      "name": "Demo Driver",
+      "role": "driver",
+      "active": true,
+      "createdAt": "2026-03-20T15:45:16.743Z",
+      "updatedAt": "2026-03-20T15:45:16.743Z"
+    },
+    {
+      "id": "driver-trk-01",
+      "name": "Alex Rivera",
+      "role": "driver",
+      "active": true,
+      "createdAt": "2026-03-20T15:45:16.743Z",
+      "updatedAt": "2026-04-07T03:57:11.729Z"
+    },
+    {
+      "id": "driver-travis-owner",
+      "name": "Travis Partlow",
+      "role": "admin",
+      "active": true,
+      "createdAt": "2026-04-07T03:59:42.715Z",
+      "updatedAt": "2026-04-07T15:55:44.185Z"
+    }
+  ],
+  "pairingCodes": [],
+  "trustedDevices": [
+    {
+      "id": "device-50c3174946c34ee4",
+      "driverId": "driver-trk-01",
+      "label": "iPhone Driver",
+      "platform": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "registeredAt": "2026-03-20T15:46:18.680Z",
+      "lastSeenAt": "2026-03-20T15:52:47.136Z"
+    },
+    {
+      "id": "device-c89ba3f3cbac089a",
+      "driverId": "driver-trk-01",
+      "label": "iPhone Driver",
+      "platform": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "registeredAt": "2026-03-20T16:12:36.872Z",
+      "lastSeenAt": "2026-03-20T16:18:32.323Z"
+    },
+    {
+      "id": "device-a000d79154281965",
+      "driverId": "driver-travis-owner",
+      "label": "Travis iPhone",
+      "registeredAt": "2026-04-07T03:59:42.715Z",
+      "lastSeenAt": "2026-04-07T03:59:42.715Z"
+    },
+    {
+      "id": "device-c3622c9fba2ef75f",
+      "driverId": "driver-travis-owner",
+      "label": "iPhone Driver",
+      "platform": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "registeredAt": "2026-04-07T04:00:20.078Z",
+      "lastSeenAt": "2026-04-07T05:34:09.443Z"
+    },
+    {
+      "id": "device-ed2f907db0e3e22a",
+      "driverId": "driver-travis-owner",
+      "label": "iPhone Driver",
+      "platform": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "registeredAt": "2026-04-07T05:34:13.266Z",
+      "lastSeenAt": "2026-04-07T05:37:24.852Z"
+    },
+    {
+      "id": "device-c2ba45c46b7a2726",
+      "driverId": "driver-travis-owner",
+      "label": "iPhone Driver",
+      "platform": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "registeredAt": "2026-04-07T05:40:02.511Z",
+      "lastSeenAt": "2026-04-07T15:54:17.959Z"
+    },
+    {
+      "id": "device-39c7cc3c7757abcf",
+      "driverId": "driver-travis-owner",
+      "label": "test",
+      "registeredAt": "2026-04-07T06:14:36.725Z",
+      "lastSeenAt": "2026-04-07T06:14:36.725Z"
+    },
+    {
+      "id": "device-50f88363f9a58c56",
+      "driverId": "driver-travis-owner",
+      "label": "iPhone Driver",
+      "platform": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "registeredAt": "2026-04-07T15:49:03.175Z",
+      "lastSeenAt": "2026-04-07T17:48:28.839Z"
+    },
+    {
+      "id": "device-c59c969f4cbf9c6f",
+      "driverId": "driver-travis-owner",
+      "label": "iPhone Driver",
+      "platform": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+      "registeredAt": "2026-04-07T15:55:44.185Z",
+      "lastSeenAt": "2026-04-07T16:03:36.604Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "session-fac2a2c803b8c622",
+      "driverId": "driver-travis-owner",
+      "deviceId": "device-39c7cc3c7757abcf",
+      "tokenHash": "10512f9a8d84ae91a7ec9c63694522b500ea3b666f2dd468b2787a45148eb400",
+      "createdAt": "2026-04-07T06:14:36.725Z",
+      "expiresAt": "2026-04-07T18:14:36.729Z",
+      "lastSeenAt": "2026-04-07T06:14:36.725Z"
+    },
+    {
+      "id": "session-327d7327ea1b45e3",
+      "driverId": "driver-travis-owner",
+      "deviceId": "device-50f88363f9a58c56",
+      "tokenHash": "0013b1035cf18cc23d76ca98b28957a30418c68e8c12f0b66b04bfc3bb95430d",
+      "createdAt": "2026-04-07T15:49:03.175Z",
+      "expiresAt": "2026-04-08T03:49:03.179Z",
+      "lastSeenAt": "2026-04-07T17:48:28.839Z"
+    },
+    {
+      "id": "session-49f149a4fe668209",
+      "driverId": "driver-travis-owner",
+      "deviceId": "device-c59c969f4cbf9c6f",
+      "tokenHash": "f4f013cdd728560a083197dfa4eb0a2bab1c7f3ccdf5f4c593b5352b8f2206c4",
+      "createdAt": "2026-04-07T15:55:44.185Z",
+      "expiresAt": "2026-04-08T03:55:44.189Z",
+      "lastSeenAt": "2026-04-07T16:03:36.604Z"
+    }
+  ]
+}

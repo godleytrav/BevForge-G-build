@@ -1,0 +1,54 @@
+:root{
+  --brand-cyan:#19c6d1;--brand-lime:#a3e635;
+  --surface-0:#0b0e11;--surface-1:#12161b;--surface-2:#1c232b;
+  --text-primary:#e5e7eb;--text-muted:#9aa4b2;--text-inverse:#0b0e11;
+  --success:#22c55e;--warning:#f59e0b;--danger:#ef4444;--info:#38bdf8;
+  --radius:1rem;--radius-sm:.5rem;--shadow-1:0 6px 16px rgba(0,0,0,.25);
+  --shadow-2:0 10px 30px rgba(0,0,0,.35);--gap:1rem;--gap-lg:1.5rem;--header-h:56px;
+}
+@media (prefers-color-scheme:light){
+  :root{--surface-0:#f7f9fb;--surface-1:#fff;--surface-2:#f1f5f9;
+  --text-primary:#0f172a;--text-muted:#475569;--text-inverse:#fff;
+  --shadow-1:0 6px 16px rgba(2,6,23,.08);--shadow-2:0 10px 30px rgba(2,6,23,.12);}
+}
+*{box-sizing:border-box}html,body{height:100%}
+body{margin:0;background:
+ radial-gradient(1200px 800px at 10% -10%, rgba(25,198,209,.08), transparent 60%),
+ radial-gradient(1200px 800px at 110% 10%, rgba(163,230,53,.06), transparent 60%),
+ var(--surface-0);color:var(--text-primary);
+ font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Inter,"Helvetica Neue",Arial}
+.bf-header{height:var(--header-h);display:flex;align-items:center;gap:var(--gap);padding:0 16px;
+ background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,0)),var(--surface-1);
+ border-bottom:1px solid rgba(255,255,255,.06);position:sticky;top:0;z-index:10}
+.bf-header .brand{display:flex;align-items:center;gap:.5rem;font-weight:700}
+.bf-header .brand img{height:24px;width:24px}
+.bf-appswitch{margin-left:auto;display:flex;gap:.25rem}
+.bf-appswitch a{display:inline-flex;align-items:center;justify-content:center;height:32px;padding:0 .75rem;border-radius:.75rem;
+ color:var(--text-primary);text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,.08)}
+.bf-appswitch a:hover{background:rgba(25,198,209,.08);border-color:rgba(25,198,209,.35)}
+.bf-appswitch a.active{background:linear-gradient(90deg,rgba(25,198,209,.2),rgba(163,230,53,.2))}
+.bf-container{max-width:1200px;margin:0 auto;padding:var(--gap-lg)}
+.bf-footer{padding:24px;color:var(--text-muted);display:flex;justify-content:space-between;align-items:center;gap:var(--gap);
+ border-top:1px solid rgba(255,255,255,.06);background:var(--surface-1);margin-top:48px;border-radius:var(--radius) var(--radius) 0 0}
+.bf-card{background:var(--surface-1);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);box-shadow:var(--shadow-1)}
+.bf-card-header{padding:16px 18px;border-bottom:1px solid rgba(255,255,255,.06);font-weight:700}
+.bf-card-body{padding:18px}
+.bf-btn{display:inline-flex;align-items:center;gap:.5rem;height:40px;padding:0 14px;border-radius:.75rem;font-weight:700;text-decoration:none;cursor:pointer;border:1px solid transparent}
+.bf-btn:disabled{opacity:.6;cursor:not-allowed}
+.bf-btn--primary{background:linear-gradient(90deg,var(--brand-cyan),var(--brand-lime));color:var(--text-inverse);box-shadow:var(--shadow-1)}
+.bf-btn--primary:hover{filter:brightness(1.05)}
+.bf-btn--ghost{background:transparent;border-color:rgba(255,255,255,.12);color:var(--text-primary)}
+.bf-btn--ghost:hover{background:rgba(255,255,255,.06)}
+.bf-input,.bf-select{width:100%;background:var(--surface-2);border:1px solid rgba(255,255,255,.1);
+ color:var(--text-primary);height:40px;border-radius:.75rem;padding:0 12px}
+.bf-input::placeholder{color:var(--text-muted)}
+.bf-badge{display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:999px;background:rgba(25,198,209,.15);color:var(--brand-cyan);font-weight:700;border:1px solid rgba(25,198,209,.35)}
+.bf-table{width:100%;border-collapse:collapse;overflow:hidden;border-radius:var(--radius)}
+.bf-table th,.bf-table td{padding:12px 14px;text-align:left;border-bottom:1px solid rgba(255,255,255,.06)}
+.bf-table thead th{background:var(--surface-2);color:var(--text-muted);font-weight:700}
+.bf-table tbody tr:hover{background:rgba(255,255,255,.03)}
+.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}
+.grid{display:grid}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+@media(max-width:900px){.grid-2{grid-template-columns:1fr}}
+.flex{display:flex}.items-center{align-items:center}.justify-between{justify-content:space-between}
+.gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}

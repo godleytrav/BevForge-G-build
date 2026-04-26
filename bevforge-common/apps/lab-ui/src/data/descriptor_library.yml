@@ -1,0 +1,467 @@
+defaults:
+  beverage: beer
+  batch_size_l: 20
+  efficiency_pct: 72
+  attenuation: 0.76
+  targets:
+    abv:
+      min: 4.8
+      max: 6.0
+    ibu:
+      min: 32
+      max: 50
+    srm:
+      min: 5
+      max: 8
+  proposal:
+    base_malt:
+      name: North American Pale Malt
+      percent: 78
+      ppg: 37
+      color_srm: 2.2
+      priority: 0
+    specialties: []
+    hop_families:
+      - key: citrus
+        label: Citrus Cascade
+        variety: Cascade
+        alpha_acid: 0.065
+    yeast_family:
+      key: american_clean
+      name: American Clean Ale
+      attenuation_shift: 0.0
+      temp_c: 19
+      duration_days: 7
+    mash_temp_c: 66
+    water_bias: Balanced profile
+categories:
+  tasting_notes:
+    label: Tasting Notes
+    groups:
+      - key: malt_core
+        label: Malt Core
+        exclusive: true
+        options:
+          - key: malt_pale_cracker
+            label: Pale cracker honey
+            biases:
+              targets:
+                abv:
+                  min: -0.2
+                  max: -0.1
+                srm:
+                  min: -2.0
+                  max: -1.5
+              mash_temp_c: -0.5
+              water_bias: Sulfate-forward
+            proposal:
+              base_malt:
+                name: North American Pale Malt
+                percent: 82
+                ppg: 37
+                color_srm: 2.0
+                priority: 10
+              specialties:
+                - key: honey_malt
+                  name: Honey Malt
+                  percent: 6
+                  cap: 8
+                  ppg: 35
+                  color_srm: 20
+          - key: malt_toasty_biscuit
+            label: Toasty biscuit crust
+            biases:
+              targets:
+                abv:
+                  min: 0.1
+                  max: 0.2
+                srm:
+                  min: 3.0
+                  max: 4.0
+            proposal:
+              base_malt:
+                name: Maris Otter Pale
+                percent: 76
+                ppg: 36
+                color_srm: 4.0
+                priority: 12
+              specialties:
+                - key: munich_light
+                  name: Munich Light Malt
+                  percent: 12
+                  cap: 14
+                  ppg: 35
+                  color_srm: 9
+          - key: malt_caramel_toffee
+            label: Rich caramel toffee
+            biases:
+              targets:
+                abv:
+                  min: 0.2
+                  max: 0.4
+                srm:
+                  min: 6.0
+                  max: 10.0
+            proposal:
+              base_malt:
+                name: Maris Otter Pale
+                percent: 72
+                ppg: 36
+                color_srm: 4.0
+                priority: 11
+              specialties:
+                - key: crystal_medium
+                  name: Crystal 60L
+                  percent: 12
+                  cap: 14
+                  ppg: 34
+                  color_srm: 60
+                - key: amber_cara
+                  name: CaraAmber
+                  percent: 6
+                  cap: 8
+                  ppg: 34
+                  color_srm: 30
+          - key: malt_roasty_cocoa
+            label: Cocoa roast warmth
+            biases:
+              targets:
+                abv:
+                  min: 0.3
+                  max: 0.5
+                srm:
+                  min: 12.0
+                  max: 18.0
+            proposal:
+              base_malt:
+                name: Munich Dark Malt
+                percent: 68
+                ppg: 35
+                color_srm: 8.0
+                priority: 13
+              specialties:
+                - key: chocolate_malt
+                  name: Chocolate Malt
+                  percent: 5
+                  cap: 7
+                  ppg: 33
+                  color_srm: 350
+                - key: roasted_barley
+                  name: Roasted Barley
+                  percent: 3
+                  cap: 5
+                  ppg: 30
+                  color_srm: 500
+      - key: malt_accent
+        label: Texture Accents
+        exclusive: false
+        options:
+          - key: accent_wheat_silk
+            label: Silky wheat lift
+            biases:
+              targets:
+                srm:
+                  min: 1.0
+                  max: 2.0
+              mash_temp_c: 0.3
+            proposal:
+              specialties:
+                - key: wheat_malt
+                  name: Wheat Malt
+                  percent: 8
+                  cap: 12
+                  ppg: 37
+                  color_srm: 3
+          - key: accent_oat_velvet
+            label: Oat velvet round
+            biases:
+              targets:
+                abv:
+                  min: 0.1
+                  max: 0.2
+              mash_temp_c: 0.8
+              water_bias: Chloride-forward
+            proposal:
+              specialties:
+                - key: flaked_oats
+                  name: Flaked Oats
+                  percent: 6
+                  cap: 10
+                  ppg: 33
+                  color_srm: 2
+          - key: accent_toast_layer
+            label: Toast layering
+            biases:
+              targets:
+                srm:
+                  min: 2.0
+                  max: 3.5
+            proposal:
+              specialties:
+                - key: victory_malt
+                  name: Victory Malt
+                  percent: 6
+                  cap: 8
+                  ppg: 34
+                  color_srm: 28
+  aroma_profile:
+    label: Aroma Profile
+    groups:
+      - key: hop_family
+        label: Hop Families
+        exclusive: false
+        options:
+          - key: hop_citrus_pith
+            label: Citrus zest and pith
+            biases:
+              targets:
+                ibu:
+                  min: 4.0
+                  max: 6.0
+            proposal:
+              hop_family:
+                key: citrus
+                label: Citrus Brights
+                variety: Citra
+                alpha_acid: 0.12
+          - key: hop_tropical_cascade
+            label: Tropical cascade
+            biases:
+              targets:
+                ibu:
+                  min: 3.0
+                  max: 5.0
+            proposal:
+              hop_family:
+                key: tropical
+                label: Tropical Mosaic
+                variety: Mosaic
+                alpha_acid: 0.11
+          - key: hop_stonefruit
+            label: Stone fruit nectar
+            biases:
+              targets:
+                ibu:
+                  min: 2.0
+                  max: 3.0
+            proposal:
+              hop_family:
+                key: stonefruit
+                label: Peach-Apricot
+                variety: Amarillo
+                alpha_acid: 0.09
+          - key: hop_resin_pine
+            label: Resin pine snap
+            biases:
+              targets:
+                ibu:
+                  min: 6.0
+                  max: 8.0
+                srm:
+                  min: 1.0
+                  max: 1.5
+            proposal:
+              hop_family:
+                key: resin
+                label: Resinous Evergreen
+                variety: Simcoe
+                alpha_acid: 0.13
+          - key: hop_noble_spice
+            label: Noble spice floral
+            biases:
+              targets:
+                ibu:
+                  min: -4.0
+                  max: -3.0
+                abv:
+                  min: -0.1
+                  max: -0.1
+            proposal:
+              hop_family:
+                key: noble
+                label: Noble Herbal
+                variety: Hallertau Mittelfrüh
+                alpha_acid: 0.045
+      - key: fermentation
+        label: Fermentation Character
+        exclusive: true
+        options:
+          - key: ferm_clean_neutral
+            label: Clean neutral ale
+            biases:
+              attenuation: 0.02
+              water_bias: Sulfate-forward
+            proposal:
+              yeast_family:
+                key: american_clean
+                name: American Clean Ale
+                attenuation_shift: 0.02
+                temp_c: 19
+                duration_days: 7
+          - key: ferm_fruity_esters
+            label: Fruity English esters
+            biases:
+              attenuation: -0.02
+            proposal:
+              yeast_family:
+                key: english_esters
+                name: English Fruity Ale
+                attenuation_shift: -0.02
+                temp_c: 20
+                duration_days: 10
+          - key: ferm_banana_clove
+            label: Banana clove weizen
+            biases:
+              attenuation: -0.04
+              targets:
+                abv:
+                  min: 0.1
+                  max: 0.2
+                ibu:
+                  min: -3.0
+                  max: -2.0
+            proposal:
+              yeast_family:
+                key: bavarian_weizen
+                name: Bavarian Weizen
+                attenuation_shift: -0.04
+                temp_c: 21
+                duration_days: 8
+            excludes:
+              - key: ferm_clean_neutral
+                reason: Phenolic yeast conflicts with neutral profile.
+              - key: ferm_lager_sulfur
+                reason: Weizen yeast conflicts with lager sulfur cues.
+          - key: ferm_lager_sulfur
+            label: Lager sulfur snap
+            biases:
+              attenuation: 0.04
+              targets:
+                abv:
+                  min: -0.2
+                  max: -0.1
+                ibu:
+                  min: -2.0
+                  max: -2.0
+                srm:
+                  min: -1.0
+                  max: -0.5
+              water_bias: Sulfate-forward
+            proposal:
+              yeast_family:
+                key: german_lager
+                name: German Lager
+                attenuation_shift: 0.04
+                temp_c: 11
+                duration_days: 14
+            excludes:
+              - key: ferm_banana_clove
+                reason: Lager fermentation conflicts with banana clove esters.
+  mouthfeel:
+    label: Mouthfeel
+    groups:
+      - key: body
+        label: Body
+        exclusive: true
+        options:
+          - key: body_light
+            label: Light spritzy
+            biases:
+              targets:
+                abv:
+                  min: -0.2
+                  max: -0.2
+              mash_temp_c: -1.0
+              attenuation: 0.01
+              water_bias: Sulfate-forward
+          - key: body_medium
+            label: Mid-palate cushion
+            biases:
+              water_bias: Balanced profile
+          - key: body_full
+            label: Plush full
+            biases:
+              targets:
+                abv:
+                  min: 0.3
+                  max: 0.4
+                srm:
+                  min: 2.0
+                  max: 3.0
+              mash_temp_c: 1.2
+              attenuation: -0.03
+              water_bias: Chloride-forward
+      - key: carbonation
+        label: Carbonation
+        exclusive: true
+        options:
+          - key: carb_sparkling
+            label: Sparkling high
+            biases:
+              targets:
+                abv:
+                  min: -0.1
+                  max: -0.1
+              attenuation: 0.01
+          - key: carb_classic
+            label: Classic draft
+            biases: {}
+          - key: carb_soft
+            label: Soft gentle
+            biases:
+              mash_temp_c: 0.6
+              attenuation: -0.01
+      - key: finish
+        label: Finish
+        exclusive: false
+        options:
+          - key: finish_crisp_dry
+            label: Crisp dry snap
+            biases:
+              targets:
+                abv:
+                  min: -0.1
+                  max: -0.1
+              mash_temp_c: -1.0
+              attenuation: 0.02
+              water_bias: Sulfate-forward
+            excludes:
+              - key: body_full
+                reason: Crisp-dry pairs with light to medium body.
+              - key: finish_round_sweet
+                reason: Crisp finish conflicts with round sweet finish.
+          - key: finish_balanced
+            label: Balanced fade
+            biases:
+              water_bias: Balanced profile
+          - key: finish_round_sweet
+            label: Round sweet linger
+            biases:
+              targets:
+                abv:
+                  min: 0.2
+                  max: 0.2
+                srm:
+                  min: 2.0
+                  max: 2.5
+              mash_temp_c: 1.0
+              attenuation: -0.03
+              water_bias: Chloride-forward
+            excludes:
+              - key: finish_crisp_dry
+                reason: Round finish conflicts with crisp dryness.
+              - key: body_light
+                reason: Round sweet finish conflicts with light body lift.
+conflicts:
+  - keys:
+      - ferm_clean_neutral
+      - ferm_banana_clove
+    reason: Clean neutral fermentation suppresses banana clove phenolics.
+  - keys:
+      - ferm_clean_neutral
+      - ferm_lager_sulfur
+    reason: Clean ale yeast conflicts with lager sulfur expression.
+  - keys:
+      - accent_oat_velvet
+      - finish_crisp_dry
+    reason: Oat velvet rounds the body beyond a crisp finish.

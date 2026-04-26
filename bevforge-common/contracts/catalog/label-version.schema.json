@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/catalog/label-version.schema.json",
+  "title": "BevForge Label Version",
+  "description": "Immutable label/compliance version referenced by packaged lots and sellable product views.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "labelVersionId",
+    "productId",
+    "revision",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "labelVersionId": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "string"
+    },
+    "assetId": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "sourceSuite": {
+      "type": "string",
+      "enum": ["os", "ops", "lab", "flow", "connect"]
+    },
+    "colaReference": {
+      "type": "string"
+    },
+    "formulaReference": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}
+

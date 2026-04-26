@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/flow/tap.schema.json",
+  "title": "BevForge FLOW Tap",
+  "description": "Tap endpoint definition and live serving status.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "siteId",
+    "name",
+    "status",
+    "meterType",
+    "createdAt",
+    "updatedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "displayOrder": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "status": {
+      "type": "string",
+      "enum": ["online", "offline", "maintenance", "disabled"]
+    },
+    "meterType": {
+      "type": "string",
+      "enum": ["hall_effect", "pulse_meter", "none", "other"]
+    },
+    "temperatureProbeId": {
+      "type": "string"
+    },
+    "lineTempC": {
+      "type": "number"
+    },
+    "flowRateOzPerMin": {
+      "type": "number",
+      "minimum": 0
+    },
+    "notes": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

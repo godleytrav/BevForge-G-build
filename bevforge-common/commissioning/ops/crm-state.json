@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ops-crm-state",
+  "updatedAt": "2026-04-06T23:50:47.845Z",
+  "clients": [],
+  "leads": [],
+  "prospects": [],
+  "tasks": [],
+  "activities": [],
+  "visits": [],
+  "sampleOrders": []
+}

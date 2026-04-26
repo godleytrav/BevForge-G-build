@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/compliance/compliance-feed.schema.json",
+  "title": "BevForge Compliance Feed",
+  "description": "Portable JSON-on-disk feed of compliance events for OS->OPS handoff.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "sourceSuite",
+    "siteId",
+    "generatedAt",
+    "range",
+    "events"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "id": {
+      "type": "string"
+    },
+    "sourceSuite": {
+      "type": "string",
+      "enum": ["os"]
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "range": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "to"],
+      "properties": {
+        "from": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "to": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "cursor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sort": {
+          "type": "string",
+          "enum": ["occurredAt_asc__id_asc"]
+        },
+        "afterOccurredAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "afterId": {
+          "type": "string"
+        },
+        "nextAfter": {
+          "type": "string",
+          "description": "Opaque cursor token for next page request."
+        },
+        "lastEventId": {
+          "type": "string"
+        },
+        "hasMore": {
+          "type": "boolean"
+        }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "totalEvents": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "byType": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "./compliance-event.schema.json"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "sourceSuite": {
+                "const": "os"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "digestAlgo": {
+          "type": "string",
+          "enum": ["sha256"]
+        },
+        "digest": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

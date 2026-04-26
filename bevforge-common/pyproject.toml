@@ -1,0 +1,10 @@
+[project]
+name = "bevforge-common"
+version = "0.1.0"
+description = "Shared building blocks for BevForge suites"
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2.7", "sqlmodel>=0.0.21", "passlib[bcrypt]>=1.7", "pyjwt>=2.8"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

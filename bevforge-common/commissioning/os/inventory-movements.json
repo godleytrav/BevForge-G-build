@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "inventory-movements",
+  "updatedAt": "2026-04-22T14:21:05.117Z",
+  "movements": [
+    {
+      "id": "ae1197c4-4af8-4ac6-9dff-dc47e1a4c810",
+      "itemId": "c16f5693-78e2-4ca2-9a10-392b3d22d53c",
+      "siteId": "main",
+      "type": "produce",
+      "quantity": 4,
+      "unit": "units",
+      "reason": "Packaging run d2ec2a8c-f7b3-4e3f-86f4-ba53d49b1023 completed.",
+      "reasonCode": "packaging_complete",
+      "batchId": "dfd0bdcb-c927-4470-818b-7de07de92eee",
+      "packageLotId": "a31eb203-7491-448b-bc4f-caedee101185",
+      "metadata": {
+        "packageLotCode": "GC-CORE-JUST-ANOUTHER-TESTY-KEG15-B01-P01",
+        "outputSkuId": "GC-CORE-JUST-ANOUTHER-TESTY-KEG15",
+        "rejectedUnits": 0,
+        "lossQty": 0,
+        "sourceQtyUsed": 2,
+        "complianceSnapshot": {
+          "beverageClass": "cider",
+          "brandName": "GC-CORE-JUST-ANOUTHER-TESTY",
+          "productName": "Just Anouther Testy Cider",
+          "classDesignation": "Cider",
+          "taxClass": "other",
+          "abvPct": 7.0875,
+          "netContentsStatement": "15.5 gal keg",
+          "healthWarningIncluded": true,
+          "interstateSale": false,
+          "formulaRequired": false,
+          "fdaLabelReviewComplete": false,
+          "ingredientStatementReviewed": false,
+          "allergenReviewComplete": false,
+          "hardCiderQualified": false
+        }
+      },
+      "createdAt": "2026-04-22T14:21:05.117Z"
+    }
+  ]
+}

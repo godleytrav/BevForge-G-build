@@ -1,0 +1,208 @@
+[
+  {
+    "id": "9461c2f9-2233-4f4d-a347-6b795ed05a4a",
+    "catalog_id": "9834b00a-16b3-4165-8abd-bec3b61d4614",
+    "lot_code": "US -8069",
+    "crop_year": 2024,
+    "qty": 50,
+    "unit": "lb",
+    "overrides_json": {},
+    "cost_per_unit": 3.31,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "861d78ff-6729-4280-a644-232b82b076b3",
+    "catalog_id": "af2b5341-a340-400d-95d3-4d0cc4ff5753",
+    "lot_code": "PIL-3649",
+    "crop_year": 2024,
+    "qty": 40,
+    "unit": "lb",
+    "overrides_json": {},
+    "cost_per_unit": 4.37,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "5624c0e3-7021-4e75-a61c-950fea8122f1",
+    "catalog_id": "4bdc3ddc-e630-46fd-aa2f-7c88f2069c97",
+    "lot_code": "CRY-5385",
+    "crop_year": 2024,
+    "qty": 10,
+    "unit": "lb",
+    "overrides_json": {},
+    "cost_per_unit": 10.11,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "c724f53b-182e-4af3-a467-b8efeca72c11",
+    "catalog_id": "2cfe9b79-9e50-4d6b-bcf5-20b25dd99d00",
+    "lot_code": "FLA-6745",
+    "crop_year": 2024,
+    "qty": 15,
+    "unit": "lb",
+    "overrides_json": {},
+    "cost_per_unit": 7.64,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "a9be0cb4-7fad-4d03-89fe-ebeb5b1575fd",
+    "catalog_id": "ad5a09b7-e6af-4b0a-8581-97863fa95746",
+    "lot_code": "MUN-3983",
+    "crop_year": 2024,
+    "qty": 20,
+    "unit": "lb",
+    "overrides_json": {},
+    "cost_per_unit": 10.69,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "e22dbf6f-265b-4bac-8a6c-652bb6aedd77",
+    "catalog_id": "da645404-c558-4687-b756-09d86471f6b9",
+    "lot_code": "CIT-8051",
+    "crop_year": 2024,
+    "qty": 2.0,
+    "unit": "lb",
+    "overrides_json": {
+      "alpha_acid_actual": 0.127
+    },
+    "cost_per_unit": 4.5,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "f9b7e761-cbb4-49bb-b1b2-6bf40b280862",
+    "catalog_id": "20a5b6ce-38d8-463d-91d9-0b143a30a969",
+    "lot_code": "CAS-7222",
+    "crop_year": 2024,
+    "qty": 1.5,
+    "unit": "lb",
+    "overrides_json": {
+      "alpha_acid_actual": 0.059
+    },
+    "cost_per_unit": 6.02,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "6cc415b7-70a9-4e88-90b4-c89cab5a5832",
+    "catalog_id": "dbd316b4-ce86-41de-a64d-5153eafaf278",
+    "lot_code": "CEN-5790",
+    "crop_year": 2024,
+    "qty": 1.0,
+    "unit": "lb",
+    "overrides_json": {
+      "alpha_acid_actual": 0.102
+    },
+    "cost_per_unit": 7.9,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "bc78eee1-6a12-46bd-a021-2d87d50249db",
+    "catalog_id": "87acfff7-e33a-4bc3-ae63-2d522dead70a",
+    "lot_code": "NEL-3010",
+    "crop_year": 2024,
+    "qty": 0.8,
+    "unit": "lb",
+    "overrides_json": {
+      "alpha_acid_actual": 0.119
+    },
+    "cost_per_unit": 9.13,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "4bdcc8a6-6779-4250-adb2-4b4fa9ca8a6c",
+    "catalog_id": "f2bada9e-8cb8-4ce1-9990-b3a6b6aea7fc",
+    "lot_code": "SAA-7007",
+    "crop_year": 2024,
+    "qty": 1.0,
+    "unit": "lb",
+    "overrides_json": {
+      "alpha_acid_actual": 0.036
+    },
+    "cost_per_unit": 5.17,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "03e1f432-1607-4c19-a04f-e36c3ca1a3b9",
+    "catalog_id": "1150af83-04e2-4b6a-b84b-3ad72bbc958e",
+    "lot_code": "CHI-9899",
+    "crop_year": 2024,
+    "qty": 10,
+    "unit": "packs",
+    "overrides_json": {},
+    "cost_per_unit": 3.55,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "a99bd743-6e89-4a91-9b7c-87758980dc1f",
+    "catalog_id": "d85dec2c-28ba-4d94-b2a5-9d5e47ffc18c",
+    "lot_code": "LON-2675",
+    "crop_year": 2024,
+    "qty": 6,
+    "unit": "packs",
+    "overrides_json": {},
+    "cost_per_unit": 4.54,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "21426af0-373c-426b-9f98-b1046076a716",
+    "catalog_id": "a306c156-caf7-4735-8be8-18f86ebdec8d",
+    "lot_code": "WEI-1515",
+    "crop_year": 2024,
+    "qty": 4,
+    "unit": "packs",
+    "overrides_json": {},
+    "cost_per_unit": 11.47,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  },
+  {
+    "id": "990082cd-fbcf-4169-8f76-78652906a7cf",
+    "catalog_id": "e4c58ff6-3988-40b7-8a0c-1e8e07317a74",
+    "lot_code": "W-3-8142",
+    "crop_year": 2024,
+    "qty": 12,
+    "unit": "packs",
+    "overrides_json": {},
+    "cost_per_unit": 9.18,
+    "received_at": "2025-10-08",
+    "expires_at": null,
+    "qa_state": "approved",
+    "location": "Main Cold Room"
+  }
+]

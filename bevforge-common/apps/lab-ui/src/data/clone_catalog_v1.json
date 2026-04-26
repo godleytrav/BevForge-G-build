@@ -1,0 +1,1723 @@
+[
+  {
+    "id": "sierra_nevada_pale_ale",
+    "name": "Sierra Nevada Pale Ale",
+    "brewery": "Sierra Nevada Brewing Co.",
+    "ba_class": "American Pale Ale",
+    "style_key": "american_pale_ale",
+    "targets": {
+      "abv": {
+        "min": 5.4,
+        "max": 5.6
+      },
+      "ibu": {
+        "min": 35,
+        "max": 40
+      },
+      "srm": {
+        "min": 6,
+        "max": 8
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Chico / US-05"
+    },
+    "hop_families": [
+      {
+        "key": "hop_citrus_pith",
+        "label": "Cascade Citrus"
+      },
+      {
+        "key": "hop_resin_pine",
+        "label": "Centennial Pine"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_citrus_pith",
+        "hop_resin_pine",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "bells_two_hearted",
+    "name": "Bell's Two Hearted Ale",
+    "brewery": "Bell's Brewery",
+    "ba_class": "American IPA",
+    "style_key": "american_ipa",
+    "targets": {
+      "abv": {
+        "min": 6.8,
+        "max": 7.0
+      },
+      "ibu": {
+        "min": 55,
+        "max": 60
+      },
+      "srm": {
+        "min": 7,
+        "max": 8
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Chico / US-05"
+    },
+    "hop_families": [
+      {
+        "key": "hop_citrus_pith",
+        "label": "Centennial Citrus"
+      },
+      {
+        "key": "hop_resin_pine",
+        "label": "Pine Resin"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_citrus_pith",
+        "hop_resin_pine",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "founders_all_day",
+    "name": "Founders All Day IPA",
+    "brewery": "Founders Brewing Co.",
+    "ba_class": "Session IPA",
+    "style_key": "session_ipa",
+    "targets": {
+      "abv": {
+        "min": 4.5,
+        "max": 4.7
+      },
+      "ibu": {
+        "min": 42,
+        "max": 45
+      },
+      "srm": {
+        "min": 6,
+        "max": 7
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Chico / US-05"
+    },
+    "hop_families": [
+      {
+        "key": "hop_citrus_pith",
+        "label": "Citrus"
+      },
+      {
+        "key": "hop_resin_pine",
+        "label": "Resin"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_citrus_pith",
+        "hop_resin_pine",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_light",
+        "carb_classic",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "stone_ipa",
+    "name": "Stone IPA",
+    "brewery": "Stone Brewing",
+    "ba_class": "American IPA",
+    "style_key": "american_ipa",
+    "targets": {
+      "abv": {
+        "min": 6.9,
+        "max": 7.1
+      },
+      "ibu": {
+        "min": 70,
+        "max": 75
+      },
+      "srm": {
+        "min": 8,
+        "max": 9
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Chico / US-05"
+    },
+    "hop_families": [
+      {
+        "key": "hop_resin_pine",
+        "label": "Pine Resin"
+      },
+      {
+        "key": "hop_citrus_pith",
+        "label": "Citrus"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_resin_pine",
+        "hop_citrus_pith",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "lagunitas_ipa",
+    "name": "Lagunitas IPA",
+    "brewery": "Lagunitas Brewing Company",
+    "ba_class": "American IPA",
+    "style_key": "american_ipa",
+    "targets": {
+      "abv": {
+        "min": 6.1,
+        "max": 6.3
+      },
+      "ibu": {
+        "min": 50,
+        "max": 55
+      },
+      "srm": {
+        "min": 7,
+        "max": 9
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Chico / US-05"
+    },
+    "hop_families": [
+      {
+        "key": "hop_citrus_pith",
+        "label": "Citrus"
+      },
+      {
+        "key": "hop_stonefruit",
+        "label": "Stone Fruit"
+      },
+      {
+        "key": "hop_resin_pine",
+        "label": "Pine"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_citrus_pith",
+        "hop_stonefruit",
+        "hop_resin_pine",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "firestone_union_jack",
+    "name": "Firestone Walker Union Jack",
+    "brewery": "Firestone Walker Brewing Co.",
+    "ba_class": "American IPA",
+    "style_key": "american_ipa",
+    "targets": {
+      "abv": {
+        "min": 7.0,
+        "max": 7.2
+      },
+      "ibu": {
+        "min": 65,
+        "max": 70
+      },
+      "srm": {
+        "min": 8,
+        "max": 9
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Chico / US-05"
+    },
+    "hop_families": [
+      {
+        "key": "hop_citrus_pith",
+        "label": "Citrus"
+      },
+      {
+        "key": "hop_stonefruit",
+        "label": "Stone Fruit"
+      },
+      {
+        "key": "hop_resin_pine",
+        "label": "Pine"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_citrus_pith",
+        "hop_stonefruit",
+        "hop_resin_pine",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "deschutes_fresh_squeezed",
+    "name": "Deschutes Fresh Squeezed IPA",
+    "brewery": "Deschutes Brewery",
+    "ba_class": "American IPA",
+    "style_key": "american_ipa",
+    "targets": {
+      "abv": {
+        "min": 6.2,
+        "max": 6.4
+      },
+      "ibu": {
+        "min": 60,
+        "max": 65
+      },
+      "srm": {
+        "min": 9,
+        "max": 11
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Chico / US-05"
+    },
+    "hop_families": [
+      {
+        "key": "hop_stonefruit",
+        "label": "Stone Fruit"
+      },
+      {
+        "key": "hop_tropical_cascade",
+        "label": "Tropical"
+      },
+      {
+        "key": "hop_citrus_pith",
+        "label": "Citrus"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_caramel_toffee",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_caramel_toffee",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_stonefruit",
+        "hop_tropical_cascade",
+        "hop_citrus_pith",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "russian_river_pliny_elder",
+    "name": "Russian River Pliny the Elder",
+    "brewery": "Russian River Brewing Company",
+    "ba_class": "Double IPA",
+    "style_key": "double_ipa",
+    "targets": {
+      "abv": {
+        "min": 8.0,
+        "max": 8.2
+      },
+      "ibu": {
+        "min": 80,
+        "max": 85
+      },
+      "srm": {
+        "min": 7,
+        "max": 8
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Chico / US-05"
+    },
+    "hop_families": [
+      {
+        "key": "hop_resin_pine",
+        "label": "Resin"
+      },
+      {
+        "key": "hop_citrus_pith",
+        "label": "Citrus"
+      },
+      {
+        "key": "hop_stonefruit",
+        "label": "Stone Fruit"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_resin_pine",
+        "hop_citrus_pith",
+        "hop_stonefruit",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "tree_house_julius",
+    "name": "Tree House Julius",
+    "brewery": "Tree House Brewing Company",
+    "ba_class": "New England IPA",
+    "style_key": "ne_ipa",
+    "targets": {
+      "abv": {
+        "min": 6.7,
+        "max": 6.9
+      },
+      "ibu": {
+        "min": 45,
+        "max": 50
+      },
+      "srm": {
+        "min": 5,
+        "max": 6
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "Juicy English Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_tropical_cascade",
+        "label": "Tropical"
+      },
+      {
+        "key": "hop_stonefruit",
+        "label": "Stone Fruit"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_oat_velvet",
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Chloride-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_oat_velvet",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_tropical_cascade",
+        "hop_stonefruit",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_full",
+        "carb_soft",
+        "finish_round_sweet"
+      ]
+    }
+  },
+  {
+    "id": "alchemist_heady_topper",
+    "name": "The Alchemist Heady Topper",
+    "brewery": "The Alchemist",
+    "ba_class": "New England IPA",
+    "style_key": "ne_ipa",
+    "targets": {
+      "abv": {
+        "min": 8.0,
+        "max": 8.2
+      },
+      "ibu": {
+        "min": 75,
+        "max": 80
+      },
+      "srm": {
+        "min": 6,
+        "max": 7
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "English Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_tropical_cascade",
+        "label": "Tropical"
+      },
+      {
+        "key": "hop_resin_pine",
+        "label": "Resin"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_oat_velvet"
+      ]
+    },
+    "water_bias": "Chloride-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_oat_velvet"
+      ],
+      "aroma_profile": [
+        "hop_tropical_cascade",
+        "hop_resin_pine",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_full",
+        "carb_soft",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "lawsons_sip_of_sunshine",
+    "name": "Lawson's Sip of Sunshine",
+    "brewery": "Lawson's Finest Liquids",
+    "ba_class": "Double IPA",
+    "style_key": "double_ipa",
+    "targets": {
+      "abv": {
+        "min": 8.0,
+        "max": 8.2
+      },
+      "ibu": {
+        "min": 65,
+        "max": 70
+      },
+      "srm": {
+        "min": 6,
+        "max": 7
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "English Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_tropical_cascade",
+        "label": "Tropical"
+      },
+      {
+        "key": "hop_stonefruit",
+        "label": "Stone Fruit"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_caramel_toffee",
+      "accents": [
+        "accent_oat_velvet"
+      ]
+    },
+    "water_bias": "Chloride-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_caramel_toffee",
+        "accent_oat_velvet"
+      ],
+      "aroma_profile": [
+        "hop_tropical_cascade",
+        "hop_stonefruit",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_full",
+        "carb_soft",
+        "finish_round_sweet"
+      ]
+    }
+  },
+  {
+    "id": "allagash_white",
+    "name": "Allagash White",
+    "brewery": "Allagash Brewing Company",
+    "ba_class": "Belgian-Style Witbier",
+    "style_key": "belgian_wit",
+    "targets": {
+      "abv": {
+        "min": 5.1,
+        "max": 5.3
+      },
+      "ibu": {
+        "min": 13,
+        "max": 17
+      },
+      "srm": {
+        "min": 4,
+        "max": 5
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "Belgian Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble Spice"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_sparkling",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "hoegaarden_wit",
+    "name": "Hoegaarden Witbier",
+    "brewery": "Brouwerij Hoegaarden",
+    "ba_class": "Belgian-Style Witbier",
+    "style_key": "belgian_wit",
+    "targets": {
+      "abv": {
+        "min": 4.9,
+        "max": 5.1
+      },
+      "ibu": {
+        "min": 12,
+        "max": 15
+      },
+      "srm": {
+        "min": 3,
+        "max": 4
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "Belgian Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble Spice"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_light",
+        "carb_sparkling",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "blue_moon_white",
+    "name": "Blue Moon Belgian White",
+    "brewery": "Blue Moon Brewing Company",
+    "ba_class": "Belgian-Style Witbier",
+    "style_key": "belgian_wit",
+    "targets": {
+      "abv": {
+        "min": 5.3,
+        "max": 5.5
+      },
+      "ibu": {
+        "min": 15,
+        "max": 18
+      },
+      "srm": {
+        "min": 5,
+        "max": 6
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "Belgian Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble Spice"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Chloride-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_soft",
+        "finish_round_sweet"
+      ]
+    }
+  },
+  {
+    "id": "saison_dupont",
+    "name": "Saison Dupont",
+    "brewery": "Brasserie Dupont",
+    "ba_class": "Saison/Farmhouse Ale",
+    "style_key": "belgian_saison",
+    "targets": {
+      "abv": {
+        "min": 6.5,
+        "max": 6.8
+      },
+      "ibu": {
+        "min": 30,
+        "max": 35
+      },
+      "srm": {
+        "min": 5,
+        "max": 6
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "Saison Yeast"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Peppery Noble"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_light",
+        "carb_sparkling",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "orval_trappist",
+    "name": "Orval Trappist Ale",
+    "brewery": "Brasserie d'Orval",
+    "ba_class": "Belgian Pale Ale",
+    "style_key": "belgian_pale",
+    "targets": {
+      "abv": {
+        "min": 6.7,
+        "max": 7.0
+      },
+      "ibu": {
+        "min": 32,
+        "max": 36
+      },
+      "srm": {
+        "min": 8,
+        "max": 9
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "Belgian Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble Spice"
+      },
+      {
+        "key": "hop_resin_pine",
+        "label": "Dry Hop"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_toasty_biscuit",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_toasty_biscuit",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "hop_resin_pine",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_sparkling",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "westmalle_tripel",
+    "name": "Westmalle Tripel",
+    "brewery": "Brouwerij der Trappisten van Westmalle",
+    "ba_class": "Belgian Tripel",
+    "style_key": "belgian_tripel",
+    "targets": {
+      "abv": {
+        "min": 9.3,
+        "max": 9.6
+      },
+      "ibu": {
+        "min": 34,
+        "max": 38
+      },
+      "srm": {
+        "min": 7,
+        "max": 8
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "Belgian Abbey"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble Spice"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_sparkling",
+        "finish_round_sweet"
+      ]
+    }
+  },
+  {
+    "id": "chimay_blue",
+    "name": "Chimay Grande R\u00e9serve (Blue)",
+    "brewery": "Bi\u00e8res de Chimay",
+    "ba_class": "Belgian Strong Dark Ale",
+    "style_key": "belgian_strong_dark",
+    "targets": {
+      "abv": {
+        "min": 9.0,
+        "max": 9.2
+      },
+      "ibu": {
+        "min": 28,
+        "max": 32
+      },
+      "srm": {
+        "min": 26,
+        "max": 28
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_fruity_esters",
+      "label": "Belgian Abbey"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble Spice"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_caramel_toffee",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_caramel_toffee",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_fruity_esters"
+      ],
+      "mouthfeel": [
+        "body_full",
+        "carb_classic",
+        "finish_round_sweet"
+      ]
+    }
+  },
+  {
+    "id": "guinness_draught",
+    "name": "Guinness Draught",
+    "brewery": "Guinness",
+    "ba_class": "Irish Stout",
+    "style_key": "irish_stout",
+    "targets": {
+      "abv": {
+        "min": 4.1,
+        "max": 4.3
+      },
+      "ibu": {
+        "min": 35,
+        "max": 40
+      },
+      "srm": {
+        "min": 35,
+        "max": 38
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Irish Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Earthy"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_roasty_cocoa",
+      "accents": [
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_roasty_cocoa",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_soft",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "founders_breakfast_stout",
+    "name": "Founders Breakfast Stout",
+    "brewery": "Founders Brewing Co.",
+    "ba_class": "Imperial Coffee Stout",
+    "style_key": "imperial_stout",
+    "targets": {
+      "abv": {
+        "min": 8.3,
+        "max": 8.5
+      },
+      "ibu": {
+        "min": 60,
+        "max": 65
+      },
+      "srm": {
+        "min": 45,
+        "max": 50
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "American Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_resin_pine",
+        "label": "Resin"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_roasty_cocoa",
+      "accents": [
+        "accent_oat_velvet",
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_roasty_cocoa",
+        "accent_oat_velvet",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_resin_pine",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_full",
+        "carb_soft",
+        "finish_round_sweet"
+      ]
+    }
+  },
+  {
+    "id": "great_lakes_edmund_fitzgerald",
+    "name": "Great Lakes Edmund Fitzgerald Porter",
+    "brewery": "Great Lakes Brewing Company",
+    "ba_class": "Robust Porter",
+    "style_key": "american_porter",
+    "targets": {
+      "abv": {
+        "min": 6.0,
+        "max": 6.2
+      },
+      "ibu": {
+        "min": 37,
+        "max": 42
+      },
+      "srm": {
+        "min": 30,
+        "max": 35
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "American Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_resin_pine",
+        "label": "Resin"
+      },
+      {
+        "key": "hop_noble_spice",
+        "label": "Earthy"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_roasty_cocoa",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_roasty_cocoa",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_resin_pine",
+        "hop_noble_spice",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "anchor_steam",
+    "name": "Anchor Steam Beer",
+    "brewery": "Anchor Brewing Company",
+    "ba_class": "California Common",
+    "style_key": "california_common",
+    "targets": {
+      "abv": {
+        "min": 4.8,
+        "max": 5.0
+      },
+      "ibu": {
+        "min": 37,
+        "max": 40
+      },
+      "srm": {
+        "min": 9,
+        "max": 10
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Steam Ale"
+    },
+    "hop_families": [
+      {
+        "key": "hop_resin_pine",
+        "label": "Northern Brewer"
+      },
+      {
+        "key": "hop_noble_spice",
+        "label": "Spice"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_toasty_biscuit",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_toasty_biscuit",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_resin_pine",
+        "hop_noble_spice",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "sierra_nevada_celebration",
+    "name": "Sierra Nevada Celebration Ale",
+    "brewery": "Sierra Nevada Brewing Co.",
+    "ba_class": "Fresh Hop IPA",
+    "style_key": "american_ipa",
+    "targets": {
+      "abv": {
+        "min": 6.7,
+        "max": 6.9
+      },
+      "ibu": {
+        "min": 65,
+        "max": 70
+      },
+      "srm": {
+        "min": 10,
+        "max": 12
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_clean_neutral",
+      "label": "Chico / US-05"
+    },
+    "hop_families": [
+      {
+        "key": "hop_resin_pine",
+        "label": "Pine"
+      },
+      {
+        "key": "hop_citrus_pith",
+        "label": "Citrus"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_toasty_biscuit",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Sulfate-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_toasty_biscuit",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_resin_pine",
+        "hop_citrus_pith",
+        "ferm_clean_neutral"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "samuel_adams_boston_lager",
+    "name": "Samuel Adams Boston Lager",
+    "brewery": "Boston Beer Company",
+    "ba_class": "Vienna Lager",
+    "style_key": "vienna_lager",
+    "targets": {
+      "abv": {
+        "min": 4.9,
+        "max": 5.1
+      },
+      "ibu": {
+        "min": 30,
+        "max": 34
+      },
+      "srm": {
+        "min": 10,
+        "max": 12
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_lager_sulfur",
+      "label": "German Lager"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_toasty_biscuit",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_toasty_biscuit",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_lager_sulfur"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "brooklyn_lager",
+    "name": "Brooklyn Lager",
+    "brewery": "Brooklyn Brewery",
+    "ba_class": "Amber Lager",
+    "style_key": "american_amber_lager",
+    "targets": {
+      "abv": {
+        "min": 5.1,
+        "max": 5.3
+      },
+      "ibu": {
+        "min": 30,
+        "max": 34
+      },
+      "srm": {
+        "min": 11,
+        "max": 13
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_lager_sulfur",
+      "label": "German Lager"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble"
+      },
+      {
+        "key": "hop_resin_pine",
+        "label": "Dry Hop"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_toasty_biscuit",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_toasty_biscuit",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "hop_resin_pine",
+        "ferm_lager_sulfur"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "pilsner_urquell",
+    "name": "Pilsner Urquell",
+    "brewery": "Plze\u0148sk\u00fd Prazdroj",
+    "ba_class": "Czech Premium Pale Lager",
+    "style_key": "czech_pilsner",
+    "targets": {
+      "abv": {
+        "min": 4.3,
+        "max": 4.5
+      },
+      "ibu": {
+        "min": 38,
+        "max": 42
+      },
+      "srm": {
+        "min": 4,
+        "max": 5
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_lager_sulfur",
+      "label": "Czech Lager"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Saaz"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": []
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_lager_sulfur"
+      ],
+      "mouthfeel": [
+        "body_light",
+        "carb_sparkling",
+        "finish_crisp_dry"
+      ]
+    }
+  },
+  {
+    "id": "weihenstephaner_hefe",
+    "name": "Weihenstephaner Hefeweissbier",
+    "brewery": "Bayerische Staatsbrauerei Weihenstephan",
+    "ba_class": "German Hefeweizen",
+    "style_key": "hefeweizen",
+    "targets": {
+      "abv": {
+        "min": 5.3,
+        "max": 5.5
+      },
+      "ibu": {
+        "min": 12,
+        "max": 15
+      },
+      "srm": {
+        "min": 4,
+        "max": 5
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_banana_clove",
+      "label": "Weizen"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Spice"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_banana_clove"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_sparkling",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "paulaner_oktoberfest",
+    "name": "Paulaner Oktoberfest M\u00e4rzen",
+    "brewery": "Paulaner Brauerei",
+    "ba_class": "M\u00e4rzen",
+    "style_key": "marzen",
+    "targets": {
+      "abv": {
+        "min": 5.8,
+        "max": 6.0
+      },
+      "ibu": {
+        "min": 22,
+        "max": 25
+      },
+      "srm": {
+        "min": 11,
+        "max": 13
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_lager_sulfur",
+      "label": "German Lager"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_toasty_biscuit",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_toasty_biscuit",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_lager_sulfur"
+      ],
+      "mouthfeel": [
+        "body_medium",
+        "carb_classic",
+        "finish_balanced"
+      ]
+    }
+  },
+  {
+    "id": "ayinger_celebrator",
+    "name": "Ayinger Celebrator Doppelbock",
+    "brewery": "Ayinger Privatbrauerei",
+    "ba_class": "Doppelbock",
+    "style_key": "doppelbock",
+    "targets": {
+      "abv": {
+        "min": 6.7,
+        "max": 6.9
+      },
+      "ibu": {
+        "min": 25,
+        "max": 28
+      },
+      "srm": {
+        "min": 22,
+        "max": 24
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_lager_sulfur",
+      "label": "German Lager"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_caramel_toffee",
+      "accents": [
+        "accent_toast_layer"
+      ]
+    },
+    "water_bias": "Chloride-forward",
+    "selections": {
+      "tasting_notes": [
+        "malt_caramel_toffee",
+        "accent_toast_layer"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_lager_sulfur"
+      ],
+      "mouthfeel": [
+        "body_full",
+        "carb_classic",
+        "finish_round_sweet"
+      ]
+    }
+  },
+  {
+    "id": "modelo_especial",
+    "name": "Modelo Especial",
+    "brewery": "Grupo Modelo",
+    "ba_class": "International Pale Lager",
+    "style_key": "international_pale_lager",
+    "targets": {
+      "abv": {
+        "min": 4.4,
+        "max": 4.6
+      },
+      "ibu": {
+        "min": 18,
+        "max": 22
+      },
+      "srm": {
+        "min": 3,
+        "max": 4
+      }
+    },
+    "batch_size_l": 20,
+    "yeast_family": {
+      "key": "ferm_lager_sulfur",
+      "label": "Mexican Lager"
+    },
+    "hop_families": [
+      {
+        "key": "hop_noble_spice",
+        "label": "Noble"
+      }
+    ],
+    "grain_pattern": {
+      "core": "malt_pale_cracker",
+      "accents": [
+        "accent_wheat_silk"
+      ]
+    },
+    "water_bias": "Balanced profile",
+    "selections": {
+      "tasting_notes": [
+        "malt_pale_cracker",
+        "accent_wheat_silk"
+      ],
+      "aroma_profile": [
+        "hop_noble_spice",
+        "ferm_lager_sulfur"
+      ],
+      "mouthfeel": [
+        "body_light",
+        "carb_sparkling",
+        "finish_crisp_dry"
+      ]
+    }
+  }
+]

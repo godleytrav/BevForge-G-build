@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Tron-inspired Dark Base Theme */
+    --background: 220 15% 8%; /* Very dark gray / near-black */
+    --foreground: 210 20% 95%; /* Light gray to white */
+
+    --card: 220 15% 12%; /* Slightly lighter dark gray */
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 15% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 190 95% 60%; /* Tron blue / electric cyan - default */
+    --primary-foreground: 220 15% 8%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 210 20% 95%;
+
+    --muted: 220 15% 18%; /* Medium gray for muted backgrounds */
+    --muted-foreground: 210 10% 60%; /* Medium gray for muted text */
+
+    --accent: 190 95% 60%; /* Matches primary for consistency */
+    --accent-foreground: 220 15% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 95%;
+
+    --border: 220 15% 22%; /* Subtle lines using slightly lighter gray */
+    --input: 220 15% 22%;
+    --ring: 190 95% 60%; /* Matches primary */
+
+    /* Per-Suite Accent Colors (for reference) */
+    --suite-os: 190 95% 60%; /* Tron blue / electric cyan */
+    --suite-flow-primary: 142 71% 45%; /* FLOW primary green */
+    --suite-flow-secondary: 142 69% 58%; /* FLOW soft green */
+    --suite-lab-primary: 240 70% 60%; /* Indigo */
+    --suite-lab-secondary: 40 95% 60%; /* Amber */
+    --suite-ops-primary: 191 100% 58%; /* Electric cyan/blue */
+    --suite-ops-secondary: 195 65% 86%; /* Soft aqua/cold white */
+    --suite-connect-primary: 270 70% 60%; /* Violet */
+    --suite-connect-secondary: 25 90% 60%; /* Soft Orange */
+
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-1: 190 95% 60%;
+    --chart-2: 180 95% 55%;
+    --chart-3: 240 70% 60%;
+    --chart-4: 175 70% 50%;
+    --chart-5: 270 70% 60%;
+
+    /* Sidebar colors for Dashboard layout */
+    --sidebar: 220 15% 10%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 190 95% 60%;
+    --sidebar-primary-foreground: 220 15% 8%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 220 15% 22%;
+    --sidebar-ring: 190 95% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
+  }
+}
+
+/* Per-Suite Dynamic Theming */
+@layer base {
+  /* OS Suite - Tron Blue/Cyan Theme */
+  [data-suite="os"] {
+    --primary: 190 95% 60%; /* Tron blue/cyan */
+    --primary-foreground: 220 15% 8%;
+    --accent: 190 95% 60%;
+    --accent-foreground: 220 15% 8%;
+    --ring: 190 95% 60%;
+  }
+
+  /* Flow Suite - Green Runtime Theme */
+  [data-suite="flow"] {
+    --primary: 142 71% 45%; /* Flow green */
+    --primary-foreground: 220 15% 8%;
+    --accent: 142 69% 58%; /* Soft green */
+    --accent-foreground: 220 15% 8%;
+    --ring: 142 71% 45%;
+  }
+
+  /* Lab Suite - Indigo + Amber Theme */
+  [data-suite="lab"] {
+    --primary: 240 70% 60%; /* Indigo */
+    --primary-foreground: 220 15% 8%;
+    --accent: 40 95% 60%; /* Amber */
+    --accent-foreground: 220 15% 8%;
+    --ring: 240 70% 60%;
+  }
+
+  /* Ops Suite - Charcoal + Electric Cyan Theme */
+  [data-suite="ops"] {
+    --primary: 191 100% 58%; /* Electric cyan */
+    --primary-foreground: 210 40% 10%;
+    --accent: 195 65% 86%; /* Soft aqua */
+    --accent-foreground: 210 40% 10%;
+    --ring: 191 100% 58%;
+  }
+
+  /* Connect Suite - Violet + Soft Orange Theme */
+  [data-suite="connect"] {
+    --primary: 270 70% 60%; /* Violet */
+    --primary-foreground: 220 15% 8%;
+    --accent: 25 90% 60%; /* Soft Orange */
+    --accent-foreground: 220 15% 8%;
+    --ring: 270 70% 60%;
+  }
+}
+
+/* Suite-specific accent styling */
+@layer components {
+  /* OS Suite - Tron Blue/Cyan */
+  .suite-os-icon {
+    color: hsl(var(--suite-os));
+  }
+  .suite-os-active {
+    border-left: 3px solid hsl(var(--suite-os));
+    background: hsl(var(--suite-os) / 0.05);
+  }
+  .suite-os-card:hover {
+    box-shadow: 0 0 20px hsl(var(--suite-os) / 0.2);
+  }
+
+  /* Flow Suite - Green Runtime */
+  .suite-flow-icon {
+    background: linear-gradient(135deg, hsl(var(--suite-flow-primary)), hsl(var(--suite-flow-secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .suite-flow-active {
+    border-left: 3px solid hsl(var(--suite-flow-primary));
+    background: linear-gradient(90deg, hsl(var(--suite-flow-primary) / 0.05), hsl(var(--suite-flow-secondary) / 0.05));
+  }
+  .suite-flow-card:hover {
+    box-shadow: 0 0 20px hsl(var(--suite-flow-primary) / 0.2);
+  }
+
+  /* Lab Suite - Indigo + Amber */
+  .suite-lab-icon {
+    background: linear-gradient(135deg, hsl(var(--suite-lab-primary)), hsl(var(--suite-lab-secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .suite-lab-active {
+    border-left: 3px solid hsl(var(--suite-lab-primary));
+    background: linear-gradient(90deg, hsl(var(--suite-lab-primary) / 0.05), hsl(var(--suite-lab-secondary) / 0.05));
+  }
+  .suite-lab-card:hover {
+    box-shadow: 0 0 20px hsl(var(--suite-lab-primary) / 0.2);
+  }
+
+  /* Ops Suite - Charcoal + Electric Cyan */
+  .suite-ops-icon {
+    background: linear-gradient(135deg, hsl(var(--suite-ops-primary)), hsl(var(--suite-ops-secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .suite-ops-active {
+    border-left: 3px solid hsl(var(--suite-ops-primary));
+    background: linear-gradient(90deg, hsl(var(--suite-ops-primary) / 0.05), hsl(var(--suite-ops-secondary) / 0.05));
+  }
+  .suite-ops-card:hover {
+    box-shadow: 0 0 20px hsl(var(--suite-ops-primary) / 0.2);
+  }
+
+  /* Connect Suite - Violet + Soft Orange */
+  .suite-connect-icon {
+    background: linear-gradient(135deg, hsl(var(--suite-connect-primary)), hsl(var(--suite-connect-secondary)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .suite-connect-active {
+    border-left: 3px solid hsl(var(--suite-connect-primary));
+    background: linear-gradient(90deg, hsl(var(--suite-connect-primary) / 0.05), hsl(var(--suite-connect-secondary) / 0.05));
+  }
+  .suite-connect-card:hover {
+    box-shadow: 0 0 20px hsl(var(--suite-connect-primary) / 0.2);
+  }
+
+  /* Hover effects with subtle glow */
+  .hover\:glow-primary:hover {
+    box-shadow: 0 0 15px hsl(var(--primary) / 0.3);
+  }
+
+  /* Smooth transitions */
+  .transition-glow {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "ops-logistics-state",
+  "updatedAt": "2026-04-07T19:08:33.265Z",
+  "fleet": [
+    {
+      "id": "TRK-01",
+      "name": "Northbound 01",
+      "driver": "Alex Rivera",
+      "homeBase": "Main Warehouse",
+      "maxStops": 10,
+      "vehicleType": "box-truck",
+      "status": "loading"
+    },
+    {
+      "id": "TRK-02",
+      "name": "City Loop 02",
+      "driver": "Jordan Kim",
+      "homeBase": "Main Warehouse",
+      "maxStops": 8,
+      "vehicleType": "pickup-truck",
+      "status": "idle"
+    },
+    {
+      "id": "TRK-03",
+      "name": "Reserve 03",
+      "driver": "Maintenance Pool",
+      "homeBase": "Service Bay",
+      "maxStops": 6,
+      "vehicleType": "passenger-car",
+      "status": "maintenance"
+    }
+  ],
+  "routeProgress": {},
+  "deliveryEvents": [],
+  "siteProfiles": {
+    "site-joes-pub": {
+      "siteId": "site-joes-pub",
+      "siteName": "Joe's Pub",
+      "contactName": "Joe Miller",
+      "phone": "(555) 210-4401",
+      "email": "orders@joespub.test",
+      "address": "120 Dockside Ave, Test City, CA",
+      "deliveryWindow": "10:00 AM - 2:00 PM",
+      "receivingHours": "Mon-Fri 9:00 AM - 5:00 PM",
+      "dockNotes": "Rear alley dock, call ahead 15 minutes."
+    }
+  },
+  "truckDispatch": {
+    "TRK-01": {
+      "truckId": "TRK-01",
+      "truckName": "Truck 1",
+      "packagingId": "TRK-01",
+      "destination": "Route North - Truck 01",
+      "dispatchedAt": "2026-04-07T05:32:53.891Z",
+      "readiness": "ready-for-delivery",
+      "totalItems": 1,
+      "totalWeightLb": 152,
+      "totalVolumeFt3": 11.8,
+      "loadedPackagingIds": [
+        "PLT-110"
+      ]
+    }
+  },
+  "truckPlanning": []
+}

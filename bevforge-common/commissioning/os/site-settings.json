@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "os-site-settings",
+  "updatedAt": "2026-04-21T22:44:41.700Z",
+  "siteName": "Main Production Site",
+  "defaultSiteId": "main",
+  "defaultVolumeUnit": "bbl",
+  "temperatureUnit": "F",
+  "timezone": "America/Los_Angeles",
+  "batchPrefix": "",
+  "requireRecipeBeforeBatch": true,
+  "complianceGuidance": {
+    "primarySalesChannel": "direct_to_consumer",
+    "interstateSalesDefault": false,
+    "retailFoodEstablishmentExemptLikely": true
+  },
+  "reportingCalendar": {
+    "autoCalendarDeadlines": true,
+    "ttbOperationsFrequency": "quarterly",
+    "ttbExciseFrequency": "quarterly",
+    "californiaCdtfaFrequency": "monthly",
+    "californiaAbcEnabled": true,
+    "californiaAbcReviewMonth": 7,
+    "californiaAbcReviewDay": 31
+  }
+}

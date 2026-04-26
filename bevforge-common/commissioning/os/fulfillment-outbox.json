@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "fulfillment-outbox",
+  "updatedAt": "2026-04-21T15:27:05.810Z",
+  "nextCursor": 12,
+  "events": []
+}

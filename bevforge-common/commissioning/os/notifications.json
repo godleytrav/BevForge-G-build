@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "os-notifications",
+  "updatedAt": "2026-04-22T14:21:05.179Z",
+  "manual": [
+    {
+      "schemaVersion": "1.0.0",
+      "id": "768c73d5-6e65-42e1-a7b7-bc5bb874c68e",
+      "category": "operations",
+      "level": "success",
+      "title": "Packaging Run Completed",
+      "message": "GC-CORE-JUST-ANOUTHER-TESTY-KEG15 is now on hand and ready for OPS allocation.",
+      "sourceSuite": "os",
+      "sourceType": "manual",
+      "sourceRecordId": "dfd0bdcb-c927-4470-818b-7de07de92eee",
+      "createdAt": "2026-04-22T14:21:05.179Z",
+      "updatedAt": "2026-04-22T14:21:05.179Z",
+      "links": {
+        "openPath": "/os/batches/dfd0bdcb-c927-4470-818b-7de07de92eee"
+      }
+    },
+    {
+      "schemaVersion": "1.0.0",
+      "id": "621aaafd-9f9d-4f3f-b1df-7ebd6691ec43",
+      "category": "operations",
+      "level": "info",
+      "title": "Packaging Run Started",
+      "message": "GC-CORE-JUST-ANOUTHER-TESTY-B01 packaging is now active for GC-CORE-JUST-ANOUTHER-TESTY-KEG15.",
+      "sourceSuite": "os",
+      "sourceType": "manual",
+      "sourceRecordId": "dfd0bdcb-c927-4470-818b-7de07de92eee",
+      "createdAt": "2026-04-22T14:20:41.918Z",
+      "updatedAt": "2026-04-22T14:20:41.918Z",
+      "links": {
+        "openPath": "/os/packaging?sourceBatchId=dfd0bdcb-c927-4470-818b-7de07de92eee"
+      }
+    }
+  ],
+  "states": []
+}

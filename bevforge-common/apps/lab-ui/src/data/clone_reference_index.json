@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Sierra Nevada Pale Ale",
+    "style": "American Pale Ale",
+    "abv": 5.6,
+    "ibu": 38,
+    "srm": 9,
+    "descriptors": ["citrus", "pine", "balanced", "clean"]
+  },
+  {
+    "name": "Dale's Pale Ale",
+    "style": "American Pale Ale",
+    "abv": 6.5,
+    "ibu": 65,
+    "srm": 10,
+    "descriptors": ["citrus", "resin", "balanced", "bitter"]
+  },
+  {
+    "name": "Bell's Two Hearted Ale",
+    "style": "American IPA",
+    "abv": 7.0,
+    "ibu": 55,
+    "srm": 10,
+    "descriptors": ["citrus", "pine", "resin", "clean"]
+  },
+  {
+    "name": "Lagunitas IPA",
+    "style": "American IPA",
+    "abv": 6.2,
+    "ibu": 51,
+    "srm": 11,
+    "descriptors": ["citrus", "resin", "caramel", "balanced"]
+  },
+  {
+    "name": "Pilsner Urquell",
+    "style": "Czech Premium Pale Lager",
+    "abv": 4.4,
+    "ibu": 40,
+    "srm": 5,
+    "descriptors": ["floral", "spice", "crisp", "soft_finish"]
+  },
+  {
+    "name": "Weihenstephaner Hefeweissbier",
+    "style": "Hefeweizen",
+    "abv": 5.4,
+    "ibu": 14,
+    "srm": 6,
+    "descriptors": ["banana", "clove", "soft_finish", "wheat"]
+  },
+  {
+    "name": "Guinness Draught",
+    "style": "Irish Stout",
+    "abv": 4.2,
+    "ibu": 45,
+    "srm": 35,
+    "descriptors": ["roasty", "coffee", "chocolate", "dry"]
+  },
+  {
+    "name": "Allagash White",
+    "style": "Belgian Witbier",
+    "abv": 5.2,
+    "ibu": 17,
+    "srm": 5,
+    "descriptors": ["citrus", "spice", "soft_finish", "wheat"]
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "transfer-route-map",
+  "updatedAt": "2026-02-25T21:35:24.356Z",
+  "routes": {
+    "hlt_to_mash": {
+      "enabled": true,
+      "pumpRef": "dev-pump-mm0tiebh-sipguh",
+      "sourceValveRef": "dev-valve-mm0tkjqf-yln6x6",
+      "destinationValveRef": "dev-valve-mm0tfltv-9oz8i2",
+      "closeValvesOnComplete": true,
+      "requireArmConfirm": false
+    },
+    "mash_to_kettle": {
+      "enabled": true,
+      "pumpRef": "dev-pump-mm0tiebh-sipguh",
+      "sourceValveRef": "dev-valve-mm0tfltv-9oz8i2",
+      "destinationValveRef": "dev-valve-mm0tkl7n-i2pcpt",
+      "closeValvesOnComplete": true,
+      "requireArmConfirm": false
+    },
+    "kettle_to_fermenter": {
+      "enabled": true,
+      "pumpRef": "dev-pump-mm0tiebh-sipguh",
+      "sourceValveRef": "dev-valve-mm0tkl7n-i2pcpt",
+      "destinationValveRef": "dev-valve-mm0tdi9p-apn7we",
+      "closeValvesOnComplete": true,
+      "requireArmConfirm": false
+    },
+    "fermenter_to_bright": {
+      "enabled": true,
+      "pumpRef": "dev-pump-mm0tiebh-sipguh",
+      "sourceValveRef": "dev-valve-mm0tdi9p-apn7we",
+      "destinationValveRef": "dev-valve-mm0tdi9p-apn7we",
+      "closeValvesOnComplete": true,
+      "requireArmConfirm": false
+    },
+    "bright_to_packaging": {
+      "enabled": true,
+      "pumpRef": "dev-pump-mm0tiebh-sipguh",
+      "sourceValveRef": "dev-valve-mm0tdi9p-apn7we",
+      "closeValvesOnComplete": true,
+      "requireArmConfirm": true
+    }
+  }
+}

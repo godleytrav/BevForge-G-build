@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "name": "Fat Tire Clone (BevForge Lab)",
+    "version": "v1",
+    "created_utc": "2026-02-20T00:00:00Z",
+    "source": "bevforge-lab",
+    "recipe_type": "beer",
+    "mode": "hybrid",
+    "style_hint": "American Amber Ale",
+    "notes": [
+      "Clone targets based on BYO: OG~1.050 FG~1.013 IBU~19 SRM~14.",
+      "Grain/hop bill aligned to commonly shared Fat Tire clone variants; adjust to your system efficiency and sensory goals."
+    ]
+  },
+
+  "targets": {
+    "og": 1.050,
+    "fg": 1.013,
+    "abv_pct": 4.7,
+    "ibu": 19,
+    "srm": 14
+  },
+
+  "batch": {
+    "batch_size_l": 19.0,
+    "package_size_l": 19.0,
+    "boil_time_min": 60,
+    "brewhouse_eff_pct": 65,
+    "losses_l": {
+      "kettle_trub": 1.0,
+      "chiller": 0.5,
+      "transfer": 0.5
+    }
+  },
+
+  "ingredients": {
+    "fermentables": [
+      {
+        "name": "Pale Ale Malt (2-Row)",
+        "type": "grain",
+        "subcategory": "base",
+        "weight_kg": 3.65,
+        "yield_pct": 78,
+        "lovibond": 2.0,
+        "diastatic_power_lintner": 120
+      },
+      {
+        "name": "Munich Malt (Light)",
+        "type": "grain",
+        "subcategory": "malt",
+        "weight_kg": 0.82,
+        "yield_pct": 75,
+        "lovibond": 8.0,
+        "diastatic_power_lintner": 40
+      },
+      {
+        "name": "Crystal 60L",
+        "type": "grain",
+        "subcategory": "caramel",
+        "weight_kg": 0.23,
+        "yield_pct": 74,
+        "lovibond": 60.0,
+        "diastatic_power_lintner": 0
+      },
+      {
+        "name": "Victory Malt",
+        "type": "grain",
+        "subcategory": "specialty",
+        "weight_kg": 0.11,
+        "yield_pct": 73,
+        "lovibond": 25.0,
+        "diastatic_power_lintner": 0
+      },
+      {
+        "name": "Biscuit Malt",
+        "type": "grain",
+        "subcategory": "specialty",
+        "weight_kg": 0.14,
+        "yield_pct": 73,
+        "lovibond": 23.0,
+        "diastatic_power_lintner": 0
+      },
+      {
+        "name": "Chocolate Malt (small amount)",
+        "type": "grain",
+        "subcategory": "roast",
+        "weight_kg": 0.03,
+        "yield_pct": 65,
+        "lovibond": 350.0,
+        "diastatic_power_lintner": 0
+      }
+    ],
+
+    "hops": [
+      {
+        "name": "Willamette",
+        "form": "pellet",
+        "alpha_acid_pct": 4.5,
+        "weight_g": 28.0,
+        "use": "boil",
+        "time_min": 60,
+        "stage": "boil"
+      },
+      {
+        "name": "Willamette",
+        "form": "pellet",
+        "alpha_acid_pct": 4.5,
+        "weight_g": 14.0,
+        "use": "boil",
+        "time_min": 5,
+        "stage": "boil"
+      }
+    ],
+
+    "yeast": {
+      "name": "WLP051 (California Ale V) or equivalent",
+      "attenuation_pct": 72.5,
+      "temp_c_min": 19,
+      "temp_c_max": 21,
+      "flocculation": "medium-high"
+    },
+
+    "water": {
+      "profile_name": "Amber Balanced (Default)",
+      "volume_l": 0,
+      "ca": 75,
+      "mg": 10,
+      "na": 15,
+      "cl": 75,
+      "so4": 90,
+      "hco3": 120
+    },
+
+    "adjuncts": [
+      {
+        "name": "Whirlfloc",
+        "type": "fining",
+        "use": "boil",
+        "time_min": 5,
+        "amount": "1 tablet"
+      }
+    ]
+  },
+
+  "hardware_prep": {
+    "mash": {
+      "target_mash_c": 68,
+      "mash_time_min": 60,
+      "water_to_grist_l_per_kg": 3.0
+    },
+    "boil": {
+      "boil_time_min": 60
+    },
+    "chill": {
+      "target_wort_temp_c": 19
+    }
+  },
+
+  "process": {
+    "mash_steps": [
+      { "name": "saccharification", "target_c": 68, "duration_min": 60 },
+      { "name": "mashout", "target_c": 76, "duration_min": 10 }
+    ],
+    "boil": {
+      "duration_min": 60,
+      "hop_schedule": [
+        { "name": "Willamette", "weight_g": 28.0, "alpha_acid_pct": 4.5, "time_min": 60, "stage": "boil" },
+        { "name": "Willamette", "weight_g": 14.0, "alpha_acid_pct": 4.5, "time_min": 5, "stage": "boil" }
+      ],
+      "whirlpool": { "temp_c": 80, "duration_min": 10 }
+    },
+    "fermentation": {
+      "primary_temp_c": 20,
+      "primary_days": 10,
+      "diacetyl_rest_enabled": true,
+      "diacetyl_rest_temp_c": 21,
+      "diacetyl_rest_days": 2,
+      "cold_crash_enabled": true,
+      "cold_crash_temp_c": 2,
+      "cold_crash_days": 2,
+      "pressure_fermentation": { "enabled": false, "pressure_bar": 0.0 },
+      "stop_early": { "enabled": false, "target_sg": null }
+    },
+    "packaging": {
+      "package": "keg_or_bottle",
+      "target_vols_co2": 2.4,
+      "priming": { "sugar_type": "dextrose", "g_per_l": 5.0 }
+    }
+  },
+
+  "sensor_profiles": {
+    "temperature": [
+      { "role": "mash", "units": "C" },
+      { "role": "kettle", "units": "C" },
+      { "role": "fermenter", "units": "C" }
+    ],
+    "gravity": [
+      { "role": "fermenter", "method": "tilt|ispindel|densimeter|tuning_fork", "units": "SG" }
+    ]
+  },
+
+  "actions": [
+    { "id": "m1", "stage": "mash", "action": "heat_to", "target_c": 68, "device": "mash_heater" },
+    { "id": "m2", "stage": "mash", "action": "hold", "duration_min": 60 },
+    { "id": "m3", "stage": "mash", "action": "heat_to", "target_c": 76, "device": "mash_heater" },
+    { "id": "m4", "stage": "mash", "action": "hold", "duration_min": 10 },
+
+    { "id": "b1", "stage": "boil", "action": "heat_to", "target_c": 100, "device": "kettle_heater" },
+    { "id": "b2", "stage": "boil", "action": "hop_add", "at_min_remaining": 60, "hop_ref": "Willamette_60" },
+    { "id": "b3", "stage": "boil", "action": "hop_add", "at_min_remaining": 5, "hop_ref": "Willamette_5" },
+    { "id": "b4", "stage": "boil", "action": "hold", "duration_min": 60 },
+
+    { "id": "c1", "stage": "chill", "action": "cool_to", "target_c": 19, "device": "chiller_loop" },
+
+    { "id": "f1", "stage": "fermentation", "action": "hold_temp", "target_c": 20, "duration_days": 10, "device": "ferment_temp_control" },
+    { "id": "f2", "stage": "fermentation", "action": "diacetyl_rest", "target_c": 21, "duration_days": 2, "device": "ferment_temp_control" },
+    { "id": "f3", "stage": "fermentation", "action": "cold_crash", "target_c": 2, "duration_days": 2, "device": "ferment_temp_control" }
+  ],
+
+  "triggers": [
+    { "action_id": "m1", "when": "stage_start", "stage": "mash" },
+    { "action_id": "m2", "when": "temp_reached", "target_c": 68 },
+    { "action_id": "m3", "when": "after_action", "after": "m2" },
+    { "action_id": "b1", "when": "stage_start", "stage": "boil" },
+    { "action_id": "c1", "when": "boil_complete" },
+    { "action_id": "f1", "when": "transfer_complete", "to": "fermenter" }
+  ],
+
+  "safety": {
+    "temp_max_c": 105,
+    "pump_dry_run_protect": true
+  },
+
+  "logging": {
+    "interval_s": 30,
+    "channels": ["temp", "sg", "actions", "stage"]
+  }
+}

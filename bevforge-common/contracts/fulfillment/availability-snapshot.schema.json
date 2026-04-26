@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bevforge.dev/contracts/fulfillment/availability-snapshot.schema.json",
+  "title": "BevForge Availability Snapshot",
+  "description": "OS authoritative quantity snapshot for a SKU at a site. Traceability rows may reference package-lot or batch lineage without changing canonical SKU identity.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "skuId",
+    "siteId",
+    "onHandQty",
+    "allocatedQty",
+    "availableQty",
+    "asOf"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "siteId": {
+      "type": "string"
+    },
+    "onHandQty": {
+      "type": "number",
+      "minimum": 0
+    },
+    "allocatedQty": {
+      "type": "number",
+      "minimum": 0
+    },
+    "availableQty": {
+      "type": "number"
+    },
+    "uom": {
+      "type": "string"
+    },
+    "lotBreakdown": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lotAvailability"
+      }
+    },
+    "asOf": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "lotAvailability": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lotId", "availableQty"],
+      "properties": {
+        "lotId": {
+          "type": "string",
+          "description": "Legacy lot identifier retained for compatibility. Prefer `packageLotId` / `packageLotCode` for packaged inventory traceability."
+        },
+        "packageLotId": {
+          "type": "string"
+        },
+        "packageLotCode": {
+          "type": "string"
+        },
+        "batchId": {
+          "type": "string"
+        },
+        "batchCode": {
+          "type": "string"
+        },
+        "assetId": {
+          "type": "string"
+        },
+        "assetCode": {
+          "type": "string"
+        },
+        "availableQty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}
